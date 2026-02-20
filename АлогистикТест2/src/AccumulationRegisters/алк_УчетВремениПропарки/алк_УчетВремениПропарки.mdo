@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="adbfebb9-30fa-4632-9371-0596e9af963e">
+  <producedTypes>
+    <selectionType typeId="73e0a060-182a-47f8-93c0-8292fedd36a5" valueTypeId="42226b5d-eeef-4028-8d45-03fbc0d39755"/>
+    <listType typeId="36fbb1fc-a1ab-4a20-ae59-7f35771f300c" valueTypeId="9f575146-b60d-4e0f-9d0f-2b6a41a4ebe7"/>
+    <managerType typeId="25c67446-ffab-4f1c-aea1-56deeaac857f" valueTypeId="661da717-fc69-4243-8ffd-6732a7d70b5b"/>
+    <recordSetType typeId="cdf61719-49b5-46f4-b6d1-4fa5a685c35d" valueTypeId="7865356a-ec1b-49ba-b3be-494d9ef35462"/>
+    <recordKeyType typeId="35aca742-2897-46da-a5a1-8f893f83b953" valueTypeId="eb6cf9c5-f073-44f8-856a-22fcf4fe4e63"/>
+    <recordType typeId="6f3586c8-126f-4eb7-90c4-b360017fd765" valueTypeId="624c692e-aae5-49ab-9dbd-752b0530e2e3"/>
+  </producedTypes>
+  <name>алк_УчетВремениПропарки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет времени пропарки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="450a3730-2f2d-4b42-804b-130e1a10411f">
+    <name>ВремяОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время операции</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="60dcf695-6687-4b50-86c6-a94d06b63185">
+    <name>Камера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Камера</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b816b5de-78f6-4188-aa05-63a349563fa1">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ОперацииПропарки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0ffd9216-12c2-49de-8ebf-4721ba340890">
+    <name>ГрадацияПропарки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Градация пропарки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ГрадацияПропарки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

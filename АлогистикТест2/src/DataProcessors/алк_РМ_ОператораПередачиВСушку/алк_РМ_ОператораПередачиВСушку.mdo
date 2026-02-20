@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="830df583-57a7-477c-98d0-43a1dc2d93a5">
+  <producedTypes>
+    <objectType typeId="92002348-6dcd-433b-8943-0743a04eb3c8" valueTypeId="56ca4225-0e03-4992-8de3-403afc6e5249"/>
+    <managerType typeId="2cf0fe3c-a798-4337-99e9-3a7bbac4ed6c" valueTypeId="13e98527-8ce8-470c-8aa8-3df9bb913e64"/>
+  </producedTypes>
+  <name>алк_РМ_ОператораПередачиВСушку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочее место оператора</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.алк_РМ_ОператораПередачиВСушку.Form.Форма</defaultForm>
+  <attributes uuid="f93f9a98-6afe-4f5d-bf41-4722586304b8">
+    <name>Бригада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бригада</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Бригады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="95a84a1e-16f9-4c3b-a741-0869df1ba0be">
+    <name>ДатаСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата смены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e019c4cc-b24d-4680-8244-21b64e93506c">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a9399907-4907-4e39-a6f7-00ef62cb3c93">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ОперацииПроизводства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="bbe7022b-6a56-42d8-8e5c-08a61e5e750c">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>DataProcessor.алк_РМ_ОператораПередачиВСушку.Attribute.Номенклатура</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="b4b88d88-49ca-4917-abc1-124e96becf4a">
+    <name>Сертификат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СертификатыНаПродукцию</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="857b47d9-af15-48d4-9004-410be2b12628">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8771a0da-d038-43a9-be0a-cc2f0e584353">
+    <name>Участок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Операция</name>
+      <field>DataProcessor.алк_РМ_ОператораПередачиВСушку.Attribute.Операция</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="c289c48f-36fc-433b-9b1a-0bcaa0fee21f">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="878d0b90-93c6-4ada-9421-582499321d59">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>DefinedType.алк_Количество</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="e47db4ba-b786-429b-8e53-663c646366b8">
+    <name>КоличествоЛистов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество листов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="363025a7-de9a-42d1-9de4-fc4b5a07a7fc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="78f8fe29-5d97-4dd7-8f2c-98d567377573">
+    <name>алк_РМ_ОператораПередачаВСушку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочее место оператора передачи в сушку</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="31044b78-922a-4572-9445-f1fdaedb9c91">
+    <name>алк_РМ_ОператораПередачаНаФанеру</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочее место оператора передача на фанеру</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

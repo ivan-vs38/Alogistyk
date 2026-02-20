@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a003e641-a41d-4962-9bb2-0bd8b5b7ff5a">
+  <producedTypes>
+    <selectionType typeId="d56774de-4ead-491d-adb1-c20edecbced0" valueTypeId="ab9a7f96-f966-4307-b99f-86e6b1de8387"/>
+    <listType typeId="af887815-0a76-4e01-ae9d-04b69fcbdf52" valueTypeId="ceb97378-76b9-4591-b4a5-3d086bad7577"/>
+    <managerType typeId="0dfc0b10-9702-4e69-ae09-6e704ef80688" valueTypeId="677fb5db-c707-4e27-8f1f-e0729ed21d7a"/>
+    <recordSetType typeId="7047e4ed-5f7a-4979-ae0f-f9081e2e2cf6" valueTypeId="94cc15a8-27cf-4f00-bbd7-88fb4bd5b54d"/>
+    <recordKeyType typeId="53177a6e-6bb5-42f2-a985-bfdd0a2eb774" valueTypeId="656216c3-ad19-4f3c-8009-d6d38d030685"/>
+    <recordType typeId="b53e1262-c8b1-431f-af02-a6fd4dfa08f1" valueTypeId="0d71bf18-c56d-4c0f-9a4e-674ae1552023"/>
+  </producedTypes>
+  <name>алк_УчетПростоев</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет простоев</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="0aa3832e-4d84-4e27-b6a1-efc80a27703f">
+    <name>ВремяПростоя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время простоя</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="ad9d1d66-239e-43a0-a2ba-fc5a29ab9958">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="40ac6637-7b7b-4e61-a0ad-576b274d44fe">
+    <name>МашинныйЦентр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Машинный центр</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_МашинныйЦентр</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f8637531-8b10-4a86-a60b-697fd69a70ef">
+    <name>Цех</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цех</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Цеха</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9959687f-d7c0-4e34-b8f5-8bae3082951f">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ee979ed6-2bc8-4b88-95d4-edbcc4b197c0">
+    <name>Простой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Простой</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Простой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8506ffda-aac0-412f-89b6-8a3b40720052">
+    <name>Участок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a0b5c185-1549-41ac-953b-a36a37386b02">
+    <name>Узел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_УзелУчастка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c03fdb1d-6771-4fc6-9ef1-9d9e9bcdd6d8">
+    <name>ВидПростоя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид простоя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ВидПростоя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a19baa3a-1fd5-4b48-8cf1-bef4138ad2af">
+    <name>ТипПростоя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип простоя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ТипПростоя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a0b53097-98ae-4163-9a5c-b2e5da2d9158">
+    <name>Служба</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служба</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Службы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="dd4f6a2d-235c-48db-bad4-df28ddf7d5ec">
+    <name>СменаУдалить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена удалить</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:AccumulationRegister>

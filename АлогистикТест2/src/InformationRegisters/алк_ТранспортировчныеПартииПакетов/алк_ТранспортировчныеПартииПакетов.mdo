@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b4eb6e1-087a-4d9c-9951-108fae8683fe">
+  <producedTypes>
+    <selectionType typeId="5bcbeb80-47fc-4fe6-a7dd-06d5f70e8b00" valueTypeId="e81ff2c8-727d-4c48-b3cc-cb153d4bf080"/>
+    <listType typeId="d7b96692-3bbf-4ae0-b35d-3e4d8d0df87a" valueTypeId="9fea06bc-5344-4fa6-a1f2-f0782c522992"/>
+    <managerType typeId="dbdca193-d0dc-4fe3-8c8c-e2a7f47e5fe7" valueTypeId="e94094e6-368f-4d89-9988-c15e5e6163d8"/>
+    <recordSetType typeId="202b8eec-cc8e-401e-9ded-59ba4a83f3be" valueTypeId="012584a9-4d33-4b89-899f-52a7d61f5ed5"/>
+    <recordKeyType typeId="74fb99b3-f552-454f-8cb1-6f2ee48edb0c" valueTypeId="f6831a24-5dfb-4156-8114-735b56296177"/>
+    <recordType typeId="391d6d19-16e4-4e98-9188-c6e212c48c38" valueTypeId="e73fd290-2be6-4e28-956e-786c344a3ebd"/>
+    <recordManagerType typeId="0c66c39b-dd13-4da6-a008-e8a40eb5d16d" valueTypeId="c4893c84-a192-48f6-b17c-044a3291ffb7"/>
+  </producedTypes>
+  <name>алк_ТранспортировчныеПартииПакетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Транспортировчные партии пакетов</value>
+  </synonym>
+  <comment>Принадлежность пакетов к партиям на различных этапах транспортировки</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="11756597-c1d9-469f-a3ef-38657e93923c">
+    <name>ДокументТранспортировочнаяПартия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ &quot;Транспортировочная партия&quot;</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ТранспортировочныеПартии</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6c896a7a-4e61-4b40-a217-c2310fbcacc4">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

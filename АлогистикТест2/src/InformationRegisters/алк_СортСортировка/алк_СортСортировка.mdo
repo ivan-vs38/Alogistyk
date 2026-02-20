@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f71c20d-f86f-4608-90c3-e461b9344930">
+  <producedTypes>
+    <selectionType typeId="52d7c181-70e1-444e-8072-e8c2f4fb57d7" valueTypeId="acf13706-f205-4589-88eb-486356ca1e2b"/>
+    <listType typeId="538577eb-e289-4eb0-b6a2-19ac72e69196" valueTypeId="efd58d2a-3e3f-4b87-acd3-9d1224016c0f"/>
+    <managerType typeId="7057a02f-77a9-475a-bf9f-f05bdff6bf44" valueTypeId="de139045-bcb6-4a17-9c71-b5b00c7435be"/>
+    <recordSetType typeId="dad7bc9c-6212-409f-a306-b7141dcb75ce" valueTypeId="05533769-4285-47b7-840d-dcc5281377d0"/>
+    <recordKeyType typeId="0710ec17-0973-4021-a7ea-2f7c2692b9a8" valueTypeId="9ce09b68-a249-4e5d-8453-97f08b263d9a"/>
+    <recordType typeId="187205f1-f821-4cb7-bcab-729895996e17" valueTypeId="454bcce5-2bde-4f3b-8c6c-1fa15964a53e"/>
+    <recordManagerType typeId="5003bb69-db68-432e-b414-da193ad029cc" valueTypeId="ea65c871-8a57-4113-96af-3ce52d9012f5"/>
+  </producedTypes>
+  <name>алк_СортСортировка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие сорта из файла сортировки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.алк_СортСортировка.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="785b435a-06fe-4618-8adf-918e6a595700">
+    <name>Сорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сорт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.алк_СортСортировка.Dimension.КатегорияНоменклатуры</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4c6a757c-9b91-4f98-b20e-440e66f282c0">
+    <name>СортФайл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сорт файл</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="76e871d7-7da3-4765-98e0-afab155cf6eb">
+    <name>КатегорияНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="69f7a98b-e35f-4702-bf6e-b08be0e5788d">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

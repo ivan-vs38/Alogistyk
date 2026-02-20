@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e01e8ed4-aaad-4a6b-b2a3-4d4e70302305">
+  <producedTypes>
+    <selectionType typeId="9690b66f-f188-45cc-9740-5702004cb378" valueTypeId="7e2e0941-48b0-4085-85b5-e5070b4af9d0"/>
+    <listType typeId="a2b3a125-23a7-44e9-a9f4-3ebff19d4e2e" valueTypeId="d68bd6a5-4d49-4fdf-bfd8-897a37518d7d"/>
+    <managerType typeId="118011a8-bd62-4ea3-8b36-aee1dfaf2024" valueTypeId="a6444bdf-5013-424e-8d25-ca3f42913ec2"/>
+    <recordSetType typeId="1e9e8db1-9d17-4f76-b313-b8513f45e9a6" valueTypeId="dc397c38-207f-4616-b08c-c7aef6065aa4"/>
+    <recordKeyType typeId="b5fce1e1-ed9f-416a-a255-c6cf748d8d14" valueTypeId="e44f5ea4-ab6a-4708-b16a-a99f533ea5cd"/>
+    <recordType typeId="1ac1b931-cb23-411d-9ea4-4d6883855667" valueTypeId="72ffffb1-bd56-4a4e-a011-58cd53b586e0"/>
+  </producedTypes>
+  <name>алк_ДанныеАктаОТК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Алк данные акта ОТК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4c867bcc-f06b-4cb0-a25f-e251b555b39a">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="4f6b3421-2310-49e4-8526-2c48a91f7e3d">
+    <name>СсылочноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылочное значение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+      <types>CatalogRef.Влажность</types>
+      <types>CatalogRef.Породы</types>
+      <types>CatalogRef.алк_ВариантыПрипуска</types>
+      <types>CatalogRef.Длины</types>
+      <types>CatalogRef.Сорта</types>
+      <types>CatalogRef.РазмерСечения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="36274609-021e-43b3-827b-85d89fe7f0b2">
+    <name>Шаблон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ШаблоныОТК</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c6868e27-cb00-4b30-85bf-b087250c40b3">
+    <name>Строка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>64</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2975ea97-39fa-4627-b74c-a7b741475f12">
+    <name>Колонка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Колонка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>64</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="124f18aa-1682-4e0b-bb2d-3b8882b6d715">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4bd1fd39-03cd-4a7f-8b43-5007583dcbf4">
+    <name>Группа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>64</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="99c78bf8-1191-43c4-99b7-6137ed8c4137">
+    <name>УникальныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уникальный номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

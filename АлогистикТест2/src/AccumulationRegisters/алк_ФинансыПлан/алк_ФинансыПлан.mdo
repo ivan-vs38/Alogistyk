@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a1fc5bb-db53-4a20-b802-59bfcc25069e">
+  <producedTypes>
+    <selectionType typeId="acf30e57-2c9d-4390-84c3-8fba098a0cba" valueTypeId="e78ee7bf-4398-40f3-b9c5-c052184937bc"/>
+    <listType typeId="33f06690-818b-461c-b9dd-58b72ed2a42b" valueTypeId="a07a23b2-7008-4335-9dcd-6d3f4cd77b8e"/>
+    <managerType typeId="962f04b9-b217-4937-9654-83ba6e486860" valueTypeId="0af2db0e-d4ad-4853-8dc5-f8e174bc5fb6"/>
+    <recordSetType typeId="259e5851-cba0-45cb-bd14-b2cec8938038" valueTypeId="ce65a916-6ccc-43f5-86aa-e41b750f3ab3"/>
+    <recordKeyType typeId="4cee4dc3-104d-451c-b5d9-a3c6037b458a" valueTypeId="b3a22d50-fc0d-4a29-8e73-7ef4d69f314e"/>
+    <recordType typeId="3ccc4231-8e0c-4cf1-81d0-985ddf4e223d" valueTypeId="9afa97d2-0bfc-4294-b35d-135203045dd8"/>
+  </producedTypes>
+  <name>алк_ФинансыПлан</name>
+  <synonym>
+    <key>ru</key>
+    <value>Финансы план</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="059895fc-0933-4061-ac65-90b7aeee114b">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="05ad06ac-dc90-459c-b63c-aa126cc0a823">
+    <name>Факт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факт</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="fd90d3b0-4822-49cf-96ef-38c76aff50bd">
+    <name>КатегорияНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f0b1575b-d1fe-4e52-9919-b22eee270b3a">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

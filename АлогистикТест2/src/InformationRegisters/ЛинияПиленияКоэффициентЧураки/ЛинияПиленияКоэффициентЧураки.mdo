@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4dc2381-5733-47ca-8170-ec32a88bce83">
+  <producedTypes>
+    <selectionType typeId="51c93150-8960-4695-84bb-76d66879de0d" valueTypeId="98f25a6a-4492-46eb-aebe-3b6e7f32a972"/>
+    <listType typeId="9bfdabc4-da2d-4089-ab0b-fdf3a0851147" valueTypeId="35db840d-0348-49f1-bd37-42d68c842641"/>
+    <managerType typeId="77a60123-54f1-4967-91c7-b181b1e788ba" valueTypeId="2337bad3-30eb-45ff-9d59-9b633da0022d"/>
+    <recordSetType typeId="84526fea-9d59-4be0-9d36-8c01fe88608b" valueTypeId="b8fb4812-9091-4646-b408-31eda11cb677"/>
+    <recordKeyType typeId="ed2bb3c9-386b-459c-8126-1e6775efecdd" valueTypeId="8d7c8e23-cd96-4e03-a25d-c5b1a8435f03"/>
+    <recordType typeId="ba53c2bc-b06b-4fe9-bbb8-5d0912a0fad4" valueTypeId="aa440a16-a7ef-4848-8b24-f97267560d92"/>
+    <recordManagerType typeId="1e68f977-ea7e-45f6-8306-bf47b852df20" valueTypeId="59e78f9e-9d31-43d6-8a8e-cee5c87081a1"/>
+  </producedTypes>
+  <name>ЛинияПиленияКоэффициентЧураки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Линия пиления коэффициент чураки</value>
+  </synonym>
+  <comment>Удалить Кэффициент при учете объемов отходов лесопиления (чураки)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="afc22606-99e3-4258-8828-b94225d62aee">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9aa16d26-44a4-4552-b792-bd9e443a89a2">
+    <name>НоменклатураОтход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура отход</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1b5a4449-4be5-42f1-bfaf-228062063aef">
+    <name>ШтабельОтход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штабель отход</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="86737b96-9048-4913-8f93-b4a351e083e0">
+    <name>Диаметр</name>
+    <synonym>
+      <key>ru</key>
+      <value>D, см</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a028656b-e67f-4e75-9df0-996d3bdf85a6">
+    <name>ДлинаБревна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина бревна, L, м</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

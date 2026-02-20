@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e15a651d-5b07-4eda-b343-4e86209a886a">
+  <producedTypes>
+    <selectionType typeId="faecb839-f9fe-4ec9-8df5-3e6afe36ed45" valueTypeId="f3a653cb-2c5c-488a-a649-07af285c04ff"/>
+    <listType typeId="b349c4ae-81e3-43fa-b93e-61cc47af37a4" valueTypeId="eda61026-97c0-49e5-a74f-1497964eadeb"/>
+    <managerType typeId="7b3302cf-d9f8-4e87-b702-66499aa5b170" valueTypeId="704c953c-278d-4ec9-9956-a2b1bc8282d7"/>
+    <recordSetType typeId="3302653d-89a4-48a6-814f-eee7738e2d46" valueTypeId="061c7145-d8f7-4dc5-b87b-d0af72451f91"/>
+    <recordKeyType typeId="042931ac-29f2-4adb-b08d-488daaba90f1" valueTypeId="fcab0fd2-0deb-49e7-8a95-931491754a62"/>
+    <recordType typeId="2de5e854-aa66-4d03-af15-b4ca8782b744" valueTypeId="af1ff107-9345-43a3-b2e9-c28c3f020426"/>
+    <recordManagerType typeId="0a63af7c-311d-454e-9321-a04698bb1451" valueTypeId="a6cdbb32-36bd-47ee-9195-fe1987b8169c"/>
+  </producedTypes>
+  <name>алк_СостояниеСушильныхКамер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние сушильных камер (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="052fc839-2939-40e7-b4e9-1d5d6eacaac4">
+    <name>Неисправна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неисправна</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a7700547-61f1-4dea-aa5e-376f5b23cee1">
+    <name>СушильнаяКамера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сушильная камера</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd7445f0-4b7f-4b03-a66c-86e05d611f8b">
+  <name>РФП_ПередЗаписьюДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>РФП перед записью документов</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.РфпСервер.РФП_ПередЗаписьюДокументовПередЗаписью</handler>
+</mdclass:EventSubscription>

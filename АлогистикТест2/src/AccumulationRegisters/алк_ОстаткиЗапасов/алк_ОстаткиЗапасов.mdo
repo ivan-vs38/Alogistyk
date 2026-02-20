@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82ca2566-b9ae-496a-9b8a-689800ac9973">
+  <producedTypes>
+    <selectionType typeId="0346ab6c-f609-4848-afc0-d45d78766add" valueTypeId="f76777a1-ac57-460a-b8ee-a7c7c84fc28f"/>
+    <listType typeId="625cf7c6-bca9-4997-8dd4-bb8b78828c93" valueTypeId="b528ec01-a1ab-4006-8927-ac4a310b5343"/>
+    <managerType typeId="2b094a81-8060-4345-8fdc-8e99b44aaa3b" valueTypeId="e6fcf426-7f81-4025-88ac-bcf291d1b5e8"/>
+    <recordSetType typeId="8a8f659a-cd7c-4fd2-a99c-b8531f863c98" valueTypeId="ec6a56ff-3d65-453d-b104-6ade444ce64e"/>
+    <recordKeyType typeId="ab07dcd7-f10e-4aff-a00c-e5912c992240" valueTypeId="6eed1f7d-94ec-4e81-a3d2-1a75c2a3a692"/>
+    <recordType typeId="e8336e19-8d9c-4589-a2fa-91112b34749f" valueTypeId="02e1a2cd-20b0-41b9-8a1e-2ef17a1dadc6"/>
+  </producedTypes>
+  <name>алк_ОстаткиЗапасов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки запасов (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="0412a917-3b86-49ef-b937-b58083a4d389">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment>Для пиловочника и пилмата это объем, для ДГ это вес</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="34abd757-bec3-4ba1-8c38-24d3198c287e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="456653e9-79a4-4779-a5d6-fccc70886341">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ff4a0e45-31e1-4071-ba4d-8ba9c55e00ee">
+    <name>Штабель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штабель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a9f49a18-9254-4a09-b688-0daa0251a0a8">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="85f2ab75-0453-48f3-bee6-3ce69edf6b37">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cb006011-228f-4a81-85cb-e34c42bd4fa0">
+    <name>Сертификат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СертификатыНаПродукцию</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5373a7e9-7f27-4c48-85d1-7ab3a680ea35">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Серия товаров</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

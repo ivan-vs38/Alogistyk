@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2bbd85b8-0bb6-42d0-ab1f-bfc8d6bccc24">
+  <producedTypes>
+    <selectionType typeId="6bb47d9a-d7b2-4454-8110-a58849b1476f" valueTypeId="6bcdb81b-54ac-40fe-bbdd-2011d4baf7ac"/>
+    <listType typeId="07ae97b2-a8a0-45cc-b028-0e3674621591" valueTypeId="4b4958dd-bfda-4f85-a651-526f15141aab"/>
+    <managerType typeId="36db4a96-1481-4eeb-a88d-f7fe0b08949d" valueTypeId="124ef4e9-08ca-4947-bcc7-4cac40e927e5"/>
+    <recordSetType typeId="7a739319-d297-4f67-85f5-12965e104922" valueTypeId="6672a03b-c46d-488c-a982-9a5b2d89b6f2"/>
+    <recordKeyType typeId="d45d6193-5d76-4024-b054-bfb703e53dec" valueTypeId="c559db00-07d4-4dd5-b8ed-3560a49f127b"/>
+    <recordType typeId="30e5a200-2c79-46bc-82a7-20e2b87d2ea1" valueTypeId="71c808e0-6032-4dd2-86cb-b0af6c74f871"/>
+    <recordManagerType typeId="35e43a06-922c-4c67-93fc-d576cc07fc45" valueTypeId="2b67896b-5dc7-4f70-8832-cb0b0b928cec"/>
+  </producedTypes>
+  <name>алк_ЦеныНаЛесопродукциюТД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены на лесопродукцию (ТД)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c7dca784-29ec-41fc-866e-8f190dededf1">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3a0530e5-a0e4-432d-ab92-d4262287e82a">
+    <name>СтавкаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтавкиНДС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5e5466f9-bbf6-4141-b5b1-2b049096527c">
+    <name>СуммаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cab26f7f-da92-473b-9742-d994f27f789d">
+    <name>Всего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Всего</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Поле, автоматически заполняемое суммарной стоимостью запасов согласно настройкам цен и валют.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="66b7fb6c-898a-4ee3-a5a0-baacd1814105">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.КатегорияНоменклатуры</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Catalog.КатегорииНоменклатуры.Пиловочник</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="306b5aea-a4e4-4165-9d2a-aff0eb229ba2">
+    <name>Порода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порода</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Породы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="02189b9c-5850-4ded-a136-bdc930ccf20c">
+    <name>Сорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сорт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0f1bca4a-c612-448e-99c4-e963d91321c5">
+    <name>Длина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Длины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="48280077-6c66-4644-9696-d80b99979ad5">
+    <name>Градация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Градация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Градации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e76c2986-55e1-46c7-955c-e328cf138de7">
+    <name>Некондиция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Некондиция</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="31c473d9-dd02-4944-8a07-7757f0fdacfb">
+    <name>СтанцияОтправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станция отправления</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ЛогистическиеЦентры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3e0a8052-2afd-4661-8213-c3182177d28b">
+    <name>ВидТранспортировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид транспортировки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ВидыТранспортировки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

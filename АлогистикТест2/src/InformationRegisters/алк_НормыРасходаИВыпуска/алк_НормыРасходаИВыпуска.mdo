@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57481503-3230-4725-8709-ef9cd3fa780d">
+  <producedTypes>
+    <selectionType typeId="8fc7fe45-7654-4ed5-964a-fd5ad1f118a5" valueTypeId="15a70f60-f8a1-4000-9602-547288ffb2b4"/>
+    <listType typeId="a144c1ae-6a49-4a53-87fc-d037a46602cf" valueTypeId="c3449230-5cd1-40de-a2d0-ce390b55ea6a"/>
+    <managerType typeId="83eb925b-1d22-474d-99ab-4e12f334f720" valueTypeId="afdec966-e797-4b67-9ec5-6d250e863359"/>
+    <recordSetType typeId="dc6fb1f9-43ee-43ff-b8eb-7c179709631e" valueTypeId="2ebcd3e1-59b2-4abc-ab61-59ef3ddf4b3e"/>
+    <recordKeyType typeId="d5eae316-0e56-4b3c-8e7b-5780d3d6c2d5" valueTypeId="3e83db99-130e-48c8-8a79-d1f003718dab"/>
+    <recordType typeId="2c15f242-ff1d-4fc8-8d9b-d86840e411c6" valueTypeId="c8b03fcc-4229-4aa0-8897-6fcf68400f7f"/>
+    <recordManagerType typeId="06b7cf4b-afe3-4c0a-b13a-5221749af1a3" valueTypeId="c9e11ab5-a665-424e-bb99-9cc216a7d4a5"/>
+  </producedTypes>
+  <name>алк_НормыРасходаИВыпуска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы расхода и выпуска (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="31f42a0e-8af3-44d5-9ec8-1c97bfb2e1aa">
+    <name>ВариантЗависимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант зависимости</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ВариантыЗависимостиНормы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d204ea7c-5362-4899-8e09-a3917c2a27ff">
+    <name>ЦелеваяОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Целевая (основание)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0cee1c80-44c2-40c7-a013-56c46bf2588f">
+    <name>НоменклатураОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура (основание)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ebe6a5ec-7eda-40db-9521-c64d83020d48">
+    <name>ХарактеристикаОснования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика (основание)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8808d9de-b8a3-4dc9-813c-e39bc9d4e369">
+    <name>ВидДвиженияОснования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид движения (основание)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ВидДвиженияНормы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0f1a85d7-36b2-46da-ae1f-6a629c2bfa9a">
+    <name>Норма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>20</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f8b2a6ff-6d13-4e87-a36f-3bc5c893f119">
+    <name>ДатаНачалаДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала действия </value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="082726cb-00ca-4da4-9e1d-fdb1cf08693d">
+    <name>ДатаОкончанияДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания действия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b8618c99-a424-45d2-a341-6c500b4ff920">
+    <name>ОперацияПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция производства</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ОперацииПроизводства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ad4070e2-6282-49b6-ae3b-784f70e7bb82">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e87f21c6-7198-4ab9-926d-f29e8b04d887">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d0451817-f1c9-4770-be8e-bedfa0477f85">
+    <name>ВидДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид движения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ВидДвиженияНормы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

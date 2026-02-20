@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca0b217e-1e1d-4f9f-b816-b49bb0f6fade">
+  <producedTypes>
+    <selectionType typeId="f0deebc0-c635-42ee-bd55-067000126a6b" valueTypeId="5b51c5a2-1378-4dda-8ded-b90ab02981dc"/>
+    <listType typeId="d0220970-888b-4083-a8c5-d66eaaac8427" valueTypeId="44350fbd-aa09-4777-b336-a77835b52811"/>
+    <managerType typeId="9fadc298-8eb6-4dbb-bf57-da833e60c239" valueTypeId="9eaa6913-f7f7-40a6-a81d-922499df1161"/>
+    <recordSetType typeId="4b3d9e7f-2cfb-4b6a-8c01-a214e27ab142" valueTypeId="9ad1a50f-e70a-4c42-b716-3e83db9e0a21"/>
+    <recordKeyType typeId="7e134959-7611-4f6b-8168-b6f5b65127e9" valueTypeId="abd32a1a-baeb-443e-a268-74eb343dec48"/>
+    <recordType typeId="61826c5e-7317-4738-ab14-91b4bf6c5af9" valueTypeId="2e24fe01-0729-4d73-9530-693e9f9b41a3"/>
+    <recordManagerType typeId="48deed04-fe80-4bd9-a5ca-8a5e18b5cac9" valueTypeId="77d260be-6a81-4d03-ae4e-afdb1eb06d7b"/>
+  </producedTypes>
+  <name>алк_ВозвратныйШтабель</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возвратный штабель</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Для определения необходимости возврата пиловочника из штабеля, устанавливается на определенный период по определнному контрагенту. </value>
+  </explanation>
+  <resources uuid="5b9e2228-e5c1-4d83-a367-2e6b10f4b621">
+    <name>ШтабельЯвляетсяВозвратным</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штабель является возвратным</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fc806d90-99b8-4d2f-922b-f88c5194c683">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="35f339c1-cef9-4e09-88f6-7a0f9926783b">
+    <name>Штабель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штабель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

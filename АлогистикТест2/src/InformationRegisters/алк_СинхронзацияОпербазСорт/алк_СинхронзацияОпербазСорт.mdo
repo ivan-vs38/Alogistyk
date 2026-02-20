@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82a4dd86-2a23-44df-906f-6a87c69c4c33">
+  <producedTypes>
+    <selectionType typeId="f0165183-8381-47d4-adb9-bde7a154b986" valueTypeId="cc948b65-970f-48f3-8735-2cb19cfdbd7f"/>
+    <listType typeId="8a11f5cb-a26e-4a2f-919d-85710303a883" valueTypeId="0df34608-f94c-48e7-b85a-6dad4734bbbb"/>
+    <managerType typeId="64301e68-d401-4c0e-a247-e6bae898c493" valueTypeId="d583948a-cc37-4685-be58-e4a3771abdc9"/>
+    <recordSetType typeId="52aa171b-701c-4ad6-92df-1efe848b7c9c" valueTypeId="9af3e7d5-59d2-45d0-a7a3-52903456909d"/>
+    <recordKeyType typeId="b22427a0-d232-4145-882b-a232e22d11b0" valueTypeId="32c5b800-562a-4b1d-92e6-ea63b37ed91b"/>
+    <recordType typeId="d9ca62cb-c0b4-49f4-bd67-15278fd67828" valueTypeId="41b32dcd-4f17-459b-a82f-2aa116989fe1"/>
+    <recordManagerType typeId="69da8531-808f-41d4-a785-ee90fdf4506d" valueTypeId="a036b39f-0aa2-4fe1-ba51-2979abdb349d"/>
+  </producedTypes>
+  <name>алк_СинхронзацияОпербазСорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронзация опербаз (&quot;сорт&quot;)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.алк_СинхронзацияОпербазСорт.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="228dd654-7e72-4808-81b2-cfd5d1aaccc4">
+    <name>Сорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сорт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.алк_СинхронзацияОпербазСорт.Dimension.КатегорияНоменклатуры</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2ac338cf-25a3-4dd7-b4fc-e3b5c3f1751d">
+    <name>рфпСорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рфп сорт</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8b4c91c1-744b-4b75-ae59-079221c3b328">
+    <name>КатегорияНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f3060946-679d-447b-894d-14d90844e17c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

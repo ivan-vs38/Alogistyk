@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db3b8365-9245-47eb-a2bc-f86601d8d2f1">
+  <producedTypes>
+    <objectType typeId="f10d6a74-0724-462d-a0d7-8606632ba189" valueTypeId="8b9f71ee-9b38-4277-8f2d-7b2c9096620e"/>
+    <refType typeId="709ca550-4f86-498a-b907-a91154c464fb" valueTypeId="628b1017-5dfd-4457-99a9-16ba77bf380c"/>
+    <selectionType typeId="4f2a84e8-4bcf-482c-97f6-cb39144ab695" valueTypeId="4f6b1bed-7b61-4acd-a2cc-d20c9f478441"/>
+    <listType typeId="87a1af33-39ef-40ec-a9ce-e3550afffcf5" valueTypeId="fedad481-d045-4edd-b0d9-17fd0ea2eb09"/>
+    <managerType typeId="45a32279-b6f3-48ed-a5b6-f91cc6ad6b0d" valueTypeId="9d42afb8-4e37-480d-8d5f-aeab0e20d90e"/>
+  </producedTypes>
+  <name>алк_Теплоходы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Теплоходы, бажи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_Теплоходы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_Теплоходы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ca6a2fa2-db8f-4733-b8d4-f4b90e2b35d1">
+    <name>НаименованиеАнгл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование (англ)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>70</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="24343865-b19b-43da-a8d9-c311ea2920be">
+    <name>ФлагАнгл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Флаг (англ)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>70</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29137a6c-87c9-4a55-abfb-a7a053d95d5c">
+  <producedTypes>
+    <selectionType typeId="d1cd14f1-2c33-4ebc-b238-a063edaf6530" valueTypeId="d54b6b36-2ec8-4949-96be-d180b203040c"/>
+    <listType typeId="3d9c8eef-ec40-4550-bb91-3070eb3595d4" valueTypeId="be0a9153-ac9c-4ed5-b48c-b9f766c9267f"/>
+    <managerType typeId="ea30b5da-9b54-4e5d-920f-4d087a24f70a" valueTypeId="dbc3c1ee-0ac0-4bac-a9d2-281080928beb"/>
+    <recordSetType typeId="8d0f7ec9-383d-47bb-a0b3-f9210a4b6001" valueTypeId="b9ed6ddb-a130-46ff-baaa-1914a1a7a7da"/>
+    <recordKeyType typeId="97dcf0c8-e995-4c1b-b5c9-d79833e327c6" valueTypeId="62e6dad9-7bc2-465b-994e-5dee992aada5"/>
+    <recordType typeId="363df5b1-3b80-4de3-8f9e-963b2c445c19" valueTypeId="de292e01-8aec-4f28-ada6-1968b9ce7e56"/>
+    <recordManagerType typeId="551a0a71-2408-4a6b-9418-19594db991f9" valueTypeId="d3cbaf51-d5f7-46f1-a49b-c4c66a499100"/>
+  </producedTypes>
+  <name>алк_ИД_ГруппХарактеристик</name>
+  <synonym>
+    <key>ru</key>
+    <value>Идентификаторы групп для  характеристик</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f5057e9f-544a-49c2-bb35-f42b3b6e4597">
+    <name>ОбъемнаяГруппаИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объемная группа ИД</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ceaa7c34-df8c-49e6-9658-3882a81c34ea">
+    <name>АссортиментнаяГруппаИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ассортиментная группа ИД</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="aa4094ff-9b9d-49f7-a63f-050f96dd1ec9">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="def4726f-1c7f-4283-97e4-9ff68d2c5543">
+    <name>ВладелецИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец ИД</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ЗаказПокупателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6959f7a3-c0c3-4def-86ac-37c68be5fde8">
+  <producedTypes>
+    <selectionType typeId="09c8c2a6-d7d8-4bda-aa27-e01ec6eb4c37" valueTypeId="2d236b2d-9c50-418b-8a20-c74cd30acf52"/>
+    <listType typeId="2e22fae0-d21b-45e4-90c8-1dbdaa662746" valueTypeId="3d458841-70e9-4f64-b8d1-fc51a681c2ff"/>
+    <managerType typeId="de9dc4f7-aff7-4749-bccc-b32699279462" valueTypeId="cb03c3fa-4f3e-4f08-88c9-52345419c00d"/>
+    <recordSetType typeId="da018db8-50f7-4265-8473-f942db536a5d" valueTypeId="613a280c-d15a-4911-bd6d-2e1b15dbcc84"/>
+    <recordKeyType typeId="3bbad850-21ee-492f-b893-bb1a6c911644" valueTypeId="43034c2c-0209-4a65-9bd6-6d398109fd06"/>
+    <recordType typeId="0b02237b-ac7c-45da-83c6-5c1b129a66e8" valueTypeId="0ca48f4f-8d9e-42e2-9f8d-991706d6f7dd"/>
+    <recordManagerType typeId="4d17a9d1-f802-426c-8298-05fea5b91e3b" valueTypeId="ff26e768-014a-4d08-a9b5-1246e3ee0df6"/>
+  </producedTypes>
+  <name>алк_ЗаданияДляРасчетаЗначенийПоказателейДляОтчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задания для расчета значений показателей для отчетов (алк)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="1b7c88d7-4162-4887-9ac2-8f2536820ff6">
+    <name>ВременнаяМетка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Временная метка</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="aaf80194-f0bf-4712-b049-320a94500b17">
+    <name>ПериодРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период расчета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="3eb9035f-474d-472b-9a46-1861fb6600aa">
+    <name>ОперацияПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция производства</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ОперацииПроизводства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="bb3ca1ac-adfd-4fbd-85df-4ae3025e6434">
+    <name>ВидЗначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид значения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ВидЗначенияПоказателяОтчетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

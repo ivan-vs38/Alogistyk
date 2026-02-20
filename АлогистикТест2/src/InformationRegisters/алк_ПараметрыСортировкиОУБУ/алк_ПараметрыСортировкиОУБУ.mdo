@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44913994-ecab-4814-941d-a3dadfe81d11">
+  <producedTypes>
+    <selectionType typeId="e874a172-adf1-4915-8a2c-8b219f5c1409" valueTypeId="34f591ac-a1b7-4e8f-9049-ed79d3a7b78e"/>
+    <listType typeId="20eeef5e-4d87-4701-82ab-b4533e410f23" valueTypeId="5f85a80d-cfee-48ff-96d2-96efd9bc23b8"/>
+    <managerType typeId="a4eb2b5f-0353-489e-ba1d-1c8d936fc8f9" valueTypeId="0fd44613-1378-48d7-8415-6189742ef295"/>
+    <recordSetType typeId="dba603fb-e051-40ff-8788-3cdad1b8470c" valueTypeId="65545f44-5b82-45aa-aaf6-147322b86218"/>
+    <recordKeyType typeId="1c34ff2f-4b50-484e-ba39-1fa656ebe41d" valueTypeId="deabf3b7-8bef-4f5f-b87b-a6c057e2db25"/>
+    <recordType typeId="96de76e5-bc27-41bc-9ac8-5b90117f019e" valueTypeId="f40d93ac-0a9f-4774-92b4-3d67c7d892fa"/>
+    <recordManagerType typeId="a8155542-0632-463e-9e50-1da94f8d8193" valueTypeId="10c32256-fcb9-4944-8ae6-7b7241501afb"/>
+  </producedTypes>
+  <name>алк_ПараметрыСортировкиОУБУ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры сортировки ОУ БУ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="39a267fa-0aa2-4912-a8cc-938d1361baac">
+    <name>Штабель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штабель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2e0c263d-ee21-461b-950f-123f3d7bd94d">
+    <name>Порода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порода</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Породы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7cf83d7b-6335-4705-967a-3ca0fe4a954d">
+    <name>Сорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сорт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="29c1c0bf-6ccd-4517-84e9-2eb3e335855b">
+    <name>ДиаметрОт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диаметр от</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fc5cc289-53dc-4853-8051-0321940aba56">
+    <name>ДиаметрДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диаметр до</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3204710b-87d2-4711-bde9-4202aee1ccae">
+    <name>ДлинаОт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина от</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c509d6d8-3099-4f64-994b-947d97d5a018">
+    <name>ДлинаДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина до</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="55a580e1-23be-4293-90a5-16a75ae595a3">
+    <name>ДлинаУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина У</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Длины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="36c0bdea-3047-4f60-8cc4-7cf12f55e555">
+    <name>СортУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сорт У</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0c6d3b73-b6c0-4573-b3b7-9c2947a43c87">
+    <name>ПоГосту</name>
+    <synonym>
+      <key>ru</key>
+      <value>По Госту</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

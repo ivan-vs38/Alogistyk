@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f46a83f1-a82f-434a-8e51-7f080862ef8b">
+  <producedTypes>
+    <objectType typeId="b7a73204-7b57-4897-a4c8-7412b63ae246" valueTypeId="9231e3dc-3ecf-474e-95c3-db0b17a61824"/>
+    <refType typeId="70563a86-7ff0-4f2b-bd7d-fd4c23facb65" valueTypeId="85481537-9330-48c5-bbae-e6f7d02f2262"/>
+    <selectionType typeId="09127e21-f887-4f6b-aafd-ccd70c399fe8" valueTypeId="3d1fab6b-44c6-4f8d-9ef9-8083096f442c"/>
+    <listType typeId="4492420d-c59a-4b4f-baf4-5e152a7442a4" valueTypeId="f19bb0d0-4a39-4cbe-b242-d1bda10f39a5"/>
+    <managerType typeId="21206cf5-c073-4bdf-82c8-0fe3c54db22b" valueTypeId="167af7a1-03cd-44df-b4cc-fd153b1f0826"/>
+  </producedTypes>
+  <name>алк_Смены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Смены (алк)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_Смены.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_Смены.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="6091e8d0-a4e6-42b6-ab6c-842a1b8c8779">
+      <name>Вечер_3</name>
+      <description>Вечер (3)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="1d4bfec5-c5e0-4f8d-a5e0-2cb4f94f29e4">
+      <name>День_2</name>
+      <description>День (2)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="1d44cc09-bae3-4f0e-9fdd-7f16f65f1d84">
+      <name>День_3</name>
+      <description>День (3)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="8250d0c8-5552-4664-8c81-363978dc9621">
+      <name>Ночь_2</name>
+      <description>Ночь (2)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="89895640-5415-4431-92f4-54758d2a4f57">
+      <name>Ночь_3</name>
+      <description>Ночь (3)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="1e2c49e7-0cf8-4416-b640-8d9a4838ef25">
+    <name>НачалоСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало смены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4a75b60d-6c35-4d45-96c6-02e1468019a1">
+    <name>КонецСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец смены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0fffb457-1d3d-4c1f-9a96-56bfe798d2df">
+    <name>ТипСмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип смен</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ТипСмен</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d4302f03-1ad8-4ace-9dfa-84173c96e0eb">
+    <name>СменаПрошлыхСуток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена прошлых суток</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

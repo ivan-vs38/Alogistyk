@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dac42318-b568-40cc-bc03-0bdd499d38ab">
+  <name>алк_СкладИЛогистика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склад и логистика</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаЛогистика</picture>
+  </picture>
+  <content>Report.алк_ВыполнениеЗаказов</content>
+  <content>Report.алк_ТоварыНаСкладахРезерв</content>
+  <content>Report.алк_ТоварыНаСкладахПоПараметрам</content>
+  <content>Report.алк_ВнутренняяПередачаМеждуОрганизациями</content>
+  <content>Report.алк_РеестрДокументовОтгрузки</content>
+  <content>Report.алк_ВедомостьТоварыНаСкладах_Вертикальная</content>
+  <content>Report.алк_ВедомостьТоварыНаСкладах</content>
+  <content>Report.алк_ВыпускПродукции</content>
+  <content>CommonPicture.ПодсистемаЛогистика</content>
+  <content>DataProcessor.ВыгрузкаИзАЛогистиК_вТД</content>
+  <content>Document.алк_ЗаявкаФСС</content>
+  <content>Document.алк_ЛогистикаЖД</content>
+  <content>AccumulationRegister.алк_ОтгрузкиПоЗаказам</content>
+  <content>AccumulationRegister.алк_ТоварыВПути</content>
+  <content>AccumulationRegister.алк_ОстаткиЗапасов</content>
+  <content>Document.алк_Аддендумы</content>
+  <content>Document.алк_ПривязкаПакетовКАддендуму</content>
+  <content>DataProcessor.алк_РМ_ПривязкаПакетовКАддендуму</content>
+  <content>DataProcessor.алк_РабочееМестоПоСписаниюПакетов</content>
+  <content>DataProcessor.алк_РМ_СоставСмены</content>
+  <content>Document.алк_ЗаказПокупателя</content>
+  <content>DataProcessor.алк_РМ_ПривязкаПакетовКАддендуму_2_0</content>
+  <subsystems>СкладскиеОперации</subsystems>
+  <subsystems>ТранспортнаяЛогистика</subsystems>
+  <subsystems>ПортовыеОперации</subsystems>
+  <subsystems>Отчеты</subsystems>
+  <subsystems>НСИ</subsystems>
+</mdclass:Subsystem>

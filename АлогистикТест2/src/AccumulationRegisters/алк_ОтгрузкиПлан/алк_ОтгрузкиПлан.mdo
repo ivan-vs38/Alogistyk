@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9125ca99-97c9-472c-a86b-123844b20dbb">
+  <producedTypes>
+    <selectionType typeId="0fa20765-3034-46a0-93f6-42a693b46341" valueTypeId="79a3e7fd-3b8c-44e3-8177-f81a8ef6508b"/>
+    <listType typeId="19a38867-72b8-4a5a-9281-5ae977ddefbe" valueTypeId="31dc9722-d543-4857-90c0-a6ab99dcebf7"/>
+    <managerType typeId="f62088f4-3757-43f6-b94a-eee014ef8465" valueTypeId="b03e94ae-08cb-4b99-b608-62a736fbb112"/>
+    <recordSetType typeId="9fe5984c-269f-49dc-a02c-9b19097ff16d" valueTypeId="5509a703-dc4c-4f1b-b77e-80ff6d28ea60"/>
+    <recordKeyType typeId="743efd96-73c7-4d5e-8081-3fd29d115b11" valueTypeId="59502ecb-e71e-4044-8b87-9af17ebdb45e"/>
+    <recordType typeId="e2a7051a-82a5-479c-94fd-8c20b7af740d" valueTypeId="e27e91a7-d4a5-4ca7-af58-3d11b3fa6a93"/>
+  </producedTypes>
+  <name>алк_ОтгрузкиПлан</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отгрузки план</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="ac8b4157-45d2-4593-861b-f0bc62a29d2d">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма (тыс. $)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="064bd9e2-4346-4091-aa56-83c7c960815e">
+    <name>Объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем (м3)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="159f9b03-ac28-42db-996e-0754a4cb9060">
+    <name>ОПСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОПСумма (тыс. $)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="65d3562a-ae4f-4821-8b74-a2262e95140d">
+    <name>ОПОбъем</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОПОбъем (м3)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="03b5f99b-d649-4005-9293-27c54407984f">
+    <name>СтоимостьПеревозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость перевозки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="9469073c-4fdd-4c6a-b1a5-7d0480c71db0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="963f127f-7001-440c-bfcc-1584a631d49f">
+    <name>ЗаказПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ЗаказПокупателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

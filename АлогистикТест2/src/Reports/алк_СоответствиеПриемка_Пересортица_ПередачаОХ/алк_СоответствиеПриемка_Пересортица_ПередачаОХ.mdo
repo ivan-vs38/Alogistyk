@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f5e35fc-29bf-4f4f-abe6-03bb81fa4f09">
+  <producedTypes>
+    <objectType typeId="73fa2afb-fd0f-4189-a3f0-673f0a0f79fc" valueTypeId="79a109d1-a0b7-4bae-9d8e-b8dd930ddcb0"/>
+    <managerType typeId="88d3ca3f-ab4f-4c87-98ad-0789237e2b78" valueTypeId="50717339-d10d-4383-8b91-72be4726dc48"/>
+  </producedTypes>
+  <name>алк_СоответствиеПриемка_Пересортица_ПередачаОХ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет. Соответствие между приемкой ЛП, пересортицей и передачей на ОХ.</value>
+  </synonym>
+  <defaultForm>Report.алк_СоответствиеПриемка_Пересортица_ПередачаОХ.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.алк_СоответствиеПриемка_Пересортица_ПередачаОХ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.алк_СоответствиеПриемка_Пересортица_ПередачаОХ.Form.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>Report.алк_СоответствиеПриемка_Пересортица_ПередачаОХ.Form.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="0b30a024-692f-49bc-9356-30cf11f13aff">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="409776b9-90d2-4daf-99ee-38b083b4af9f">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f1ecc393-c22d-4347-9cb8-f9b1be185d1c">
+    <name>ФормаНастроекОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2dfaa123-7407-42e5-8c03-ae72a916580b">
+    <name>ФормаВариантаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ac8e5633-cf14-4bec-b272-3c8fda4266a8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="c89e401e-3d96-4d03-ac40-78c56a8adb70">
+    <name>Команда1</name>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb68f991-6913-4631-8b71-0faa1edb690d">
+  <producedTypes>
+    <objectType typeId="5139745e-04bf-4f78-9d82-769fec2e142a" valueTypeId="28b506ab-f745-49db-a893-998d60e9c668"/>
+    <managerType typeId="2b3af468-13b8-47d6-bc2d-8b6309c62ab0" valueTypeId="4b027f8d-ebcb-411a-9e6a-729a6fe06267"/>
+  </producedTypes>
+  <name>алк_ПодборДокументовТранспортировки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Алк подбор документов транспортировки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.алк_ПодборДокументовТранспортировки.Form.Форма</defaultForm>
+  <tabularSections uuid="7a414b9e-6b09-46d5-826e-7285ddf38943">
+    <producedTypes>
+      <objectType typeId="173f5a1b-90a8-4e76-bbfd-73197b211556" valueTypeId="320f7a72-fc87-4ace-b2b6-a3e13e590c9a"/>
+      <rowType typeId="693300c6-7045-46e5-8947-a1ef821ab1f1" valueTypeId="5cd48da5-3415-4381-9c4d-7f2c3af7fef2"/>
+    </producedTypes>
+    <name>ПодобранныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подобранные документы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="06555974-36da-4cfe-8c67-4ce391e16067">
+      <name>ДокументТранспортировки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ транспортировки</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.алк_ТранспортировкаЗапасов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="f1dd645e-6fd8-4566-a09f-7bc0c3640985">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

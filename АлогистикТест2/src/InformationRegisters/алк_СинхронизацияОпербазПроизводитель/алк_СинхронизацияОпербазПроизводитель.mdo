@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a252cb9-0819-4adb-9139-b62814a0263a">
+  <producedTypes>
+    <selectionType typeId="590e32ac-0978-4eef-a9f7-ba24d881af5c" valueTypeId="686cf983-3010-4e1e-b12c-2894ac67f429"/>
+    <listType typeId="3a73ca37-557b-4ae9-b9a6-c637683c333b" valueTypeId="3eaa617c-01ee-4159-8071-e6e4b42bb6f4"/>
+    <managerType typeId="70a8707a-0e4f-4f01-a4a5-3da7022d308c" valueTypeId="ff15c1a7-0167-4fcd-9ca0-06cc91d8f4b3"/>
+    <recordSetType typeId="7126cdc3-0798-4a94-855e-c0bccecba382" valueTypeId="f2b0e793-ef3b-4a12-bf9c-121f4c2f521f"/>
+    <recordKeyType typeId="79c26905-b6fb-40c5-8dfd-106e2408196e" valueTypeId="a9b53048-e216-4d91-86e0-ee680b48bec0"/>
+    <recordType typeId="ded7dc2b-7066-4013-b8b7-7b41e636db6a" valueTypeId="d37b71b4-acdd-4f17-854f-6247a0c751c4"/>
+    <recordManagerType typeId="41e35820-79b7-4777-8b22-aad241e9ad29" valueTypeId="5b1692a6-a043-41f1-a609-9c384f63031e"/>
+  </producedTypes>
+  <name>алк_СинхронизацияОпербазПроизводитель</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация опербаз (&quot;Производитель&quot;)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="40618d28-f82e-4cfb-aba6-a03b521a3ffd">
+    <name>Производитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="bd3be179-4bbd-4d3a-9dc3-992b68bd4061">
+    <name>рфпПроизводитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рфп производитель</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

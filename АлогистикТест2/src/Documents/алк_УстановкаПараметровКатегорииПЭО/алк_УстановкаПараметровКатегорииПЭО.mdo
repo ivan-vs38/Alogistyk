@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ffe3ca57-ec91-4c26-8ead-055a41d5aefa">
+  <producedTypes>
+    <objectType typeId="eefe77a8-0574-4e6d-9076-6f49e6c8c1ee" valueTypeId="5cf689e6-cea2-474d-bb5b-f0d1e05a993a"/>
+    <refType typeId="56ea3dc1-f011-4f27-8ca3-97b804cd1955" valueTypeId="28d9c503-e034-4f61-8bc8-c46bd7bf2d08"/>
+    <selectionType typeId="3e56c1e2-2b67-4680-af91-d30359f9dadd" valueTypeId="479b4256-29a6-4942-81ba-70becdce921a"/>
+    <listType typeId="15fcdf9b-4851-41f6-8b89-3206a00f28cc" valueTypeId="4f59eca1-3281-49f1-afb5-476fba00e480"/>
+    <managerType typeId="d7b88acd-6ee2-4a48-838c-fa481194b07e" valueTypeId="a8338dc8-78a5-4256-bcba-59d3d7ab1170"/>
+  </producedTypes>
+  <name>алк_УстановкаПараметровКатегорииПЭО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка параметров категории ПЭО (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.алк_УстановкаПараметровКатегорииПЭО.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.алк_УстановкаПараметровКатегорииПЭО.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="2d2c1b0b-813c-47ff-8abe-77a80d70df47">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="897dbdee-e9d0-4cb3-a8ab-0ae78db69958">
+    <name>КатегорияПЭО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория ПЭО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_КатегорияНоменклатурыПЭО</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c7f2b7ac-3139-478e-ab14-2afc7549ab29">
+    <name>КатегорияНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a73f9650-756b-4d79-81fa-7237477dd7a0">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="732d6a94-eb0b-4550-ad7e-7012d2ed9599">
+    <name>ФормаСоставаКатегорииПЭО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав категории ПЭО</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="3948f607-417f-41c6-84fd-bfa07bd26787">
+    <producedTypes>
+      <objectType typeId="42fd5d89-9ead-4dd9-b551-9cd22af1b77f" valueTypeId="c52a4de3-75ba-4905-8991-dbba56df8bf7"/>
+      <rowType typeId="9d69cfb0-776c-44bc-a9b7-9332fd229c6c" valueTypeId="bff6edaf-ee6a-4fac-a211-7207e44037cc"/>
+    </producedTypes>
+    <name>ПредставлениеСоставаКатегорииПЭО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление состава категории ПЭО</value>
+    </synonym>
+    <attributes uuid="c2e2fa5f-5277-4c52-a573-69143e286057">
+      <name>ДлинаСтр</name>
+      <synonym>
+        <key>ru</key>
+        <value>Длина стр</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>300</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ee4a76e8-9dce-47b2-b21c-c98b646aedfe">
+      <name>СечениеСтр</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сечение </value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>300</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bc7a649d-cdd8-4d3e-9304-8d9f38a5c3c8">
+      <name>ПородаСтр</name>
+      <synonym>
+        <key>ru</key>
+        <value>Порода стр</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>300</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0f53971f-0cf8-4475-8986-c346dcde36d7">
+      <name>ВлажностьСтр</name>
+      <synonym>
+        <key>ru</key>
+        <value>Влажность стр</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>300</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="81f04897-4578-4ca7-bcc8-9fb1bfc8f9c7">
+      <name>Ключ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ключ</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>350</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="fa2fbd58-7d7d-4294-8301-be1d0d307cd4">
+    <producedTypes>
+      <objectType typeId="5e8a5159-0147-490d-820c-d96384355085" valueTypeId="17ecead2-4f31-463c-a47a-3c7388428ce3"/>
+      <rowType typeId="4e7d3497-bed3-4826-b2d8-d41ff38bcebd" valueTypeId="b840ec2d-0852-4b7c-b0f1-36d694c96d11"/>
+    </producedTypes>
+    <name>СоставКатегорииПЭО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав категории ПЭО</value>
+    </synonym>
+    <attributes uuid="30dffd14-6a67-43fe-825e-48564b795d66">
+      <name>Длина</name>
+      <synonym>
+        <key>ru</key>
+        <value>Длина</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Длины</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c85d447b-6996-4a2d-95d8-eb3242e883cb">
+      <name>Сечение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сечение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.РазмерСечения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2757f0c6-f8fb-4aa9-b46c-fa9a9616fedd">
+      <name>Порода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Порода</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Породы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="10383825-ff23-4356-9d7a-e4b195c1d718">
+      <name>Влажность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Влажность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Влажность</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="374e4a95-aedf-4fe1-b8e6-ff121b8defbc">
+      <name>Ключ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ключ</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>350</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

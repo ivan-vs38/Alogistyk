@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e1cf6d5-2a0b-4051-aa8a-e438a314c21c">
+  <producedTypes>
+    <selectionType typeId="7013c692-c2b5-4336-89a7-44c19560cdec" valueTypeId="f1deafa4-3ed5-448d-9e6c-d708a5f44373"/>
+    <listType typeId="91181f93-36bc-4163-b3d1-53720cabae3f" valueTypeId="052f58b4-3474-4e84-a825-46d3195e079e"/>
+    <managerType typeId="83782973-c414-4973-bb39-e91150a607da" valueTypeId="50240b25-acae-4eb0-b657-57b2a2480b8e"/>
+    <recordSetType typeId="99e14f30-0e45-437f-a34c-3d2653fdaf59" valueTypeId="2b0bde96-b0c2-4233-b12e-ec7e9e26a1be"/>
+    <recordKeyType typeId="841af3ca-41fa-4993-adf3-533f2066bff4" valueTypeId="014f0e11-3e9e-4311-9ebc-53cd0e68d4a0"/>
+    <recordType typeId="1fd53a6a-9bce-45e0-9115-788690118949" valueTypeId="effec92c-8be1-422d-8a91-e4482a28e9de"/>
+    <recordManagerType typeId="7072da3d-1162-4155-83a5-81e3273bb9b4" valueTypeId="b8f580ed-3a96-4ac4-87a2-8f1d6b0bca9b"/>
+  </producedTypes>
+  <name>РФП_ПечатьЭтикеток</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать этикеток</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.РФП_ПечатьЭтикеток.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.РФП_ПечатьЭтикеток.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e1408b53-0ebc-413d-9d5c-32803c326a4e">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dd4d4a82-a748-41cf-9f00-30cd18dd729a">
+    <name>Компьютер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компьютер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="cd95c9c1-f698-413a-98c6-48e338cd0cde">
+    <name>НомерЭтикетки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер этикетки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d06120dc-fbd2-46c8-9247-107993a2fdce">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d16e20f0-0b2d-47c8-905a-65ad4a0c92d0">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

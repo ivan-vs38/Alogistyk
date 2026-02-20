@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b3f68e8-31ac-40ba-98cb-d95c16fb4002">
+  <name>алк_ЛесобиржаЦЛП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лесобиржа ЦЛП</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаЛесобиржа</picture>
+  </picture>
+  <content>Report.алк_ПриемкаЛесопродукцииГОСТ_ДопДанныеПоставщика</content>
+  <content>Document.алк_СменныйРапортЦЛП</content>
+  <content>CommonPicture.ПодсистемаЛесобиржа</content>
+  <content>Document.алк_ПеремещениеЛесопродукции</content>
+  <content>CommonCommand.алк_ПанельОтчетов_ЛесобиржаЦЛП</content>
+  <content>Document.алк_ВходящийТранспорт</content>
+  <content>Report.алк_ВедомостьПоОстаткамЗапасов_Биржа</content>
+  <content>Report.алк_ВедомостьПоОстаткамЗапасов_БиржаКатегории</content>
+  <content>Report.алк_ПоступлениеУСЛМ_ОУБУ</content>
+  <subsystems>Сортировка</subsystems>
+  <subsystems>Склад</subsystems>
+  <subsystems>Производство</subsystems>
+  <subsystems>Приемка</subsystems>
+  <subsystems>БиржаЦЛП</subsystems>
+  <subsystems>Справочники</subsystems>
+  <subsystems>УчетОтветхранения</subsystems>
+  <subsystems>Загружаемые</subsystems>
+</mdclass:Subsystem>

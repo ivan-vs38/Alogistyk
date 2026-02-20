@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fef5c158-128e-41c2-b14e-fbac5d962f67">
+  <producedTypes>
+    <selectionType typeId="29762d55-9d71-446b-a019-0f7ae0912dd9" valueTypeId="1f906759-003d-44a3-879b-fa2f79439e2e"/>
+    <listType typeId="a8971641-e220-4c31-a455-3739d960406d" valueTypeId="908ae47b-6441-4d22-9fcc-1924956d6d55"/>
+    <managerType typeId="4070552d-4df4-4675-a299-619df3e9e0bf" valueTypeId="bda68a6c-6bee-42b3-b0cc-b774629ab6c1"/>
+    <recordSetType typeId="8dd2d6d7-0ffc-41a5-84d8-32142bf9a7bb" valueTypeId="877f3df7-efc9-4309-b0b2-6169ec59ffa0"/>
+    <recordKeyType typeId="85645277-705b-43c6-ba2c-2049fea1b3ce" valueTypeId="599312b4-83c1-4b03-b0f3-dd9daa6b31f1"/>
+    <recordType typeId="b4074717-c524-4790-8e96-5f64d325fc69" valueTypeId="a8ab46f2-38c6-443d-9bb7-73de3a8e4ec8"/>
+    <recordManagerType typeId="5bba6d93-e569-44bc-9477-a86ecf784117" valueTypeId="e22536d6-1a9b-493f-8f34-327df8364b24"/>
+  </producedTypes>
+  <name>СертификацияПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сертификация продукции</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="36751962-6dcc-468b-b127-a23c37f8e616">
+    <name>Сертификат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СертификатыНаПродукцию</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8150acaa-68bd-44de-9fc1-afc0de692fbc">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

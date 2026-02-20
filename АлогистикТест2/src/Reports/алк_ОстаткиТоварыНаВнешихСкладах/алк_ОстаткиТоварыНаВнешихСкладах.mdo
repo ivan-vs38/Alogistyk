@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72ea2bd0-6a00-4f55-b2f9-422b972efdaf">
+  <producedTypes>
+    <objectType typeId="074d1c26-69f0-4cb1-80a2-f10131e59dc6" valueTypeId="01c1d7b3-b7a5-4d59-80ec-27b41cb1dc20"/>
+    <managerType typeId="2f1be066-43a9-4ed3-b220-44a01b31e9a2" valueTypeId="45883d1b-755d-4838-8494-268a6b95f8a2"/>
+  </producedTypes>
+  <name>алк_ОстаткиТоварыНаВнешихСкладах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет. &quot;Внешние&quot; склады (для агента). Остатки</value>
+  </synonym>
+  <defaultForm>Report.алк_ОстаткиТоварыНаВнешихСкладах.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.алк_ОстаткиТоварыНаВнешихСкладах.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.алк_ОстаткиТоварыНаВнешихСкладах.Form.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>Report.алк_ОстаткиТоварыНаВнешихСкладах.Form.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="b59ef82f-5d25-4ca7-a78c-358cbde2b53e">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="378f75cc-2346-4f90-9397-860bf5729f56">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7d56e28a-27b9-49f3-91a9-0e944e941f72">
+    <name>ФормаНастроекОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="abb960a9-42a0-4321-a783-27360aa857bf">
+    <name>ФормаВариантаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1cf1ebe6-5d66-4ff7-b4ce-9863c9a7e15f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="5e787820-c4c2-4042-a0dd-d46897782921">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет. &quot;Внешние&quot; склады. Остатки</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

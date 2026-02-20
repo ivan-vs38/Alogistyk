@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="043af573-61db-49d2-a65e-5be4ed09e556">
+  <producedTypes>
+    <selectionType typeId="b1f066da-129e-4ace-b829-d56dd1961fc6" valueTypeId="607a7812-ab29-4710-a14c-42d152b2ce0f"/>
+    <listType typeId="24f2c468-0ed6-4dfb-87c7-89a36c71bb97" valueTypeId="9714e647-be17-406d-aa39-28544ce267b7"/>
+    <managerType typeId="f23d662c-5954-4b4a-bc5a-11142fe6b541" valueTypeId="f7515b8e-85fd-4bfb-b2d6-18eaad758c85"/>
+    <recordSetType typeId="123f76ae-7817-4570-98c5-317677ee4507" valueTypeId="89691ebc-7176-49c2-8f8f-aa433edbc774"/>
+    <recordKeyType typeId="1117ee59-37bf-4792-85ca-fbb713166141" valueTypeId="16fc079c-164a-404d-a026-5d372ecfa8db"/>
+    <recordType typeId="9f307b42-4a31-4790-9cc8-23dc9c298918" valueTypeId="9c38e0b2-cfc5-439f-8c53-f3552a838e6c"/>
+    <recordManagerType typeId="58f89759-49d7-44e6-877a-f17ea01baa6b" valueTypeId="a8c75722-d085-4230-a4eb-a943d51d2e48"/>
+  </producedTypes>
+  <name>алк_БоковаяДоска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Боковая доска</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.алк_БоковаяДоска.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.алк_БоковаяДоска.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="c31a8dbf-708c-4ce5-b555-b651b1e536df">
+    <name>Сечение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сечение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РазмерСечения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ac69f002-ba5c-4de7-81bb-040b3b04d0e9">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ec6533ea-9216-4dbd-af12-1796b9b8c214">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="adf56fc0-7b40-4a00-bba9-d5d2aeffd9c8">
+  <producedTypes>
+    <selectionType typeId="91568fd4-d066-4214-9fa6-452af8c1158b" valueTypeId="01e85536-caa1-4de5-bbf5-40172ea3450a"/>
+    <listType typeId="90a07b8a-0f87-489c-975d-caf7f1036f0f" valueTypeId="e4a32d9e-485c-4935-a302-9f45ec6ab571"/>
+    <managerType typeId="fdec8d71-dbc2-4bff-98fb-1a405cfc857d" valueTypeId="d1efcf60-5420-47a7-8834-e945400720c5"/>
+    <recordSetType typeId="e4c64e56-06b9-4d47-b829-c7635e593ff1" valueTypeId="3ec23e3e-4dd8-443f-b24a-92be57fc19ae"/>
+    <recordKeyType typeId="d209912e-d987-465f-9b09-208457200118" valueTypeId="95f37a62-7a15-4a48-a2c8-2932f7e89714"/>
+    <recordType typeId="b5a235b2-0a67-4457-b143-01f6a143e39d" valueTypeId="96d5888b-4580-4474-b0f6-1a3d238934c1"/>
+  </producedTypes>
+  <name>алк_ВыполнениеЗаказовЭтапыСерии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнение заказов по этапам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="8a51e726-9fc9-46fb-be7e-1488d8581c8c">
+    <name>КоличествоПакетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество пакетов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="b565beee-b04d-4146-a94c-48df64a430be">
+    <name>ВидТранспортировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид транспортировки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ВидыТранспортировки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="580aab5f-5094-4c4d-abb8-03fcef914aa7">
+    <name>Контейнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контейнер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="bc326f75-e57f-4e81-97a6-5cce0adf5215">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="85c8a792-e379-4900-9f5e-88620974c604">
+    <name>ЗаказПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ЗаказПокупателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="dabb1255-030d-4285-a1d5-18c472d26224">
+    <name>ЭтапВыполненияЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап выполнения заказа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ЭтапыВыполненияЗаказов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e19b1ebc-cb58-4eb9-b6a4-a18cad9a8a5d">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Серия товаров</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="75cce174-79b1-4b0c-bc20-e970d8274ce3">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

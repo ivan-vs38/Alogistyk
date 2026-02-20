@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="187612a3-3ed9-4024-a692-54781632b373">
+  <producedTypes>
+    <selectionType typeId="25065cfd-a38b-4d78-a2fd-9e2833d166d0" valueTypeId="96b63d1b-0917-44b9-8833-216d9f9fa977"/>
+    <listType typeId="944e3132-36d1-44fe-938d-4f2aea7d0792" valueTypeId="81608e52-828b-4409-b893-b768c4e2f859"/>
+    <managerType typeId="1bf4871d-327f-4513-8f8e-7d03828f0529" valueTypeId="dbec25ff-a94b-4556-9692-56751e920d67"/>
+    <recordSetType typeId="7508dd34-49a5-42d8-9154-5983efa14906" valueTypeId="464b159b-1603-48ea-949e-fc5229525ed0"/>
+    <recordKeyType typeId="b6c8d7a0-0df9-417f-b769-7e540fb422fb" valueTypeId="2a38663c-cb04-46d5-a2f9-d9269bf92ca2"/>
+    <recordType typeId="46881375-57ef-4167-ad60-6c58ee9137fc" valueTypeId="2e6fe578-713e-4beb-8452-48cd279de37e"/>
+    <recordManagerType typeId="0bdcdac0-aea3-4fd1-b949-ed4dec7484fc" valueTypeId="cc92c068-53ab-4822-a4b9-7574e6cff418"/>
+  </producedTypes>
+  <name>алк_СвободныеСерийныеНомера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свободные серийные номера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="64cd2f1e-24f3-4e6a-8456-36d4813430e0">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

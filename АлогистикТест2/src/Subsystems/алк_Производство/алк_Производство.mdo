@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d7b6c2b-48b7-47f9-9860-02e95b7b8b93">
+  <name>алк_Производство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производство</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаПроизводство</picture>
+  </picture>
+  <content>Report.алк_ВедомостьПоОстаткамЗапасов</content>
+  <content>Report.алк_КонтрольОформленияПроизводственныхДокументов</content>
+  <content>Report.алк_ВедомостьПоОстаткамЗапасов_Отгрузка</content>
+  <content>Report.алк_ОснованияРасформированияПакетов</content>
+  <content>CommonCommand.алк_ПанельОтчетов_Производство</content>
+  <content>InformationRegister.алк_ДополнительныеПараметрыПроизводства</content>
+  <content>DataProcessor.алк_РМ_ПеремещениеПакетов</content>
+  <content>Report.алк_ОборотыПроизводства</content>
+  <content>InformationRegister.алк_ФорматКПроизводству</content>
+  <content>Report.алк_ВедомостьПоПакетамНаУпаковке</content>
+  <content>Document.алк_СборкаЗапасов</content>
+  <content>CommonCommand.алк_ПанельОтчетов_ПроизводствоЦЛП</content>
+  <content>DataProcessor.алк_РМ_МастераДГ</content>
+  <content>Document.алк_ВводПроизводственныхПоказателейДГ</content>
+  <content>Catalog.алк_ПоказателиПроизводстваДГ</content>
+  <content>CommonCommand.алк_ПанельОтчетов_ДГ</content>
+  <content>DataProcessor.алк_РМ_МастераЦЛП</content>
+  <content>Document.алк_НормыРасходаИВыпуска</content>
+  <content>DataProcessor.алк_РМ_МастераФанеры</content>
+  <content>DataProcessor.алк_РМ_ОператораУпаковкиФанеры</content>
+  <content>DataProcessor.алк_РМ_СборкаРазборкаПакетов_РС</content>
+  <content>DataProcessor.алк_РМ_НачальникаСмены</content>
+  <content>DataProcessor.Алк_ДобавлениеКомментарияВДокладнуюОТК</content>
+  <subsystems>ЦПШ</subsystems>
+  <subsystems>Справочники</subsystems>
+  <subsystems>ОбщиеДокументы</subsystems>
+</mdclass:Subsystem>

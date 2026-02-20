@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="208e1b04-5bf0-4dfd-8efd-095d7eb93a43">
+  <producedTypes>
+    <objectType typeId="d82d9e77-74e1-4de1-a411-745c9e7ad8d3" valueTypeId="6ab6e4ea-bdfd-4a2d-b867-8b7767a32871"/>
+    <managerType typeId="51ab4095-fbba-438e-9ce3-6150139e0f79" valueTypeId="e73bf337-54de-4572-a2ce-60a4061445e0"/>
+  </producedTypes>
+  <name>алк_ОгрузкаПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет. Отгрузка готовой продукции.</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.алк_ОгрузкаПродукции.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultVariantForm>Report.алк_ОгрузкаПродукции.Form.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="203b163a-d3b7-44a5-87a0-6ca1772b98ba">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9fe5d8c0-6126-4f82-a7fa-53bd09c9b128">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6ea3ebbf-6697-4590-9894-832321f2d63c">
+    <name>ФормаНастроекОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ab0acba4-45a0-403b-95e5-61e12dc7ed06">
+    <name>ФормаВариантаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f43b762d-b76e-4b92-9cc4-126e9db5029f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="ede68b14-c45f-40fc-a271-ee8b0bb3cb8c">
+    <name>ОткрытьОтчет_ОтгрузкаПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет. Отгрузка продукции</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

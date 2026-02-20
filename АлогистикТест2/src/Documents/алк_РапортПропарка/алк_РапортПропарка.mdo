@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="269aa40b-f0cd-47b2-8088-8dfabecf8be4">
+  <producedTypes>
+    <objectType typeId="c1772531-7e51-457b-870b-e05fec5d85d1" valueTypeId="e161a8a6-9f0c-4498-91b6-9139b14c49bc"/>
+    <refType typeId="9517abaa-c544-427f-92fc-88fb707011cb" valueTypeId="a29e50ea-e327-4862-af51-912cd0991596"/>
+    <selectionType typeId="7da0392d-03e8-4cc7-b8fb-6e3ab5191f7a" valueTypeId="eac1ea74-ddd1-4e06-b994-0f0fa001a026"/>
+    <listType typeId="3e6d5184-97f8-4c15-824c-0b8dcb9ef957" valueTypeId="ac4758b4-312b-4ae0-987f-e5886e86db19"/>
+    <managerType typeId="f453f502-36a9-4c54-af95-065e97d322de" valueTypeId="8642357e-75fc-42b8-965b-56021da3a326"/>
+  </producedTypes>
+  <name>алк_РапортПропарка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рапорт пропарка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.алк_РапортПропарка.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.алк_РапортПропарка.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.алк_ОстаткиКамерыГТО</registerRecords>
+  <registerRecords>InformationRegister.алк_ВремяПропарки</registerRecords>
+  <registerRecords>AccumulationRegister.алк_УчетВремениПропарки</registerRecords>
+  <registerRecords>InformationRegister.алк_СтатусПропарки</registerRecords>
+  <registerRecords>AccumulationRegister.алк_ОстаткиВКамерахПропарки</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="41dfad5e-1d1e-4eda-a06f-69bbe513ec0e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2d47d04b-30b1-42f3-986b-f533be8e7c1a">
+    <name>ДатаСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата смены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="30068cda-27d2-4132-b6ac-bcc0af64b509">
+    <name>СменаУдалить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена удалить</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1aafbb23-7bc5-4804-a9e9-ffa471edf6c5">
+    <name>Бригада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бригада</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_СменыШпон</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="42eb9212-48ac-4702-ab70-e5ee73d2f2be">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурная единица</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bc45f61f-0403-4136-b705-2e6a576f41ed">
+    <name>КамераПропарки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Камера пропарки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Ячейки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="13a1e69b-1d58-4f53-9b93-79211ed82453">
+    <name>Мастер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="08e37318-8696-40ad-b06e-a27b3a98986f">
+    <name>НачалоОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало операции</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1b6f3905-a8a4-4629-9df9-5f404229a648">
+    <name>ОкончаниеОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание операции</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6909be84-2f3d-4939-a191-d93432482339">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ОперацииПропарки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4e556ca5-8694-46c8-9e9b-f163334244c8">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6c439e50-370a-4a9d-82ec-6db53d52e668">
+    <name>Пропарщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пропарщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c932bf67-285a-4b25-bd02-99c8a2a357ed">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="aa21c0b4-c33f-4371-ae6d-4e0d9957b96c">
+    <name>Участок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c81ae877-2916-4a8d-a411-d8791bb3c7e5">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6dad26fb-2d51-4685-94cc-fbd7563530e3">
+    <name>ФормаВводаВремени</name>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="6793848d-d1ea-4f90-9264-b2ed920bd3af">
+    <producedTypes>
+      <objectType typeId="0d6c1c6c-8636-4443-aaeb-9930a0053256" valueTypeId="de9d8e0d-32f0-41ae-a437-b3e7f0d43487"/>
+      <rowType typeId="6c0b0a44-9ad0-45a0-a1e3-12bb2c2ea301" valueTypeId="77c6cc22-1a1e-4eaa-8eb4-1e7db1dd13d4"/>
+    </producedTypes>
+    <name>Камеры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Камеры</value>
+    </synonym>
+    <attributes uuid="b7d87db5-2ddf-492e-862c-e65da9a120cb">
+      <name>КамераСсылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Камера ссылка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.алк_Штабели</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8447c698-7787-4d77-a9c8-d4eac03db29d">
+      <name>ДлинаНаНачало</name>
+      <synonym>
+        <key>ru</key>
+        <value>Длина на начало</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Длины</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="baa6b4aa-445b-4a5e-a326-ed488a0c36ff">
+      <name>ДлинаНаКонец</name>
+      <synonym>
+        <key>ru</key>
+        <value>Длина на конец</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Длины</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="90764d2b-a932-440d-81d0-f5c2aff311ec">
+      <name>ПородаНаНачало</name>
+      <synonym>
+        <key>ru</key>
+        <value>Порода на начало</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Породы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7219bfaa-9bf8-4355-a0f0-2ba3185ec562">
+      <name>ПородаНаКонец</name>
+      <synonym>
+        <key>ru</key>
+        <value>Порода на конец</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Породы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5951f8f7-473e-4393-a7f3-5211341868db">
+      <name>СотрНаНачало</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотр на начало</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сорта</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="27bf1158-252e-47f1-a6a6-014c628ac6b5">
+      <name>СотрНаКонец</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотр на конец</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сорта</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="34b2ba05-5143-490e-a1bf-5224b251363e">
+      <name>ГрадацияНаНачало</name>
+      <synonym>
+        <key>ru</key>
+        <value>Градация на начало</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.алк_ГрадацияПропарки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1a5bbe23-abd2-4d9e-86a0-d50724220e3b">
+      <name>ГрадацияНаКонец</name>
+      <synonym>
+        <key>ru</key>
+        <value>Градация на конец</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.алк_ГрадацияПропарки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c0e15896-e004-45ce-a2e8-7c0ebb6a47e2">
+      <name>СостояниеНаНачало</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состояние на начало</value>
+      </synonym>
+      <type>
+        <types>EnumRef.алк_ОперацииПропарки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f14315bf-0127-44a2-96e6-4e6d52c80b3c">
+      <name>СостояниеНаКонец</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состояние на конец</value>
+      </synonym>
+      <type>
+        <types>EnumRef.алк_ОперацииПропарки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3b63da8f-7d9d-475f-b218-6b0ae6650d83">
+      <name>ОстатокНаНачалоСмены</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток на начало смены</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d35b071b-9fbe-4be3-96fd-adba131e8414">
+      <name>НачалоРазгрузки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начало разгрузки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f41c7672-ba19-44f8-98c8-f272a008003a">
+      <name>ОкончаниеРазгрузки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Окончание разгрузки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c093f1b4-c271-4a68-b555-257a82788820">
+      <name>ОкончаниеРазгрузкиПлан</name>
+      <synonym>
+        <key>ru</key>
+        <value>Окончание разгрузки план</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="49a71533-f836-4c77-9bd0-28d533bbf9d1">
+      <name>ОкончаниеРазгрузкиПланНаСледующуюСмену</name>
+      <synonym>
+        <key>ru</key>
+        <value>Новатив (след. смены)</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4a35958b-5711-4c08-b152-ae23f3f365df">
+      <name>РазгрузилиОбъем</name>
+      <synonym>
+        <key>ru</key>
+        <value>Разгрузили объем</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e7d4f866-4e3a-427d-be9c-00c66c88feb3">
+      <name>НачалоЗагрузки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начало загрузки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8a7c9b6c-8408-45ba-9b72-a04fc8de7f10">
+      <name>ОкончаниеЗазрузки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Окончание зазрузки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cb082e66-12c6-40c5-8472-4eb003adefac">
+      <name>ОкончаниеЗазрузкиПлан</name>
+      <synonym>
+        <key>ru</key>
+        <value>Окончание зазрузки план</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="75506371-da84-45be-a8a8-677db5614929">
+      <name>ОкончаниеЗазрузкиПланНаСледующуюСмену</name>
+      <synonym>
+        <key>ru</key>
+        <value>Новатив (след. смены)</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d707fb19-8835-4b09-b178-cfa8b0752427">
+      <name>ЗагрузкаОбъем</name>
+      <synonym>
+        <key>ru</key>
+        <value>Загрузка объем</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="562a5ff7-10ef-4324-b8fe-51aafdbfafdf">
+      <name>НачалоПропарки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начало пропарки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="095cf732-004e-4598-867a-afabdac3c379">
+      <name>ОкончаниеПропарки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Окончание пропарки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c0b618d9-333e-45e2-b563-be95e4e8a29c">
+      <name>ОкончаниеПропаркиПлан</name>
+      <synonym>
+        <key>ru</key>
+        <value>Окончание (план)</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b2a04256-16c7-47b5-9ef8-50d30f60efa7">
+      <name>ОкончаниеПропаркиПланНаСледующуюСмену</name>
+      <synonym>
+        <key>ru</key>
+        <value>Новатив (след. смены)</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b33d288e-3786-4682-9949-6e954d578e24">
+      <name>ОстатокНаКонецСмены</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток на конец смены</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="ac52d354-2302-4c81-add5-fbc8f35d2d65">
+    <producedTypes>
+      <objectType typeId="a4f610a0-1ccf-432f-82da-3ac9df8871a4" valueTypeId="0111fee5-f24c-4a24-8a3b-e1eedfbf03b2"/>
+      <rowType typeId="532ffaff-308a-465c-bf90-80b0436ef423" valueTypeId="2800f6c2-417f-41f5-bff0-db6691435ebb"/>
+    </producedTypes>
+    <name>ТаблицаДляДвижений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица для движений</value>
+    </synonym>
+    <attributes uuid="b9abbda2-18ff-45b3-ade1-1ce043ae5802">
+      <name>Камера</name>
+      <synonym>
+        <key>ru</key>
+        <value>Камера</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.алк_Штабели</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d16bb10a-a177-479c-81b2-6887030a1bf6">
+      <name>Бригада</name>
+      <synonym>
+        <key>ru</key>
+        <value>Бригада</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.алк_СменыШпон</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="74119083-3e66-45eb-9df8-645ce20724d6">
+      <name>Состояние</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состояние</value>
+      </synonym>
+      <type>
+        <types>EnumRef.алк_ОперацииПропарки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f83170fc-b96b-4d35-b993-3f6255fe1bf8">
+      <name>План</name>
+      <synonym>
+        <key>ru</key>
+        <value>План</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bc77a7a2-cf95-4c78-a23f-e8755cc67456">
+      <name>ВремяНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время начала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f0121db3-0261-4305-be60-3e29336ab034">
+      <name>ВремяОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bf3f0be0-eb07-44b1-8003-fa44dc081d2c">
+      <name>СостояниеОжидаемое</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состояние ожидаемое</value>
+      </synonym>
+      <comment>Для контроля состояния камеры при записо документа</comment>
+      <type>
+        <types>EnumRef.алк_ОперацииПропарки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="317c3e26-8aea-41ad-8f3b-1ac54d7fde65">
+    <name>алк_РапортПропаркаПечатнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Алк рапорт пропарка печатная форма</value>
+    </synonym>
+  </templates>
+</mdclass:Document>

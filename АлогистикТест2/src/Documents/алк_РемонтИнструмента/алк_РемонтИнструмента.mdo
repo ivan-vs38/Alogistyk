@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6deed907-17c2-4ade-95b5-2aaf741bf283">
+  <producedTypes>
+    <objectType typeId="5787e64e-d54b-407f-befc-7cf05a547faf" valueTypeId="0a95383a-b7f4-4be9-a917-08c1db1a2e89"/>
+    <refType typeId="067277c5-e047-4523-9f18-200e0669e60a" valueTypeId="dc16aa56-caef-4b69-9ec9-cd2a0710a696"/>
+    <selectionType typeId="364f4df6-9128-4d65-bdd8-dda822b48296" valueTypeId="763c43bc-188f-4275-821f-d1feaec55513"/>
+    <listType typeId="0f9fc847-cecf-4e63-a09a-d343fd8a2c7f" valueTypeId="a6bed451-5773-461a-86d7-b873d3c7b4db"/>
+    <managerType typeId="10b5ec3a-93b7-4d05-b505-58dbf0968354" valueTypeId="e3e5ad4c-2180-48a8-a197-c85f8c0c5b57"/>
+  </producedTypes>
+  <name>алк_РемонтИнструмента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ремонт инструмента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.алк_РемонтИнструмента.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.алк_РемонтИнструмента.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="8a8b7d9d-a8fe-4750-92d4-4facfa90599a">
+    <name>ВидРемонтаИнструмента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ВидРемонтаИнструмента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="984cd350-56f0-49d5-9271-23f53f587b0c">
+    <name>ДатаРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ремонта</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e9dd608e-1d15-44f6-b0a3-a86436bef90c">
+    <name>Пила</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пила</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Пилы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e54c8eea-0f15-4757-a7f6-b9ef2ae8ad92">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="284f425d-9fa2-4e72-8c26-3d8a895aec20">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c1b78d8f-456e-4841-8fdd-8a306e79cd76">
+    <name>НомерПилы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер пилы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b03042ba-c410-4327-997e-56e2fcc20a05">
+    <name>Станок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Станки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78e16b9b-95d4-4bbb-8c2b-88fc3c43572c">
+    <name>КоличествоПластин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество пластин</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="81b3e242-e5db-4c78-b68f-9fdd46933925">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

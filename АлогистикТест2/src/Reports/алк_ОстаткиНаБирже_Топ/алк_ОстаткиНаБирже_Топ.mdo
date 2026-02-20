@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64e51c1d-c3bd-4908-ad72-5d0d22f28758">
+  <producedTypes>
+    <objectType typeId="35a379ec-cebe-4a77-a10a-8569b8c29d08" valueTypeId="e95ddadb-34e9-4af1-ae92-8fd7ab8c3b7c"/>
+    <managerType typeId="95cdf2a3-deb8-40dc-b5f3-b859dcd4c597" valueTypeId="686a415e-44e1-499a-ac90-4d1d812f5af5"/>
+  </producedTypes>
+  <name>алк_ОстаткиНаБирже_Топ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет. Остатки &quot;Биржа ЦЛП&quot; (участок сортированных ЛМ)</value>
+  </synonym>
+  <comment>Удалить</comment>
+  <defaultForm>Report.алк_ОстаткиНаБирже_Топ.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.алк_ОстаткиНаБирже_Топ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.алк_ОстаткиНаБирже_Топ.Form.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>Report.алк_ОстаткиНаБирже_Топ.Form.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="2709a4d6-7721-40f1-9899-2d99fe59fd47">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="fa125b12-4397-4ba5-9c6c-c8b914af417f">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="860a6002-748e-46f5-a651-33ca1230e136">
+    <name>ФормаНастроекОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="efd0e6ea-31f9-46e1-aba1-af1641a0a514">
+    <name>ФормаВариантаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="40c63088-33b0-46fa-b4cc-3c8276de4844">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="1fa3d0d9-0678-435e-aa30-eac6dbb38c51">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет. Остатки &quot;Биржа ЦЛП&quot; (участок сортированных ЛМ)</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

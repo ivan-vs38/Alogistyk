@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43db0b68-8d46-44e9-bed6-ecf4986ac938">
+  <producedTypes>
+    <selectionType typeId="112445af-cfb4-4f96-bd8c-e90a01368f17" valueTypeId="92c96678-a173-4dee-8f4f-fe254785df5a"/>
+    <listType typeId="f0a55ea7-3a4a-46e5-ac9f-3ee5a78ff157" valueTypeId="19e9c41e-4273-4081-8dbb-76eb2cb04c97"/>
+    <managerType typeId="3d2e4b30-0e12-4893-b495-c26cfa6a45ad" valueTypeId="1e9cd094-d803-4bcd-99c0-61f411341c17"/>
+    <recordSetType typeId="fa607e21-e580-4fa8-93ce-1b511518b973" valueTypeId="3893e50f-e8c6-4c63-95c1-5fc427459142"/>
+    <recordKeyType typeId="a28d8e19-a17d-4151-be85-21dc407a1205" valueTypeId="515cb1fa-8b7f-4ac1-87ed-fa373d17820e"/>
+    <recordType typeId="7f868ef2-cea6-479b-a146-2f2af3235898" valueTypeId="41c8bf93-edd3-475d-a786-6f561314ed81"/>
+    <recordManagerType typeId="e6f4602f-c2a3-4cee-930d-040004b0d85f" valueTypeId="25c05c82-23e8-4e56-b8de-548133d0f43c"/>
+  </producedTypes>
+  <name>ДополнительныеРеквизиты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные реквизиты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2a6f2496-372e-4e8c-9c20-293905647964">
+    <name>ПВХ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПВХ</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="dbb39ce5-d3c3-4922-b2f7-512dc3923536">
+    <name>Реквизит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизит</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ФиксированныеДопРеквизиты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

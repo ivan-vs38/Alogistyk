@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d73e474-e179-484d-8cc8-eb9afa39628e">
+  <producedTypes>
+    <selectionType typeId="be88f10a-9f66-4384-b693-eab0af30d90f" valueTypeId="303b6466-eed7-41e8-97db-c046db42e037"/>
+    <listType typeId="ed599ebc-2cf2-4398-9106-a46ed3937f4b" valueTypeId="f2bb658c-fea9-47e3-8848-49d8acb195d6"/>
+    <managerType typeId="03d25d5d-45bf-49ff-bbe9-010c8f7a47e7" valueTypeId="b95167fa-7283-4723-98e1-6fb3ff921405"/>
+    <recordSetType typeId="59e5735c-ee62-4e24-88e1-ab331ea3cf05" valueTypeId="09e7e208-1485-4aa6-97bc-add4c594b487"/>
+    <recordKeyType typeId="31bb1463-0781-43b3-af19-fe9fe20d64d5" valueTypeId="aa40d772-36d9-4cb1-ba1a-c4b9d19d5fe6"/>
+    <recordType typeId="5498f09e-3ead-4b7c-a5b4-93c7c65b3608" valueTypeId="dbc95a39-cecc-45ab-9037-36f20beed063"/>
+  </producedTypes>
+  <name>алк_ПроизводствоПлан</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производство план</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="9c724cf9-34d3-4f3d-a668-533cbb2f5242">
+    <name>ПЗ_Объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем (ПЗ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="42db7cc2-f2b8-4889-8693-f85a72cf4f09">
+    <name>ОП_Объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем (ОП)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="9f012daf-10de-42e7-9776-3b4415787adb">
+    <name>КатегорияНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b38b4284-46d9-490b-94c9-0b2ff25b5f46">
+    <name>Сорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сорт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

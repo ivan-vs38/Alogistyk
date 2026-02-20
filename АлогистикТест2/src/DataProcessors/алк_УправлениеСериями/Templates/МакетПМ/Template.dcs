@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтруктурнаяЕдиница</dataPath>
+			<field>СтруктурнаяЕдиница</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Штабель</dataPath>
+			<field>Штабель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Порода</dataPath>
+			<field>Порода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Длина</dataPath>
+			<field>Длина</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодУпаковки</dataPath>
+			<field>ПериодУпаковки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период упаковки</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пакет</dataPath>
+			<field>Пакет</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пакет</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Порядок</dataPath>
+			<field>Порядок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядок</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесБруттоТаможня</dataPath>
+			<field>ВесБруттоТаможня</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес брутто таможня</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерийныйНомер</dataPath>
+			<field>СерийныйНомер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Припуск</dataPath>
+			<field>Припуск</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сечение</dataPath>
+			<field>Сечение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сертификат</dataPath>
+			<field>Сертификат</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сорт</dataPath>
+			<field>Сорт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КатегорияНоменклатурыПЭО</dataPath>
+			<field>КатегорияНоменклатурыПЭО</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Влажность</dataPath>
+			<field>Влажность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БоковаяДоска</dataPath>
+			<field>БоковаяДоска</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоСостав</dataPath>
+			<field>КоличествоСостав</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество состав</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объем</dataPath>
+			<field>Объем</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемТаможня</dataPath>
+			<field>ОбъемТаможня</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем таможня</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесНеттоТаможня</dataPath>
+			<field>ВесНеттоТаможня</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес нетто таможня</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сухой</dataPath>
+			<field>Сухой</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сухой</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Габарит</dataPath>
+			<field>Габарит</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	алк_ОстаткиЗапасовОбороты.СерийныйНомер КАК Пакет,
+	алк_ОстаткиЗапасовОбороты.Характеристика КАК Характеристика,
+	алк_ПараметрыХарактеристик.Порода КАК Порода,
+	алк_ПараметрыХарактеристик.Сорт КАК Сорт,
+	алк_ПараметрыХарактеристик.Длина КАК Длина,
+	алк_ПараметрыХарактеристик.Сечение КАК Сечение,
+	алк_ПараметрыХарактеристик.Влажность КАК Влажность,
+	алк_ОстаткиЗапасовОбороты.Сертификат КАК Сертификат,
+	алк_ОстаткиЗапасовОбороты.Номенклатура КАК Номенклатура,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.Припуск КАК Припуск,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.УчастокВыпуска КАК УчастокВыпуска,
+	СРЕДНЕЕ(алк_ОстаткиЗапасовОбороты.КоличествоПриход) КАК Объем,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(алк_БоковаяДоскаСрезПоследних.Сечение, ЗНАЧЕНИЕ(Справочник.РазмерСечения.ПустаяСсылка)) &lt;&gt; ЗНАЧЕНИЕ(Справочник.РазмерСечения.ПустаяСсылка)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК БоковаяДоска,
+	алк_ПараметрыХарактеристик.Длина.ДлинаММ КАК ДлинаДлинаММ,
+	алк_ПараметрыХарактеристик.Сечение.ШиринаММ КАК СечениеШиринаММ,
+	алк_ПараметрыХарактеристик.Сечение.ТолщинаММ КАК СечениеТолщинаММ,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.Припуск.ПрипускПоШирине КАК ПрипускПрипускПоШирине,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.Припуск.ПрипускПоТолщине КАК ПрипускПрипускПоТолщине,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.Припуск.ПрипускПоДлине КАК ПрипускПрипускПоДлине,
+	СРЕДНЕЕ(ВЫБОР
+			КОГДА ЕСТЬNULL(алк_ПараметрыХарактеристик.Объем, 0) = 0
+				ТОГДА ОКР(алк_ОстаткиЗапасовОбороты.КоличествоПриход)
+			ИНАЧЕ ВЫРАЗИТЬ(алк_ОстаткиЗапасовОбороты.КоличествоПриход / алк_ПараметрыХарактеристик.Объем КАК ЧИСЛО(3, 0))
+		КОНЕЦ) КАК КоличествоСостав,
+	МАКСИМУМ(алк_ДополнительныеПараметрыПакетовСрезПоследних.КатегорияНоменклатурыПЭО) КАК КатегорияНоменклатурыПЭО,
+	МИНИМУМ(алк_ОстаткиЗапасовОбороты.Период) КАК Период,
+	МАКСИМУМ(ВЫБОР
+			КОГДА алк_ОстаткиЗапасовОбороты.Номенклатура.Код В ("ПБ-00000012")
+				ТОГДА ВЫБОР
+						КОГДА алк_ОстаткиЗапасовОбороты.СтруктурнаяЕдиница.Код В ("ПБ-000097", "ПБ-000095", "ПБ-000098", "00-000008")
+							ТОГДА алк_ОстаткиЗапасовОбороты.Период
+					КОНЕЦ
+		КОНЕЦ) КАК Сухой,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.Габарит КАК Габарит
+ПОМЕСТИТЬ ВТ_Обороты
+ИЗ
+	РегистрНакопления.алк_ОстаткиЗапасов.Обороты(, , Регистратор, СерийныйНомер = &amp;СерийныйНомер) КАК алк_ОстаткиЗапасовОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК алк_ПараметрыХарактеристик
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_БоковаяДоска.СрезПоследних КАК алк_БоковаяДоскаСрезПоследних
+			ПО алк_ПараметрыХарактеристик.Сечение = алк_БоковаяДоскаСрезПоследних.Сечение
+		ПО алк_ОстаткиЗапасовОбороты.Характеристика = алк_ПараметрыХарактеристик.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ДополнительныеПараметрыПакетов.СрезПоследних(, СерийныйНомер = &amp;СерийныйНомер) КАК алк_ДополнительныеПараметрыПакетовСрезПоследних
+		ПО алк_ОстаткиЗапасовОбороты.СерийныйНомер = алк_ДополнительныеПараметрыПакетовСрезПоследних.СерийныйНомер
+
+СГРУППИРОВАТЬ ПО
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.УчастокВыпуска,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.Припуск,
+	алк_ПараметрыХарактеристик.Длина,
+	алк_ОстаткиЗапасовОбороты.Сертификат,
+	алк_ПараметрыХарактеристик.Влажность,
+	алк_ПараметрыХарактеристик.Сечение,
+	алк_ОстаткиЗапасовОбороты.Номенклатура,
+	алк_ПараметрыХарактеристик.Сорт,
+	алк_ОстаткиЗапасовОбороты.Характеристика,
+	алк_ПараметрыХарактеристик.Порода,
+	алк_ОстаткиЗапасовОбороты.СерийныйНомер,
+	алк_ПараметрыХарактеристик.Длина.ДлинаММ,
+	алк_ПараметрыХарактеристик.Сечение.ШиринаММ,
+	алк_ПараметрыХарактеристик.Сечение.ТолщинаММ,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.Припуск.ПрипускПоШирине,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.Припуск.ПрипускПоТолщине,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.Припуск.ПрипускПоДлине,
+	алк_ДополнительныеПараметрыПакетовСрезПоследних.Габарит,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(алк_БоковаяДоскаСрезПоследних.Сечение, ЗНАЧЕНИЕ(Справочник.РазмерСечения.ПустаяСсылка)) &lt;&gt; ЗНАЧЕНИЕ(Справочник.РазмерСечения.ПустаяСсылка)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Обороты.Пакет КАК Пакет,
+	ВТ_Обороты.Период КАК ПериодУпаковки,
+	ВТ_Обороты.Характеристика КАК Характеристика,
+	ВТ_Обороты.Номенклатура КАК Номенклатура,
+	ВТ_Обороты.Порода КАК Порода,
+	ВТ_Обороты.Сорт КАК Сорт,
+	ВТ_Обороты.Длина КАК Длина,
+	ВТ_Обороты.Сечение КАК Сечение,
+	ВТ_Обороты.Влажность КАК Влажность,
+	ВТ_Обороты.БоковаяДоска КАК БоковаяДоска,
+	ВТ_Обороты.КоличествоСостав КАК КоличествоСостав,
+	ВТ_Обороты.Сертификат КАК Сертификат,
+	ВТ_Обороты.Припуск КАК Припуск,
+	ВТ_Обороты.Объем КАК Объем,
+	СРЕДНЕЕ(ОКР((ВТ_Обороты.ДлинаДлинаММ + ВТ_Обороты.ПрипускПрипускПоДлине) * (ВТ_Обороты.СечениеШиринаММ + ВТ_Обороты.ПрипускПрипускПоШирине) * (ВТ_Обороты.СечениеТолщинаММ + ВТ_Обороты.ПрипускПрипускПоТолщине) * ВТ_Обороты.КоличествоСостав / 1000000000, 3)) КАК ОбъемТаможня,
+	СРЕДНЕЕ(ОКР(алк_ПлотностьНоменклатурыСрезПоследних.ПлотностьКгМ3 * (ВТ_Обороты.ДлинаДлинаММ + ВТ_Обороты.ПрипускПрипускПоДлине) * (ВТ_Обороты.СечениеШиринаММ + ВТ_Обороты.ПрипускПрипускПоШирине) * (ВТ_Обороты.СечениеТолщинаММ + ВТ_Обороты.ПрипускПрипускПоТолщине) * ВТ_Обороты.КоличествоСостав / 1000000000000, 3)) КАК ВесНеттоТаможня,
+	СРЕДНЕЕ(ОКР(алк_ПлотностьНоменклатурыСрезПоследних.ВесТарыКг / 1000 + алк_ПлотностьНоменклатурыСрезПоследних.ПлотностьКгМ3 * (ВТ_Обороты.ДлинаДлинаММ + ВТ_Обороты.ПрипускПрипускПоДлине) * (ВТ_Обороты.СечениеШиринаММ + ВТ_Обороты.ПрипускПрипускПоШирине) * (ВТ_Обороты.СечениеТолщинаММ + ВТ_Обороты.ПрипускПрипускПоТолщине) * ВТ_Обороты.КоличествоСостав / 1000000000000, 3)) КАК ВесБруттоТаможня,
+	ВТ_Обороты.КатегорияНоменклатурыПЭО КАК КатегорияНоменклатурыПЭО,
+	СРЕДНЕЕ(1) КАК Порядок,
+	ВТ_Обороты.Сухой КАК Сухой,
+	ВТ_Обороты.Габарит КАК Габарит
+ПОМЕСТИТЬ ВТ
+ИЗ
+	ВТ_Обороты КАК ВТ_Обороты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПлотностьНоменклатуры.СрезПоследних КАК алк_ПлотностьНоменклатурыСрезПоследних
+		ПО ВТ_Обороты.Номенклатура = алк_ПлотностьНоменклатурыСрезПоследних.Номенклатура
+			И ВТ_Обороты.Порода = алк_ПлотностьНоменклатурыСрезПоследних.Порода
+			И ВТ_Обороты.Влажность = алк_ПлотностьНоменклатурыСрезПоследних.Влажность
+			И ВТ_Обороты.БоковаяДоска = алк_ПлотностьНоменклатурыСрезПоследних.БоковаяДоска
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Обороты.Пакет,
+	ВТ_Обороты.Характеристика,
+	ВТ_Обороты.Порода,
+	ВТ_Обороты.Сорт,
+	ВТ_Обороты.Длина,
+	ВТ_Обороты.Сечение,
+	ВТ_Обороты.Влажность,
+	ВТ_Обороты.Сертификат,
+	ВТ_Обороты.Номенклатура,
+	ВТ_Обороты.Припуск,
+	ВТ_Обороты.Объем,
+	ВТ_Обороты.КоличествоСостав,
+	ВТ_Обороты.Период,
+	ВТ_Обороты.БоковаяДоска,
+	ВТ_Обороты.КатегорияНоменклатурыПЭО,
+	ВТ_Обороты.Сухой,
+	ВТ_Обороты.Габарит
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СерийныеНомера.Ссылка КАК Пакет,
+	алк_ПараметрыПакетовСрезПоследних.ПериодУпаковки КАК ПериодУпаковки,
+	алк_ПараметрыХарактеристик.Характеристика КАК Характеристика,
+	СерийныеНомера.Владелец КАК Номенклатура,
+	алк_ПараметрыХарактеристик.Порода КАК Порода,
+	алк_ПараметрыХарактеристик.Сорт КАК Сорт,
+	алк_ПараметрыХарактеристик.Длина КАК Длина,
+	алк_ПараметрыХарактеристик.Сечение КАК Сечение,
+	алк_ПараметрыХарактеристик.Влажность КАК Влажность,
+	алк_ПараметрыПакетовСрезПоследних.БоковаяДоска КАК БоковаяДоска,
+	алк_ПараметрыПакетовСрезПоследних.КоличествоСостав КАК КоличествоСостав,
+	алк_ПараметрыПакетовСрезПоследних.Сертификат КАК Сертификат,
+	алк_ПараметрыПакетовСрезПоследних.Припуск КАК Припуск,
+	алк_ПараметрыПакетовСрезПоследних.Объем КАК Объем,
+	алк_ПараметрыПакетовСрезПоследних.ОбъемТаможня КАК ОбъемТаможня,
+	алк_ПараметрыПакетовСрезПоследних.ВесНеттоТаможня КАК ВесНеттоТаможня,
+	алк_ПараметрыПакетовСрезПоследних.ВесБруттоТаможня КАК ВесБруттоТаможня,
+	алк_ПараметрыПакетовСрезПоследних.КатегорияНоменклатурыПЭО КАК КатегорияНоменклатурыПЭО,
+	2 КАК Порядок,
+	алк_ПараметрыПакетовСрезПоследних.Габарит КАК Габарит
+ПОМЕСТИТЬ ВТ_ПоПараметрамПакетов
+ИЗ
+	Справочник.СерийныеНомера КАК СерийныеНомера
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыПакетов.СрезПоследних(, СерийныйНомер.Ссылка = &amp;СерийныйНомер) КАК алк_ПараметрыПакетовСрезПоследних
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК алк_ПараметрыХарактеристик
+			ПО алк_ПараметрыПакетовСрезПоследних.Характеристика = алк_ПараметрыХарактеристик.Характеристика
+		ПО СерийныеНомера.Ссылка = алк_ПараметрыПакетовСрезПоследних.СерийныйНомер
+ГДЕ
+	СерийныеНомера.Ссылка = &amp;СерийныйНомер
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ.Пакет КАК Пакет,
+	ВТ.ПериодУпаковки КАК ПериодУпаковки,
+	ВТ.Характеристика КАК Характеристика,
+	ВТ.Номенклатура КАК Номенклатура,
+	ВТ.Порода КАК Порода,
+	ВТ.Сорт КАК Сорт,
+	ВТ.Длина КАК Длина,
+	ВТ.Сечение КАК Сечение,
+	ВТ.Влажность КАК Влажность,
+	ВТ.БоковаяДоска КАК БоковаяДоска,
+	ВТ.КоличествоСостав КАК КоличествоСостав,
+	ВТ.Сертификат КАК Сертификат,
+	ВТ.Припуск КАК Припуск,
+	ВТ.Объем КАК Объем,
+	ВТ.ОбъемТаможня КАК ОбъемТаможня,
+	ВТ.ВесНеттоТаможня КАК ВесНеттоТаможня,
+	ВТ.ВесБруттоТаможня КАК ВесБруттоТаможня,
+	ВТ.КатегорияНоменклатурыПЭО КАК КатегорияНоменклатурыПЭО,
+	ВТ.Сухой КАК Сухой,
+	ВТ.Порядок КАК Порядок,
+	ВТ.Габарит КАК Габарит
+ПОМЕСТИТЬ ВТ_Итог
+ИЗ
+	ВТ КАК ВТ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ПоПараметрамПакетов.Пакет,
+	ВТ_ПоПараметрамПакетов.ПериодУпаковки,
+	ВТ_ПоПараметрамПакетов.Характеристика,
+	ВТ_ПоПараметрамПакетов.Номенклатура,
+	ВТ_ПоПараметрамПакетов.Порода,
+	ВТ_ПоПараметрамПакетов.Сорт,
+	ВТ_ПоПараметрамПакетов.Длина,
+	ВТ_ПоПараметрамПакетов.Сечение,
+	ВТ_ПоПараметрамПакетов.Влажность,
+	ВТ_ПоПараметрамПакетов.БоковаяДоска,
+	ВТ_ПоПараметрамПакетов.КоличествоСостав,
+	ВТ_ПоПараметрамПакетов.Сертификат,
+	ВТ_ПоПараметрамПакетов.Припуск,
+	ВТ_ПоПараметрамПакетов.Объем,
+	ВТ_ПоПараметрамПакетов.ОбъемТаможня,
+	ВТ_ПоПараметрамПакетов.ВесНеттоТаможня,
+	ВТ_ПоПараметрамПакетов.ВесБруттоТаможня,
+	ВТ_ПоПараметрамПакетов.КатегорияНоменклатурыПЭО,
+	NULL,
+	ВТ_ПоПараметрамПакетов.Порядок,
+	NULL
+ИЗ
+	ВТ_ПоПараметрамПакетов КАК ВТ_ПоПараметрамПакетов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Итог.Пакет КАК Пакет,
+	ВТ_Итог.ПериодУпаковки КАК ПериодУпаковки,
+	ВТ_Итог.Характеристика КАК Характеристика,
+	ВТ_Итог.Номенклатура КАК Номенклатура,
+	ВТ_Итог.Порода КАК Порода,
+	ВТ_Итог.Сорт КАК Сорт,
+	ВТ_Итог.Длина КАК Длина,
+	ВТ_Итог.Сечение КАК Сечение,
+	ВТ_Итог.Влажность КАК Влажность,
+	ВТ_Итог.БоковаяДоска КАК БоковаяДоска,
+	ВТ_Итог.КоличествоСостав КАК КоличествоСостав,
+	ВТ_Итог.Сертификат КАК Сертификат,
+	ВТ_Итог.Припуск КАК Припуск,
+	ВТ_Итог.Объем КАК Объем,
+	ВТ_Итог.ОбъемТаможня КАК ОбъемТаможня,
+	ВТ_Итог.ВесНеттоТаможня КАК ВесНеттоТаможня,
+	ВТ_Итог.ВесБруттоТаможня КАК ВесБруттоТаможня,
+	ВТ_Итог.КатегорияНоменклатурыПЭО КАК КатегорияНоменклатурыПЭО,
+	ВТ_Итог.Сухой КАК Сухой,
+	ВТ_Итог.Габарит КАК Габарит,
+	ВТ_Итог.Порядок КАК Порядок
+ИЗ
+	ВТ_Итог КАК ВТ_Итог
+ГДЕ
+	НЕ ВТ_Итог.Характеристика = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+
+УПОРЯДОЧИТЬ ПО
+	Порядок</query>
+	</dataSet>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>СерийныйНомер</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Серийный номер</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СерийныеНомера</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>СерийныйНомер</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Характеристика</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПериодУпаковки</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата пакета</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Пакет</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Номенклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Порода</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Сорт</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Длина</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Сечение</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Влажность</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>БоковаяДоска</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоСостав</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Сертификат</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Припуск</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КатегорияНоменклатурыПЭО</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Объем</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Таможня</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОбъемТаможня</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объем</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ВесНеттоТаможня</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вес нетто</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ВесБруттоТаможня</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вес брутто</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

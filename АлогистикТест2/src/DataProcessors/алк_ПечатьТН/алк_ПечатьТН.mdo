@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b896997f-f486-4bdc-ba8e-30d618a256e3">
+  <producedTypes>
+    <objectType typeId="9fe0457a-d04f-4fc9-9519-ecf7b08311e7" valueTypeId="6efcbbda-e105-4cb8-a88f-903f118ef073"/>
+    <managerType typeId="1f1dcecf-0595-49e2-abc3-c69dba171ec0" valueTypeId="efba6f25-22b4-4750-8556-c54b09f9d3c6"/>
+  </producedTypes>
+  <name>алк_ПечатьТН</name>
+  <synonym>
+    <key>ru</key>
+    <value>ПечатьТН</value>
+  </synonym>
+  <defaultForm>DataProcessor.алк_ПечатьТН.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="3032cd36-0b8a-42c9-9926-ca5c4bb78ae2">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РасходнаяНакладная</types>
+      <types>DocumentRef.ПеремещениеЗапасов</types>
+      <types>DocumentRef.ОтчетОПереработке</types>
+      <types>DocumentRef.алк_ОтгрузкаЩепы</types>
+      <types>DocumentRef.алк_ТранспортировкаЗапасов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="f741dca4-40ff-430b-acde-0e8c57ec01d0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d6fea707-d15e-4ff5-82e6-55908304f646">
+    <name>ПФ_MXL_ТранспортнаяНакладная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная накладная</value>
+    </synonym>
+  </templates>
+  <templates uuid="a8359daf-8972-4f43-b74f-1285e59a4f20">
+    <name>ТТНПриложение4_с_210209</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТТНПриложение4 с 210209</value>
+    </synonym>
+  </templates>
+  <templates uuid="006c4660-61b8-461f-bce6-2b1a264096b3">
+    <name>ТТН_Приложение2022</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТТН 2022</value>
+    </synonym>
+  </templates>
+  <templates uuid="7d0b35f7-0461-4fe4-8bd5-9fd0aff33496">
+    <name>ПФ_MXL_ЭкспедиторскаяРаспискаДГ</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф MXL экспедиторская расписка ДГ</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

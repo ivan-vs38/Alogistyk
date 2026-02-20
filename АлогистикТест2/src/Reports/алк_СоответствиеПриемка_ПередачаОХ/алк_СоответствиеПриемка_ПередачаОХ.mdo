@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62d6989d-01b0-4367-89a8-3a3a493cde73">
+  <producedTypes>
+    <objectType typeId="c23e1faa-3fed-48cf-8631-878447edd6d4" valueTypeId="b728b91a-5045-4a12-9246-1eeb63328bb8"/>
+    <managerType typeId="d507f927-a439-44bb-8e5b-f5e64522c1f0" valueTypeId="dd2bab81-1c00-4423-bd9b-a980a9de5545"/>
+  </producedTypes>
+  <name>алк_СоответствиеПриемка_ПередачаОХ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет. Соответствие между приемкой ЛП и передачей на ОХ</value>
+  </synonym>
+  <defaultForm>Report.алк_СоответствиеПриемка_ПередачаОХ.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.алк_СоответствиеПриемка_ПередачаОХ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.алк_СоответствиеПриемка_ПередачаОХ.Form.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>Report.алк_СоответствиеПриемка_ПередачаОХ.Form.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="c37a6d0c-6c92-4537-9b4b-1f31064c2d2c">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="4081f6e1-ce97-46ce-bd8e-039cf2280945">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fdba1d79-3245-4ad6-ad6b-1e002ddc3cfb">
+    <name>ФормаНастроекОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b2066475-cdcb-462b-aef6-465497d8ed1f">
+    <name>ФормаВариантаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="614d67c7-bb90-4b28-b9c8-7ca60c035197">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="ff5ca108-5208-439a-ba5c-e9fe1b085eb4">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет. Соответствие между приемкой ЛП и передачей на ОХ</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

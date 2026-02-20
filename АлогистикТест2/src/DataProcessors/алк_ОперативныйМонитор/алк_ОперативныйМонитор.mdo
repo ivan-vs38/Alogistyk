@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a04a913a-49b6-4209-84e5-8478191c6dcc">
+  <producedTypes>
+    <objectType typeId="90c8a039-544e-4441-8672-eb8d7fdd940b" valueTypeId="64658b93-fa1a-444e-8ef2-034e617e1275"/>
+    <managerType typeId="330d10f5-4a49-4712-8146-2ef133e496dc" valueTypeId="97185081-3166-462d-9e91-3b4ebe53383c"/>
+  </producedTypes>
+  <name>алк_ОперативныйМонитор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Алк оперативный монитор</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.алк_ОперативныйМонитор.Form.Форма</defaultForm>
+  <attributes uuid="2bbaa4be-cb11-4810-a2f8-5679301f7473">
+    <name>ДатаСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата смены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9884c123-9613-45a6-a7f3-6772b4578305">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="89f770b9-3a6d-4570-8180-0144405bf6f8">
+    <name>ФормаНастроекМонитора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек монитора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

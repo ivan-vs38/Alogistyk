@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8469a75f-c482-497f-b1a4-802db5312e67">
+  <producedTypes>
+    <selectionType typeId="1eac9f50-d8d3-48d5-af69-2bf48b88f94c" valueTypeId="b6530d96-71da-4ee0-8f53-3867d8b78d0b"/>
+    <listType typeId="1e3dc410-8021-43a6-a499-31fdf2c7e8a9" valueTypeId="7672e314-964e-408e-82e6-753684cb8d5a"/>
+    <managerType typeId="0448146b-e8a4-46c6-aa04-b338b0bf7ecc" valueTypeId="993a94e6-41f8-49c6-9d56-ef586279ab90"/>
+    <recordSetType typeId="98ff7ced-e427-4d66-9fa7-015a07debd44" valueTypeId="5bf4f420-d7e4-4645-b7cc-32df55927a2d"/>
+    <recordKeyType typeId="c2995c25-0460-46fb-adf8-75864bc690cf" valueTypeId="87b90459-4963-43de-b5e8-ba5b527e5b4e"/>
+    <recordType typeId="59595b18-bec2-4057-b541-e696912ecdc8" valueTypeId="8eae5447-f3ea-4733-a819-e8a58aa24e96"/>
+    <recordManagerType typeId="0e612267-ee65-4eae-80ff-5d59de388029" valueTypeId="3199a8a9-107c-4fe4-a7cf-1bbd62e1378a"/>
+  </producedTypes>
+  <name>алк_ДополнительныеНастройки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные настройки (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f29257e7-1855-446c-860e-8637a2c54306">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dfeca460-2601-460b-bcb8-9dd7004127e6">
+    <name>Булево</name>
+    <synonym>
+      <key>ru</key>
+      <value>Булево</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7c068190-5671-47d7-8da3-9e90ebc15c9e">
+    <name>Строка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="66b9d6c2-e604-41c7-8a18-2eaefe01cc6f">
+    <name>Параметр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

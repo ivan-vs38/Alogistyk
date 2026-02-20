@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6827998f-a2b4-46c5-8b61-33fda94a966b">
+  <producedTypes>
+    <selectionType typeId="fc226952-d171-4cca-871b-17f05a4c4db7" valueTypeId="1a3a9fdf-b958-4059-a719-951b22c0ab90"/>
+    <listType typeId="abdc98f2-38e4-4820-a5af-eb285462ef10" valueTypeId="aeefbd7c-f406-4353-ab5f-aa3f56f2ac26"/>
+    <managerType typeId="7c8baf65-4cf0-40b3-8018-3adf01d69d53" valueTypeId="6ab6f20a-8aba-4c9e-9291-2520ea80c2fe"/>
+    <recordSetType typeId="aa750fdf-7ec3-46a4-9fb2-ac1fe2148feb" valueTypeId="7ff99e83-99e4-468c-8323-7c8ae7985b0a"/>
+    <recordKeyType typeId="99611a35-daec-4219-af2a-6e56aa97632b" valueTypeId="892dfd24-ebcb-46b6-9dc0-3d871230c111"/>
+    <recordType typeId="86872586-c1f4-4b82-8dcf-bc852bfbb448" valueTypeId="b10fdf6c-266a-4245-8d37-af12d0c0c9db"/>
+  </producedTypes>
+  <name>алк_ОборотыПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обороты производства (АЛК)</value>
+  </synonym>
+  <comment>старый !</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="dba7ea46-8288-41ad-b3ef-97c1d67fe924">
+    <name>Объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="34ecfcb2-f867-4fc7-9651-f825bd238955">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ОперацииПроизводства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b04ad6f2-147d-4eab-b015-8b5767aed070">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d0e1cd05-2989-4531-82e4-06312063ff73">
+    <name>Направление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_НаправленияДеятельности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="17751656-4450-4e75-84ac-5153070fc1aa">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="44f5e5c2-91c0-44bb-80e7-d69f756486cb">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="809d1014-5c96-47f4-9a1e-dc5e63fd7d42">
+    <name>Штабель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штабель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="91546fe7-6657-4c16-9298-c46bdd2091ea">
+    <name>ВидОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид отгрузки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ВидыОтгрузки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="38f54929-3bcb-42d8-82eb-f7c916cfce02">
+    <name>Ответхранение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответхранение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3bb368b6-ae34-4e24-9d85-f126e7bca1d0">
+    <name>ВнутреннееПотребление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутреннее потребление</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

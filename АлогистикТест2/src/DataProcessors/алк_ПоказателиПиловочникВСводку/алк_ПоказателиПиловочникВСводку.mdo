@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe10eb31-804b-4fa6-be9d-83afa2b95402">
+  <producedTypes>
+    <objectType typeId="c4aac04d-93d4-4f7d-9865-961a14f7255a" valueTypeId="e2b9d3e5-b1b2-45c7-8554-8574cbd8c160"/>
+    <managerType typeId="e7f10c45-e9e5-4f8c-a704-4d2af768337d" valueTypeId="9407cd9b-8e3e-4410-8a06-85924eae7551"/>
+  </producedTypes>
+  <name>алк_ПоказателиПиловочникВСводку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели пиловочник в сводку</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.алк_ПоказателиПиловочникВСводку.Form.Форма</defaultForm>
+  <attributes uuid="d6896a57-ea61-41b1-8454-4afeb846c466">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="4ceb56ed-28c0-4f86-b6ba-bf9d274901fb">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

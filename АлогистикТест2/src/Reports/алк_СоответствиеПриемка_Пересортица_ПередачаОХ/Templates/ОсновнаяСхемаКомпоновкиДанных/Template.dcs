@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Штабель</dataPath>
+			<field>Штабель</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Смена</dataPath>
+			<field>Смена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСмены</dataPath>
+			<field>ДатаСмены</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партия</dataPath>
+			<field>Партия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПартияТД</dataPath>
+			<field>ПартияТД</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтруктурнаяЕдиница</dataPath>
+			<field>СтруктурнаяЕдиница</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Порода</dataPath>
+			<field>Порода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сорт</dataPath>
+			<field>Сорт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Длина</dataPath>
+			<field>Длина</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сечение</dataPath>
+			<field>Сечение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПриемка</dataPath>
+			<field>КоличествоПриемка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество приемка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемПриемка</dataPath>
+			<field>ОбъемПриемка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем приемка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемОХ</dataPath>
+			<field>ОбъемОХ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем ОХ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОХ</dataPath>
+			<field>КоличествоОХ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество ОХ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемРазница</dataPath>
+			<field>ОбъемРазница</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем разница</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоРазница</dataPath>
+			<field>КоличествоРазница</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество разница</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пересортица</dataPath>
+			<field>Пересортица</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересортица</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемПриходПересортица</dataPath>
+			<field>ОбъемПриходПересортица</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем приход пересортица</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПриходПересортица</dataPath>
+			<field>КоличествоПриходПересортица</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество приход пересортица</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ячейка</dataPath>
+			<field>Ячейка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Операция</dataPath>
+			<field>Операция</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Приемка</dataPath>
+			<field>Приемка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приемка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответхранение</dataPath>
+			<field>Ответхранение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответхранение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемПриемкаОУ</dataPath>
+			<field>ОбъемПриемкаОУ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем приемка ОУ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПриемкаОУ</dataPath>
+			<field>КоличествоПриемкаОУ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество приемка ОУ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемРасходПересортица</dataPath>
+			<field>ОбъемРасходПересортица</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем расход пересортица</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоРасходПересортица</dataPath>
+			<field>КоличествоРасходПересортица</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество расход пересортица</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемРазницаПересортицаРасход</dataPath>
+			<field>ОбъемРазницаПересортицаРасход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем разница пересортица расход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемРазницаПересортицаПриход</dataPath>
+			<field>ОбъемРазницаПересортицаПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем разница пересортица приход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемРазницаОУ</dataPath>
+			<field>ОбъемРазницаОУ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем разница ОУ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	алк_УчетЛесопродукцииГОСТОстаткиИОбороты_ГОСТ.Регистратор КАК Приемка,
+	алк_ПараметрыХарактеристик.Порода,
+	алк_ПараметрыХарактеристик.Сорт,
+	алк_ПараметрыХарактеристик.Длина,
+	алк_ПараметрыХарактеристик.Сечение,
+	алк_УчетЛесопродукцииГОСТОстаткиИОбороты_ГОСТ.КоличествоПриход КАК КоличествоПриемка,
+	алк_УчетЛесопродукцииГОСТОстаткиИОбороты_ГОСТ.ОбъемПриход КАК ОбъемПриемка,
+	алк_УчетЛесопродукцииГОСТОстаткиИОбороты_ГОСТ.Штабель,
+	ЕСТЬNULL(алк_ПересортицаНоменклатуры.Ссылка, "-") КАК Пересортица,
+	ЕСТЬNULL(алк_ПередачаНаОтветхранение.Ссылка, "-") КАК Ответхранение
+ПОМЕСТИТЬ втПриемка
+ИЗ
+	РегистрНакопления.алк_УчетЛесопродукцииГОСТ.ОстаткиИОбороты(, , Авто, , Штабель.Несоответствие) КАК алк_УчетЛесопродукцииГОСТОстаткиИОбороты_ГОСТ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК алк_ПараметрыХарактеристик
+		ПО алк_УчетЛесопродукцииГОСТОстаткиИОбороты_ГОСТ.Характеристика = алк_ПараметрыХарактеристик.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.алк_ПересортицаНоменклатуры КАК алк_ПересортицаНоменклатуры
+		ПО алк_УчетЛесопродукцииГОСТОстаткиИОбороты_ГОСТ.Регистратор = алк_ПересортицаНоменклатуры.ДокументОснование
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.алк_ПередачаНаОтветхранение КАК алк_ПередачаНаОтветхранение
+		ПО алк_УчетЛесопродукцииГОСТОстаткиИОбороты_ГОСТ.Регистратор = алк_ПередачаНаОтветхранение.ДокументОснование
+ГДЕ
+	алк_ПередачаНаОтветхранение.Проведен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	алк_ЗапасыОрганизацииОбороты.Регистратор КАК Приемка,
+	алк_ПараметрыХарактеристик.Порода,
+	алк_ПараметрыХарактеристик.Сорт,
+	алк_ПараметрыХарактеристик.Длина,
+	алк_ПараметрыХарактеристик.Сечение,
+	ЕСТЬNULL(алк_ПересортицаНоменклатуры.Ссылка, "-") КАК Пересортица,
+	ЕСТЬNULL(алк_ПередачаНаОтветхранение.Ссылка, "-") КАК Ответхранение,
+	алк_ЗапасыОрганизацииОбороты.Ячейка КАК Штабель,
+	алк_ЗапасыОрганизацииОбороты.КоличествоПриход КАК КоличествоПриемкаОУ,
+	алк_ЗапасыОрганизацииОбороты.ОбъемПриход КАК ОбъемПриемкаОУ
+ПОМЕСТИТЬ втПриемкаОУ
+ИЗ
+	РегистрНакопления.алк_ЗапасыОрганизации.Обороты(
+			,
+			,
+			Регистратор,
+			Ячейка ССЫЛКА Справочник.алк_Штабели
+				И Ячейка.Несоответствие) КАК алк_ЗапасыОрганизацииОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.алк_ПересортицаНоменклатуры КАК алк_ПересортицаНоменклатуры
+		ПО алк_ЗапасыОрганизацииОбороты.Регистратор = алк_ПересортицаНоменклатуры.ДокументОснование
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.алк_ПередачаНаОтветхранение КАК алк_ПередачаНаОтветхранение
+		ПО алк_ЗапасыОрганизацииОбороты.Регистратор = алк_ПередачаНаОтветхранение.ДокументОснование
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК алк_ПараметрыХарактеристик
+		ПО алк_ЗапасыОрганизацииОбороты.Характеристика = алк_ПараметрыХарактеристик.Характеристика
+ГДЕ
+	алк_ЗапасыОрганизацииОбороты.Регистратор ССЫЛКА Документ.алк_ПриемкаЛесопродукции
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	алк_ЗапасыОрганизацииОбороты_Пересортица.Регистратор КАК Пересортица,
+	алк_ЗапасыОрганизацииОбороты_Пересортица.Регистратор.ДокументОснование КАК Приемка,
+	алк_ПередачаНаОтветхранение.Ссылка КАК Ответхранение,
+	алк_ПараметрыХарактеристик.Порода,
+	алк_ПараметрыХарактеристик.Сорт,
+	алк_ПараметрыХарактеристик.Длина,
+	алк_ПараметрыХарактеристик.Сечение,
+	алк_ЗапасыОрганизацииОбороты_Пересортица.Ячейка КАК Штабель,
+	алк_ЗапасыОрганизацииОбороты_Пересортица.ОбъемПриход КАК ОбъемПриходПересортица,
+	алк_ЗапасыОрганизацииОбороты_Пересортица.КоличествоПриход КАК КоличествоПриходПересортица
+ПОМЕСТИТЬ втПересортицаПриход
+ИЗ
+	РегистрНакопления.алк_ЗапасыОрганизации.Обороты(, , Регистратор, ) КАК алк_ЗапасыОрганизацииОбороты_Пересортица
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК алк_ПараметрыХарактеристик
+		ПО алк_ЗапасыОрганизацииОбороты_Пересортица.Характеристика = алк_ПараметрыХарактеристик.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.алк_ПередачаНаОтветхранение КАК алк_ПередачаНаОтветхранение
+		ПО алк_ЗапасыОрганизацииОбороты_Пересортица.Регистратор.ДокументОснование = алк_ПередачаНаОтветхранение.ДокументОснование
+ГДЕ
+	алк_ЗапасыОрганизацииОбороты_Пересортица.Регистратор ССЫЛКА Документ.алк_ПересортицаНоменклатуры
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	алк_ЗапасыОрганизацииОбороты_Пересортица.Регистратор КАК Пересортица,
+	алк_ЗапасыОрганизацииОбороты_Пересортица.Регистратор.ДокументОснование КАК Приемка,
+	алк_ПередачаНаОтветхранение.Ссылка КАК Ответхранение,
+	алк_ПараметрыХарактеристик.Порода,
+	алк_ПараметрыХарактеристик.Сорт,
+	алк_ПараметрыХарактеристик.Длина,
+	алк_ПараметрыХарактеристик.Сечение,
+	алк_ЗапасыОрганизацииОбороты_Пересортица.Ячейка КАК Штабель,
+	алк_ЗапасыОрганизацииОбороты_Пересортица.ОбъемРасход КАК ОбъемРасходПересортица,
+	алк_ЗапасыОрганизацииОбороты_Пересортица.КоличествоРасход КАК КоличествоРасходПересортица
+ПОМЕСТИТЬ втПересортицаРасход
+ИЗ
+	РегистрНакопления.алк_ЗапасыОрганизации.Обороты(, , Регистратор, ) КАК алк_ЗапасыОрганизацииОбороты_Пересортица
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК алк_ПараметрыХарактеристик
+		ПО алк_ЗапасыОрганизацииОбороты_Пересортица.Характеристика = алк_ПараметрыХарактеристик.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.алк_ПередачаНаОтветхранение КАК алк_ПередачаНаОтветхранение
+		ПО алк_ЗапасыОрганизацииОбороты_Пересортица.Регистратор.ДокументОснование = алк_ПередачаНаОтветхранение.ДокументОснование
+ГДЕ
+	алк_ЗапасыОрганизацииОбороты_Пересортица.Регистратор ССЫЛКА Документ.алк_ПересортицаНоменклатуры
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	алк_УчетЛесопродукцииНаОтветхраненииОбороты_ОХ.Регистратор КАК Ответхранение,
+	алк_УчетЛесопродукцииНаОтветхраненииОбороты_ОХ.Регистратор.ДокументОснование КАК Приемка,
+	алк_ПараметрыХарактеристик.Порода,
+	алк_ПараметрыХарактеристик.Сорт,
+	алк_ПараметрыХарактеристик.Длина,
+	алк_ПараметрыХарактеристик.Сечение,
+	алк_УчетЛесопродукцииНаОтветхраненииОбороты_ОХ.КоличествоПриход КАК КоличествоОХ,
+	алк_УчетЛесопродукцииНаОтветхраненииОбороты_ОХ.ОбъемПриход КАК ОбъемОХ,
+	алк_УчетЛесопродукцииНаОтветхраненииОбороты_ОХ.Штабель,
+	ЕСТЬNULL(алк_ПересортицаНоменклатуры.Ссылка, "-") КАК Пересортица
+ПОМЕСТИТЬ втОтветхранение
+ИЗ
+	РегистрНакопления.алк_УчетЛесопродукцииНаОтветхранении.Обороты(, , Авто, ) КАК алк_УчетЛесопродукцииНаОтветхраненииОбороты_ОХ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК алк_ПараметрыХарактеристик
+		ПО алк_УчетЛесопродукцииНаОтветхраненииОбороты_ОХ.Характеристика = алк_ПараметрыХарактеристик.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.алк_ПересортицаНоменклатуры КАК алк_ПересортицаНоменклатуры
+		ПО алк_УчетЛесопродукцииНаОтветхраненииОбороты_ОХ.Регистратор.ДокументОснование = алк_ПересортицаНоменклатуры.ДокументОснование
+ГДЕ
+	алк_УчетЛесопродукцииНаОтветхраненииОбороты_ОХ.Регистратор ССЫЛКА Документ.алк_ПередачаНаОтветхранение
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втПриемка.Приемка,
+	втПриемка.Пересортица,
+	втПриемка.Ответхранение КАК Ответхранение,
+	втПриемка.Порода,
+	втПриемка.Сорт,
+	втПриемка.Длина,
+	втПриемка.Сечение,
+	втПриемка.Штабель,
+	втПриемка.КоличествоПриемка,
+	втПриемка.ОбъемПриемка,
+	0 КАК КоличествоПриходПересортица,
+	0 КАК ОбъемПриходПересортица,
+	0 КАК КоличествоОХ,
+	0 КАК ОбъемОХ,
+	0 КАК КоличествоПриемкаОУ,
+	0 КАК ОбъемПриемкаОУ,
+	0 КАК ОбъемРасходПересортица,
+	0 КАК КоличествоРасходПересортица
+ПОМЕСТИТЬ втРезультат
+ИЗ
+	втПриемка КАК втПриемка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	втОтветхранение.Приемка,
+	втОтветхранение.Пересортица,
+	втОтветхранение.Ответхранение,
+	втОтветхранение.Порода,
+	втОтветхранение.Сорт,
+	втОтветхранение.Длина,
+	втОтветхранение.Сечение,
+	втОтветхранение.Штабель,
+	0,
+	0,
+	0,
+	0,
+	втОтветхранение.КоличествоОХ,
+	втОтветхранение.ОбъемОХ,
+	0,
+	0,
+	0,
+	0
+ИЗ
+	втОтветхранение КАК втОтветхранение
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	втПересортицаПриход.Приемка,
+	втПересортицаПриход.Пересортица,
+	втПересортицаПриход.Ответхранение,
+	втПересортицаПриход.Порода,
+	втПересортицаПриход.Сорт,
+	втПересортицаПриход.Длина,
+	втПересортицаПриход.Сечение,
+	втПересортицаПриход.Штабель,
+	0,
+	0,
+	втПересортицаПриход.КоличествоПриходПересортица,
+	втПересортицаПриход.ОбъемПриходПересортица,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0
+ИЗ
+	втПересортицаПриход КАК втПересортицаПриход
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	втПриемкаОУ.Приемка,
+	втПриемкаОУ.Пересортица,
+	втПриемкаОУ.Ответхранение,
+	втПриемкаОУ.Порода,
+	втПриемкаОУ.Сорт,
+	втПриемкаОУ.Длина,
+	втПриемкаОУ.Сечение,
+	втПриемкаОУ.Штабель,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	втПриемкаОУ.КоличествоПриемкаОУ,
+	втПриемкаОУ.ОбъемПриемкаОУ,
+	0,
+	0
+ИЗ
+	втПриемкаОУ КАК втПриемкаОУ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	втПересортицаРасход.Приемка,
+	втПересортицаРасход.Пересортица,
+	втПересортицаРасход.Ответхранение,
+	втПересортицаРасход.Порода,
+	втПересортицаРасход.Сорт,
+	втПересортицаРасход.Длина,
+	втПересортицаРасход.Сечение,
+	втПересортицаРасход.Штабель,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	втПересортицаРасход.ОбъемРасходПересортица,
+	втПересортицаРасход.КоличествоРасходПересортица
+ИЗ
+	втПересортицаРасход КАК втПересортицаРасход
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втРезультат.Приемка,
+	втРезультат.Пересортица,
+	втРезультат.Ответхранение,
+	втРезультат.Порода,
+	втРезультат.Сорт,
+	втРезультат.Длина,
+	втРезультат.Сечение,
+	втРезультат.КоличествоПриемка,
+	втРезультат.ОбъемПриемка,
+	втРезультат.КоличествоОХ,
+	втРезультат.ОбъемОХ,
+	втРезультат.Штабель,
+	втРезультат.КоличествоПриемка - втРезультат.КоличествоОХ КАК КоличествоРазница,
+	втРезультат.ОбъемПриемка - втРезультат.ОбъемОХ КАК ОбъемРазница,
+	втРезультат.КоличествоПриходПересортица,
+	втРезультат.ОбъемПриходПересортица,
+	втРезультат.КоличествоПриемкаОУ,
+	втРезультат.ОбъемПриемкаОУ,
+	втРезультат.ОбъемРасходПересортица,
+	втРезультат.КоличествоРасходПересортица,
+	втРезультат.ОбъемПриемкаОУ - втРезультат.ОбъемРасходПересортица КАК ОбъемРазницаПересортицаРасход,
+	втРезультат.ОбъемПриемка - втРезультат.ОбъемПриходПересортица КАК ОбъемРазницаПересортицаПриход,
+	втРезультат.КоличествоПриемкаОУ - втРезультат.КоличествоОХ КАК ОбъемРазницаОУ
+ПОМЕСТИТЬ втИтоговаяТаблица
+ИЗ
+	втРезультат КАК втРезультат
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втИтоговаяТаблица.Приемка,
+	втИтоговаяТаблица.Пересортица,
+	втИтоговаяТаблица.Ответхранение,
+	втИтоговаяТаблица.Порода,
+	втИтоговаяТаблица.Сорт,
+	втИтоговаяТаблица.Длина,
+	втИтоговаяТаблица.Сечение,
+	втИтоговаяТаблица.КоличествоПриемка,
+	втИтоговаяТаблица.ОбъемПриемка,
+	втИтоговаяТаблица.КоличествоОХ,
+	втИтоговаяТаблица.ОбъемОХ,
+	втИтоговаяТаблица.Штабель,
+	втИтоговаяТаблица.КоличествоРазница,
+	втИтоговаяТаблица.ОбъемРазница,
+	втИтоговаяТаблица.КоличествоПриходПересортица,
+	втИтоговаяТаблица.ОбъемПриходПересортица,
+	втИтоговаяТаблица.КоличествоПриемкаОУ,
+	втИтоговаяТаблица.ОбъемПриемкаОУ,
+	втИтоговаяТаблица.ОбъемРасходПересортица,
+	втИтоговаяТаблица.КоличествоРасходПересортица,
+	втИтоговаяТаблица.ОбъемРазницаПересортицаРасход,
+	втИтоговаяТаблица.ОбъемРазницаПересортицаПриход,
+	втИтоговаяТаблица.ОбъемРазницаОУ
+ИЗ
+	втИтоговаяТаблица КАК втИтоговаяТаблица</query>
+	</dataSet>
+	<totalField>
+		<dataPath>КоличествоОХ</dataPath>
+		<expression>Сумма(КоличествоОХ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоПриемка</dataPath>
+		<expression>Сумма(КоличествоПриемка)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоПриемкаОУ</dataPath>
+		<expression>Сумма(КоличествоПриемкаОУ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоПриходПересортица</dataPath>
+		<expression>Сумма(КоличествоПриходПересортица)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоРазница</dataPath>
+		<expression>Сумма(КоличествоРазница)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоРасходПересортица</dataPath>
+		<expression>Сумма(КоличествоРасходПересортица)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемОХ</dataPath>
+		<expression>Сумма(ОбъемОХ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемПриемка</dataPath>
+		<expression>Сумма(ОбъемПриемка)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемПриемкаОУ</dataPath>
+		<expression>Сумма(ОбъемПриемкаОУ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемПриходПересортица</dataPath>
+		<expression>Сумма(ОбъемПриходПересортица)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемРазница</dataPath>
+		<expression>Сумма(ОбъемРазница)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемРасходПересортица</dataPath>
+		<expression>Сумма(ОбъемРасходПересортица)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемРазницаПересортицаРасход</dataPath>
+		<expression>Сумма(ОбъемРазницаПересортицаРасход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемРазницаПересортицаПриход</dataPath>
+		<expression>Сумма(ОбъемРазницаПересортицаПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемРазницаОУ</dataPath>
+		<expression>Сумма(ОбъемРазницаОУ)</expression>
+	</totalField>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной1</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Приемка ЛП -&gt; Передача ОХ (с расхождением)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Порода</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Длина</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Приемка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Пересортица</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ответхранение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сорт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сечение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемка</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ОУ</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоПриемкаОУ</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол-во</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОбъемПриемкаОУ</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объем</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ГОСТ</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоПриемка</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол-во</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОбъемПриемка</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объем</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пересортица</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>-</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоРасходПересортица</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол-во</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОбъемРасходПересортица</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объем</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОбъемРазницаПересортицаРасход</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Откл.</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>+</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоПриходПересортица</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол-во</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОбъемПриходПересортица</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объем</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОбъемРазницаПересортицаПриход</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Откл.</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Передача ОХ</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоОХ</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОбъемОХ</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Объем</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъемРазница</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Откл.</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъемРазницаОУ</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Откл. (ОУ)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ПриемкаЛП</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ОбъемРазницаПересортицаРасход</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ОбъемРазницаПересортицаРасход</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ОбъемРазницаПересортицаПриход</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ОбъемРазницаПересортицаПриход</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ОбъемРазница</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ОбъемРазница</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Пересортица</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Ответхранение</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Приемка</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Приемка</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Пересортица</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Ответхранение</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Порода</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Длина</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Сорт</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Сечение</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:use>false</dcsset:use>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

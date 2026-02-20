@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b1e0457-2a6d-40f3-81db-c85a36724b98">
+  <producedTypes>
+    <selectionType typeId="cbbaa65d-9fe8-4a56-8b11-f8dc5880da7b" valueTypeId="6cb909e1-7493-470f-86a9-3421bcb21c4a"/>
+    <listType typeId="85099695-9718-47fe-b010-dbca2002f23f" valueTypeId="2d8ab51d-2d90-418a-8205-d54831462444"/>
+    <managerType typeId="bdc14a24-a325-4e13-9e02-91a24725799c" valueTypeId="f7255b1c-77b6-4196-b287-3aa32b026c75"/>
+    <recordSetType typeId="e34174fe-609c-4512-87d1-fdcae3a40f87" valueTypeId="3a428aa3-3d6c-46bc-b216-1b62e321ffa6"/>
+    <recordKeyType typeId="a60a5f19-57a4-4ca0-8f62-6fd03cce99d5" valueTypeId="04e3d914-0cca-4119-8e7d-598fd0efd285"/>
+    <recordType typeId="e6e819d3-0363-4eea-a062-87145413131b" valueTypeId="0d8c53bc-6ab7-4d74-a4b6-ccff38594dac"/>
+    <recordManagerType typeId="50c34188-581a-4d81-9b37-ed8554e433d4" valueTypeId="efaabaa3-397e-4b86-acdb-4d6157384cf9"/>
+  </producedTypes>
+  <name>алк_ШаблоныСерийныхНомеровНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны серийных номеров номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="65dbb6ea-0069-4498-af3f-8dc99b257174">
+    <name>ШаблонСерийногоНомера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон серийного номера</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныСерийныхНомеров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3737538d-ef49-40a9-950e-61b71c30f06a">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dd6b59d7-eed9-477b-9acb-d2d204c6b54e">
+    <name>ПериодСерии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период серии</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

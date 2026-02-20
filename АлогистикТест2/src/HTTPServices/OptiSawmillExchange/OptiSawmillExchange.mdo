@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3bcfc683-ec55-40ac-9773-27425b009ee2">
+  <name>OptiSawmillExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Opti sawmill exchange</value>
+  </synonym>
+  <rootURL>OptiSawmillExchange</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="61c5b216-dd8b-4d17-b73e-528796a865f7">
+    <name>WoodStore</name>
+    <synonym>
+      <key>ru</key>
+      <value>Wood store</value>
+    </synonym>
+    <template>/WoodStore/*</template>
+    <methods uuid="5a7ac31c-4ff3-43ab-90c9-6142b5200062">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>WoodStoreAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="19ed9c49-3988-429f-ab2c-1d6d99d45143">
+    <name>WoodDelivery</name>
+    <synonym>
+      <key>ru</key>
+      <value>Wood delivery</value>
+    </synonym>
+    <template>/WoodDelivery/*</template>
+    <methods uuid="fc541488-ed98-4983-a932-07d8ad22a079">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>WoodDeliveryAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="bbe9e9d8-2ee4-4d61-be5d-302441cc6a24">
+    <name>WoodIncome</name>
+    <synonym>
+      <key>ru</key>
+      <value>Wood income</value>
+    </synonym>
+    <template>/WoodIncome/*</template>
+    <methods uuid="632d0a7a-823c-42fc-9158-47c2f5653abd">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>WoodIncomeAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="1c9ddbfb-0cae-4fc1-abf2-273804559d06">
+    <name>LumberStore</name>
+    <synonym>
+      <key>ru</key>
+      <value>Lumber store</value>
+    </synonym>
+    <template>/LumberStore/*</template>
+    <methods uuid="f9d7219e-df45-49ef-b539-689aee811727">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>LumberStoreAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="dd8a7179-7df1-4f5d-9b6c-b91db34d9045">
+    <name>LumberInTunnels</name>
+    <synonym>
+      <key>ru</key>
+      <value>Lumber in tunnels</value>
+    </synonym>
+    <template>/LumberInTunnels/*</template>
+    <methods uuid="9406cd25-2f30-4be6-8cdc-50ad1f7b7a8e">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>LumberInTunnelsAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="25d642f2-4f29-4cb6-bc6b-348ec0c92d5b">
+    <name>LumberProductionInput</name>
+    <synonym>
+      <key>ru</key>
+      <value>Lumber production input</value>
+    </synonym>
+    <template>/LumberProductionInput/*</template>
+    <methods uuid="c14db4b0-ce4e-42ad-923e-dd6fbf1b497b">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>LumberProductionInputAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="20d74075-dd6e-4bf1-9588-b6ff8f5c6699">
+    <name>LumberProductionOutput</name>
+    <synonym>
+      <key>ru</key>
+      <value>Lumber production output</value>
+    </synonym>
+    <template>/LumberProductionOutput/*</template>
+    <methods uuid="5e5dc0f2-9bfc-4a8d-905b-a353558a4a36">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>LumberProductionOutputAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="560b3062-34ab-4bb0-b0f4-cf5dd5b746dc">
+    <name>CustomerAndContract</name>
+    <synonym>
+      <key>ru</key>
+      <value>Customer and contract</value>
+    </synonym>
+    <template>/CustomerAndContract/*</template>
+    <methods uuid="0b94cc60-c583-475a-94fd-add7f18d9867">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>CustomerAndContractAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="35252d21-95fb-4e86-8023-d56d78c1367a">
+    <name>Order</name>
+    <synonym>
+      <key>ru</key>
+      <value>Order</value>
+    </synonym>
+    <template>/Order/*</template>
+    <methods uuid="d191bfb4-41a0-4dbd-a4d1-318e67626f5b">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>OrderAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f69aae76-0c81-4a97-988b-8a57a8f1c2e6">
+    <name>OrderShipment</name>
+    <synonym>
+      <key>ru</key>
+      <value>Order shipment</value>
+    </synonym>
+    <template>/OrderShipment/*</template>
+    <methods uuid="25c8d796-96b4-4dfd-b5dc-e40de77c2bef">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>OrderShipmentAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="6e61939e-8ad1-48d3-b88c-a678c32ffa79">
+    <name>LumberProduction</name>
+    <synonym>
+      <key>ru</key>
+      <value>Lumber production</value>
+    </synonym>
+    <template>/LumberProduction/*</template>
+    <methods uuid="7ff4fe1f-c797-4ed7-b8b9-3c391e96133d">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>LumberProductionAction</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

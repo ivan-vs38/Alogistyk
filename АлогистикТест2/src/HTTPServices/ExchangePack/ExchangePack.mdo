@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c98f2cff-55bb-4abf-a11e-59a54159322b">
+  <name>ExchangePack</name>
+  <synonym>
+    <key>ru</key>
+    <value>Exchange pack</value>
+  </synonym>
+  <rootURL>ExchangePack</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="2b6e4f0c-50da-4515-9378-cd513d433b67">
+    <name>GetPack</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get pack</value>
+    </synonym>
+    <comment>Получить пакет по штрихкоду</comment>
+    <template>/GetPack/*</template>
+    <methods uuid="4eb59148-4b92-46fc-b488-1c6bbb9cc623">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>GetPackAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="e54db0c8-4731-49eb-ae36-72d1d51a5d9a">
+    <name>ChangePack</name>
+    <synonym>
+      <key>ru</key>
+      <value>Change pack</value>
+    </synonym>
+    <comment>Изменить пакет</comment>
+    <template>/ChangePack/*</template>
+    <methods uuid="5878ea11-88d0-4c33-9c2f-b816788a77df">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>ChangePackAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="526b616f-bb53-442b-9c76-525c8e0a7e47">
+    <name>DeletePack</name>
+    <synonym>
+      <key>ru</key>
+      <value>Delete pack</value>
+    </synonym>
+    <comment>Удалить пакет</comment>
+    <template>/DeletePack/*</template>
+    <methods uuid="7bb71782-adeb-409c-b725-1ced001553cf">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>DeletePackAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="6f953048-dde9-4bf3-b77a-964ecb4bc90c">
+    <name>DownloadUsers</name>
+    <synonym>
+      <key>ru</key>
+      <value>Download users</value>
+    </synonym>
+    <comment>Загрузить пользователей</comment>
+    <template>/DownloadUsers/*</template>
+    <methods uuid="0325d828-a2d7-4350-a95f-d3b07231858a">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>GetDownloadUsersAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="47718c23-ce35-459f-9970-610fddb07b45">
+    <name>CreateTransfer</name>
+    <synonym>
+      <key>ru</key>
+      <value>Create transfer</value>
+    </synonym>
+    <comment>Создать перемещение</comment>
+    <template>/CreateTransfer/*</template>
+    <methods uuid="df8d178a-903d-4f2b-8d7d-00b322a0cce6">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>CreateTransferAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="b8cd329e-0620-440e-b2b6-f7a54801a7c5">
+    <name>CreateShipment</name>
+    <synonym>
+      <key>ru</key>
+      <value>Create shipment</value>
+    </synonym>
+    <comment>Создать отгрузку</comment>
+    <template>/CreateShipment/*</template>
+    <methods uuid="3884f316-bdfb-4110-a1e3-6c92f1f9673a">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>CreateShipmentAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="d7ff4820-7ad0-40cd-b29a-0f26e9ebd4ea">
+    <name>CreateInventory</name>
+    <synonym>
+      <key>ru</key>
+      <value>Create inventory</value>
+    </synonym>
+    <comment>Создать инвентаризацию</comment>
+    <template>/CreateInventory/*</template>
+    <methods uuid="701410e0-f4e8-4ae1-94bb-ee0d2eb8842c">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>CreateInventoryAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="41ee25b8-1723-492f-94bc-a6a6842d8e70">
+    <name>GetPkg</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get pkg</value>
+    </synonym>
+    <comment>Получить все упаковки по номенклатуре</comment>
+    <template>/GetPkg/*</template>
+    <methods uuid="4f9be4cd-014e-4b58-b2bc-78eef71681a0">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>GetPkgAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="166ab8ab-5089-439a-87b7-0326102868f5">
+    <name>GetStructuralUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get structural units</value>
+    </synonym>
+    <comment>Получить Структурные единицы (Склады)</comment>
+    <template>/GetStructuralUnits/*</template>
+    <methods uuid="2b2b1975-4d72-40c2-b209-16d60e2c8dc3">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>GetStructuralUnitsAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="9bc306e4-bb4c-4fc3-8435-e9e5b2d69e21">
+    <name>CheckConnection</name>
+    <synonym>
+      <key>ru</key>
+      <value>Check connection</value>
+    </synonym>
+    <comment>Проверить соединение</comment>
+    <template>/CheckConnection/*</template>
+    <methods uuid="8b2ec629-d9c2-4035-bb79-558a95e6f131">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>CheckConnectionAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="c63a486e-4147-4e3e-a31b-f704942a0d6a">
+    <name>GetServerDate</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get server date</value>
+    </synonym>
+    <comment>Получить дату сервера</comment>
+    <template>/GetServerDate/*</template>
+    <methods uuid="778f5213-00f2-4179-a73e-b0df933056bc">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>GetServerDateAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="18e61d15-45aa-4542-932b-32992deb3f88">
+    <name>UploadShipment</name>
+    <synonym>
+      <key>ru</key>
+      <value>Upload shipment</value>
+    </synonym>
+    <comment>Выгрузить отгрузки</comment>
+    <template>/UploadShipment/*</template>
+    <methods uuid="17f03323-fa72-4ad1-bd71-401d5a2f29a9">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>UploadShipmentAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="d6cca684-70d9-4eef-a2e3-17b07e951559">
+    <name>CheckPackToOrder</name>
+    <synonym>
+      <key>ru</key>
+      <value>Check pack to order</value>
+    </synonym>
+    <comment>Проверка соответствия пакета к заказу</comment>
+    <template>/CheckPackToOrder/*</template>
+    <methods uuid="1aa51563-d4a7-4610-8daa-d2078987d681">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>CheckPackToOrderAction</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

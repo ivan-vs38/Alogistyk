@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c86880b3-0a97-4385-a048-50fb5da03086">
+  <name>алк_ЗаписатьПараметрыСерийногоНомера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Алк записать параметры серийного номера</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.СерийныеНомера</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.АлгоритмыСвойстваИХарактеристики.ЗаполнитьПараметрыСерийногоНомераПриЗаписи</handler>
+</mdclass:EventSubscription>

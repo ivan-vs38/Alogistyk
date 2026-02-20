@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd711723-a352-4552-bf51-c0ef3f71d8eb">
+  <producedTypes>
+    <selectionType typeId="cc851249-bd90-4cd8-9880-64e0c014ed6d" valueTypeId="bf9a1352-3941-4627-91ed-9fc894d2416b"/>
+    <listType typeId="7631a375-856f-437f-b9c9-62cc22ed0256" valueTypeId="3a3dcdb7-34c1-4595-b065-e88be8024eb7"/>
+    <managerType typeId="97cd5e95-03e8-45c4-a714-291f3d8cb40d" valueTypeId="03f2d88b-dd39-4a49-b9b7-7865781c2f9b"/>
+    <recordSetType typeId="683a78be-d765-4425-893a-6192ef759afd" valueTypeId="4a9ff0df-ab10-4311-90ab-47233d90800f"/>
+    <recordKeyType typeId="3fd77738-c8ce-476b-b3b2-c89508cf6bb1" valueTypeId="d0f1ac56-91de-4129-a06a-e75f64d27c24"/>
+    <recordType typeId="e395c12f-0209-4751-b5b3-562d3baff238" valueTypeId="0e4644f6-942b-4c71-b0fa-6cfd658043ff"/>
+    <recordManagerType typeId="fbc2fd87-423c-4b33-b551-c317d4abe368" valueTypeId="95d87ed7-c96d-445f-9c80-95318fb1aa94"/>
+  </producedTypes>
+  <name>алк_ФактическиеПоказателиПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фактические показатели производства</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3782a731-d5cb-4ea1-a556-da1879b1c45b">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>18</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f0a009ef-3fa7-4a25-b088-a1d61cbcdaec">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ОперацииПроизводства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d22798f9-b86c-4cdf-b8fd-5ba503ecb104">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

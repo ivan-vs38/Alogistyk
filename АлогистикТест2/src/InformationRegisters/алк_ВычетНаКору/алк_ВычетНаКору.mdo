@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75ec6284-eeea-44ce-830a-ab444c3a85d7">
+  <producedTypes>
+    <selectionType typeId="320f6a8b-e51a-43bb-b338-7ff5609b72ca" valueTypeId="663187a6-c8cd-4bf3-89cd-5d61b85968b8"/>
+    <listType typeId="38e9c661-ce66-4fc7-b726-15cb3fea1ad4" valueTypeId="3a354d0f-40d8-4785-9fd8-8e555e672b78"/>
+    <managerType typeId="c698f0b2-a70e-4789-bff3-b2268d2d6c25" valueTypeId="d631e4a8-577f-4047-bb5f-59f53e0970ba"/>
+    <recordSetType typeId="8cf6b217-cf80-4e2b-a185-bfe24cf180e3" valueTypeId="e6e9963e-998e-4cff-bddf-9f808d2a5f3f"/>
+    <recordKeyType typeId="badeb047-f8ed-48e9-acd5-ad31fae6e7ff" valueTypeId="c4e733aa-b17e-4bbb-9812-1a01cb047fb9"/>
+    <recordType typeId="ee9b30dc-56e9-460e-9b4d-d76f8799b248" valueTypeId="87637770-dafb-4edb-98b3-0facfb9e40e5"/>
+    <recordManagerType typeId="ff19259e-1430-496b-a7c1-61dca1810935" valueTypeId="74447e0b-9434-4ffb-ad29-857d5112234b"/>
+  </producedTypes>
+  <name>алк_ВычетНаКору</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вычет на кору</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="83439f0a-9bda-474e-b0cd-0cdeadb3ffd0">
+    <name>ВычетКоры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вычет коры</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3265f504-185e-4032-ac9c-9a142b64c27c">
+    <name>СечениеОт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сечение от</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a82c6c85-1eef-4fcd-916e-e15184301f99">
+    <name>СечениеДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сечение до</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

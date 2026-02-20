@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8925164f-adcc-4e62-bea2-6058564269a4">
+  <name>алк_Отходы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отходы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаОтходы</picture>
+  </picture>
+  <content>CommonCommand.РМ_СборкаОтходов</content>
+  <content>DataProcessor.алк_РабочееМестоОператораЦЛП</content>
+  <content>Report.алк_ВыпускПродукцииДопАналитика</content>
+  <content>Report.алк_ВыпускПродукции</content>
+  <content>Document.алк_СменныйРапортОтходы</content>
+  <content>Document.алк_СборкаЗапасов</content>
+  <content>CommonPicture.ПодсистемаОтходы</content>
+  <content>Report.алк_Отходы_ВедомостьВертикальная</content>
+  <content>Catalog.алк_АналитикаОборотаОтходов</content>
+  <content>InformationRegister.алк_КоэффициентВыходаОтходов</content>
+  <content>CommonCommand.алк_ПанельОтчетов_Отходы</content>
+  <content>CommonCommand.РМ_СборкаОтходовПМ</content>
+  <content>AccumulationRegister.алк_ОстаткиЗапасов</content>
+  <subsystems>ЩеповыеОтходы</subsystems>
+</mdclass:Subsystem>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01843e74-1771-4a71-befe-baea632d6ee1">
+  <producedTypes>
+    <objectType typeId="ef2cd1da-b180-4611-b0d6-a6a7af90fd5b" valueTypeId="47c4780b-73de-4b52-99ac-97c2e5112b7f"/>
+    <managerType typeId="eb3abdbe-af1c-4850-9f8f-06973a285705" valueTypeId="3f05816b-2535-4f76-b142-f2489ca9bbf5"/>
+  </producedTypes>
+  <name>алк_ПодборПакетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор пакетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.алк_ПодборПакетов.Form.Форма</defaultForm>
+  <tabularSections uuid="77bf6454-5583-4888-85e3-8b909f1ede9c">
+    <producedTypes>
+      <objectType typeId="a05aeae4-9e65-46c6-b572-4512fc39de83" valueTypeId="b0dd4435-3843-4641-952b-50b47c2c086a"/>
+      <rowType typeId="5324315b-cda2-4430-96bf-fabee8379d77" valueTypeId="e6f111ca-1609-4c09-ad92-c26b316c49cf"/>
+    </producedTypes>
+    <name>ПодобранныеПакеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подобранные пакеты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="10fc419b-eede-4120-bf64-04ad00a972ab">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="99075c50-cbfc-4e08-92f5-1707e478dd39">
+      <name>СерийныйНомер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Серийный номер</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СерийныеНомера</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Серия товаров</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.алк_ПодборПакетов.TabularSection.ПодобранныеПакеты.Attribute.Номенклатура</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0cd734d9-475e-44e0-b9e5-535ee386109d">
+      <name>КоличествоПакетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1c771753-0f04-4af6-9760-af319923e81e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

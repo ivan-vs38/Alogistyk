@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cfdd1139-95c2-4cf2-a11e-112c4a941e4e">
+  <name>ExchangeERP</name>
+  <synonym>
+    <key>ru</key>
+    <value>Exchange ERP</value>
+  </synonym>
+  <comment>обмен с ЕРП</comment>
+  <rootURL>ExchangeERP</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="7a12dff9-dd24-491f-8494-9f61e00074a8">
+    <name>InventoryTransfer</name>
+    <synonym>
+      <key>ru</key>
+      <value>Inventory transfer</value>
+    </synonym>
+    <comment>Перемещение (Передача запасов)</comment>
+    <template>/InventoryTransfer/</template>
+    <methods uuid="8fc64bdd-019f-4421-8e04-10067a166fb0">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>InventoryTransferAction</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="be01120a-575e-4bcd-a4ec-ff2fb3e63fcc">
+  <producedTypes>
+    <objectType typeId="233d3bda-b6ef-4431-9575-6a6415311401" valueTypeId="149c8af6-2bbe-4295-8afb-26f1f9d01b4a"/>
+    <managerType typeId="59563fa7-ac97-40d7-8308-d0d0c0e6e2ed" valueTypeId="aff1fd65-dd3b-4657-be24-13d063566177"/>
+  </producedTypes>
+  <name>алк_АналитическийОтчет_ПроизводственнаяИнформация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет: Производственная информация ЦЛП (аналитический отчет)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.алк_АналитическийОтчет_ПроизводственнаяИнформация.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.алк_АналитическийОтчет_ПроизводственнаяИнформация.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.алк_АналитическийОтчет_ПроизводственнаяИнформация.Form.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>Report.алк_АналитическийОтчет_ПроизводственнаяИнформация.Form.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="b3a44b3d-5be1-4d3c-af69-2944c0128692">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="bdf70c39-f919-4eac-b4fb-caa900459516">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6d5d21d1-c807-480b-baaf-f88af4078c38">
+    <name>ФормаНастроекОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3e4986f1-7270-46e0-9852-08c648a07920">
+    <name>ФормаВариантаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="cc64238f-3b36-413f-8cfb-ec6348f1f538">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

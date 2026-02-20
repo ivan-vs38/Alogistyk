@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="303a56bc-0417-469a-adea-f66479ac28a7">
+  <producedTypes>
+    <objectType typeId="7afbaeb0-dec0-47b4-a96a-f6ae4b2c1242" valueTypeId="5aa65dac-3fe2-4220-91fb-30311cdfa386"/>
+    <refType typeId="c089cb39-e77d-4577-82f6-88c400ed2e4d" valueTypeId="2f811822-43b1-4dcb-b091-f6e24c9a0410"/>
+    <selectionType typeId="76b30360-8944-4840-bd21-d2638ec3f827" valueTypeId="292ff6ee-8f9c-43f5-85a2-5cb2504ecb2a"/>
+    <listType typeId="0ace569b-3f16-4dc8-86e9-4abe668a7ffb" valueTypeId="dd4604b7-398a-4726-b224-097bc09ba442"/>
+    <managerType typeId="5ccaf6b4-5039-408f-ac19-b21495b7801f" valueTypeId="4fc659b0-cd33-479f-816a-7b8bb55e0be1"/>
+  </producedTypes>
+  <name>алк_УзелУчастка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Узел участка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_УзелУчастка.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_УзелУчастка.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.алк_УзелУчастка.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="e903319e-fb27-4527-8973-606849324af5">
+    <name>Участок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2bf92ad0-574e-4e31-b557-7361128a8448">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64388baa-c9a1-4978-873e-9a36b41657df">
+  <producedTypes>
+    <selectionType typeId="d0f8c26a-9c75-4dfd-bc8a-7092f7514429" valueTypeId="cbb70aee-db83-4cf5-a733-c2fbca9cb9e4"/>
+    <listType typeId="d94b1e92-49f3-4642-ae39-cc81cdb8b8ae" valueTypeId="97329901-49ed-4e80-afa2-61de7fb3d746"/>
+    <managerType typeId="2ec4f685-6873-4a84-8fb4-18c173365475" valueTypeId="edc1cd4f-e4ea-43c6-b645-8d8dd981cb5e"/>
+    <recordSetType typeId="27d865d9-fa5a-4763-8e52-55fbd0ae57ad" valueTypeId="6bdcbb42-ef73-435e-b90c-0e428e443e9d"/>
+    <recordKeyType typeId="d6d0087e-1c44-4e0b-97a3-b89d421ea957" valueTypeId="90e30951-4c54-4c41-a13d-d9d69bcdb587"/>
+    <recordType typeId="4cff93d8-29cc-426a-a00a-60c396825ec5" valueTypeId="a86d1376-d78c-4c24-99a2-cc99486b63b3"/>
+    <recordManagerType typeId="47f61d0a-86d1-46cf-ada3-21058386295b" valueTypeId="bace1c94-924e-45a5-8e9f-bac6c21e82df"/>
+  </producedTypes>
+  <name>алк_АналитикаНоменклатурыПЭО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аналитика номенклатуры (ПЭО)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2b6fce3e-bd39-4519-80b0-1ac03daa8a17">
+    <name>КатегорияНоменклатурыПЭО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номенклатуры (ПЭО)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_КатегорияНоменклатурыПЭО</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c2e04d19-9285-427e-b616-e0ebb56769d7">
+    <name>ТипНоменклатурыПЭО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип номенклатуры (ПЭО)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ТипНоменклатурыПЭО</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4517c5dd-c0b8-41c7-b057-5c2ce89ab59b">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

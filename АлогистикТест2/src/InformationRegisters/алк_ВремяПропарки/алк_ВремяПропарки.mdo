@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8fa78cd7-901c-48d9-990c-f229ac24930a">
+  <producedTypes>
+    <selectionType typeId="0a4c0781-900d-40f8-bca3-72046110f094" valueTypeId="b1b15a95-57d8-4a43-957d-25a0972060e8"/>
+    <listType typeId="2a9ca3b7-b114-4136-8bef-1315a791812f" valueTypeId="572eea1f-e6f5-438d-90fd-690b104a74a9"/>
+    <managerType typeId="a3804f55-0e33-4196-8c18-260173d46aa3" valueTypeId="90cf2b60-e097-4b17-8acd-92f9d0f7a3bf"/>
+    <recordSetType typeId="8e33d67e-6988-4392-a153-4773a3fd27db" valueTypeId="dc182684-dc46-43f0-ae51-c33d2f6fcf04"/>
+    <recordKeyType typeId="49773500-6ac7-416e-b53b-d1e99765f412" valueTypeId="b2db8c47-d395-490c-9bc8-17c5e44e79ba"/>
+    <recordType typeId="7f773d95-6983-48e3-8d1a-69cab761f72c" valueTypeId="db62a4e3-9f0f-4b87-8388-42b3ddb5552d"/>
+    <recordManagerType typeId="60b83fc4-63d8-4923-b667-8a4f3acd5b83" valueTypeId="762d189b-bae4-4d24-8979-f9603191433b"/>
+  </producedTypes>
+  <name>алк_ВремяПропарки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время пропарки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6c7cbcd7-0b1a-4dc1-bf75-aabde1257d72">
+    <name>ВремяНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="99ff8f0a-a486-4261-9d2f-f57bf9e7229b">
+    <name>ВремяОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="85a203cc-85de-4268-b0cb-b9a157355159">
+    <name>КамераПропарки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Камера пропарки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="06058de5-a396-4848-9e56-0bd284833c68">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ОперацииПропарки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="94cbe225-eeb0-447b-aa94-f961d6043038">
+    <name>План</name>
+    <synonym>
+      <key>ru</key>
+      <value>План</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

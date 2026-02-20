@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f7d34fc-e754-4acd-8707-ce8e1b294ab7">
+  <producedTypes>
+    <selectionType typeId="21c4a869-5d7d-44b6-8192-8629e8295d81" valueTypeId="e0ff3ed3-7efe-4370-b0fc-f7ca0d893215"/>
+    <listType typeId="661481af-70a0-486b-b7d0-846af655112f" valueTypeId="589565a6-5a10-4a4b-b3bd-c1ecb7970702"/>
+    <managerType typeId="f6e0d282-d139-4d48-9a56-89e17e5faa71" valueTypeId="57c92c75-9f7f-411b-9678-d159166ad775"/>
+    <recordSetType typeId="2295c662-789c-423d-9370-0ee334d21822" valueTypeId="064476fe-adba-4572-98c3-697b9c31aa13"/>
+    <recordKeyType typeId="bd27ab6d-e20f-4827-ba83-a46563bef218" valueTypeId="581be704-8126-4748-a5ca-a2ca0f8979d2"/>
+    <recordType typeId="2beab34b-f1a6-4b95-a5dc-85727cf3997b" valueTypeId="3b52086a-34d3-4f3c-b9ac-b2f55c3efde5"/>
+    <recordManagerType typeId="030fdf42-6de8-459b-9f9f-b13918f5ee01" valueTypeId="f52bc4f1-b61c-4e18-b532-6fba764bb930"/>
+  </producedTypes>
+  <name>алк_ПакетыИсторияЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>История заказов пакетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9a3695d2-2a68-4663-8487-8a2dd6c2246c">
+    <name>ЗаказПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ЗаказПокупателя</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ покупателя, под который осуществляется комплектация или производство продукции. Произведенная продукция будет зарезервирована под заказ покупателя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Document.ЗаказПокупателя.EmptyRef</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="1a90e9fe-6398-4e9d-b78c-123c1fccdec4">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72487b29-8474-41ac-a673-a2bcd1eae92f">
+  <producedTypes>
+    <selectionType typeId="da457763-e8ae-4d66-b427-12ed11974205" valueTypeId="f4298cfb-9575-41d7-b06a-aef9c5617631"/>
+    <listType typeId="fea04289-1f53-4750-b175-f1cede37facb" valueTypeId="ae49c3b4-f2af-4b77-ad6e-56d8f94094ae"/>
+    <managerType typeId="9a1423e3-6f09-45fa-ad5e-f687d91dae30" valueTypeId="0eb3cea7-c1bd-4fed-aa08-e695756506e3"/>
+    <recordSetType typeId="3b87acaf-7bb8-4c7c-9125-c9a786673a27" valueTypeId="34a9b16f-dfec-4770-8f3b-b820fb525a9c"/>
+    <recordKeyType typeId="d03e5e39-b78a-431e-b677-8cfc323992d2" valueTypeId="5f7dac7e-43a1-4c6c-809c-f16e00615446"/>
+    <recordType typeId="5f8c0478-3a57-4792-8a0c-01518d8e778e" valueTypeId="ae85cb06-a85b-4a7f-b9da-287f52790ae9"/>
+    <recordManagerType typeId="3320457c-42e6-4b96-8b01-2f802a84716b" valueTypeId="cc38fb3c-97e8-456c-8355-7f8f4b369d70"/>
+  </producedTypes>
+  <name>алк_НаименованиеТД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Наименование ТД</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="42b4ada4-4624-4365-9d47-dd65c44a426d">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="30ed8c65-d0fa-46ef-93c3-a041cdfc2f8a">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

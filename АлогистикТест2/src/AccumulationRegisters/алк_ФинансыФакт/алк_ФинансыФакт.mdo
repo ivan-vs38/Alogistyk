@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82fd4a94-0715-4a4d-81db-ed1370cb8780">
+  <producedTypes>
+    <selectionType typeId="d4578a51-496c-4df0-85fd-979675b0a176" valueTypeId="a6bafcd9-f11a-4d12-9e66-340a474de5fc"/>
+    <listType typeId="6ff8f68b-db00-45cc-87bf-0c01faf4f83e" valueTypeId="e9cc7888-d074-4ce0-9d5b-988bc7709e94"/>
+    <managerType typeId="153b4cfa-2e10-4a3b-a877-b710c40d5e01" valueTypeId="d8b7dd3f-f4f9-45b2-ae5e-48741397ae82"/>
+    <recordSetType typeId="92aac00e-566a-4979-bf9c-e4aeecb0583e" valueTypeId="93812317-9878-42ec-9b14-ac31924bb841"/>
+    <recordKeyType typeId="dfcab338-3369-4fb7-ad17-4091760bb722" valueTypeId="6f7afec2-efc6-44c2-a3ce-5094020f5a75"/>
+    <recordType typeId="2cf848ae-48d8-4a7d-b314-4c3383ad6e6e" valueTypeId="1970d176-c3ad-48ee-b895-67043aabb521"/>
+  </producedTypes>
+  <name>алк_ФинансыФакт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Финансы факт</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="6a38fda8-b98b-4c96-a37e-7cd24621a5c7">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+</mdclass:AccumulationRegister>

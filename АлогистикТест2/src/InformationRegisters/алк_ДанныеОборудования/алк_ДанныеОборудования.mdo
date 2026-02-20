@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6b9b788-0b82-4bf9-ae66-78404937c96c">
+  <producedTypes>
+    <selectionType typeId="89ec67f6-ba8c-4883-a45e-399653c220a9" valueTypeId="2dd996ed-dcc5-4dc3-b5a6-53091201a133"/>
+    <listType typeId="c07ea7ae-2933-4134-a74c-e10c1c29e905" valueTypeId="f9a27b08-cb74-40bc-a4aa-f25194b7bc0d"/>
+    <managerType typeId="5195835b-0880-495d-b64b-a1c57380b44e" valueTypeId="c6910548-bef0-4749-b26c-0f9889de6173"/>
+    <recordSetType typeId="18825adc-1ee3-44d9-8c7f-a9f733633c42" valueTypeId="bd230c82-6163-4c7c-938e-bd4b80b25f20"/>
+    <recordKeyType typeId="20f02bc0-e726-412c-868d-b54b8c07f53b" valueTypeId="8d4e3a83-7ee8-4ac2-a48d-e54208ee8444"/>
+    <recordType typeId="c0e29c28-bd63-4132-8823-a1eaf5f8f18c" valueTypeId="3f62a5d1-6ce5-4eb0-9818-0c73715b2fa6"/>
+    <recordManagerType typeId="196dc441-429b-404d-a2bf-a5aa1fa45f76" valueTypeId="a5384a80-1f48-45e0-8eb6-4f4cf2987dc2"/>
+  </producedTypes>
+  <name>алк_ДанныеОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные с оборудования (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b23ae384-659e-4624-ac4f-8f59052676bc">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="901b7a5f-e7d5-47fc-b5e5-3451f214d33e">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ПоказателиОборудования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d8027ad1-39a5-4899-9f3a-9bcbbafe359b">
+    <name>ДатаСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата смены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7d71dc72-f44f-4340-8ceb-18f364e3e8db">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

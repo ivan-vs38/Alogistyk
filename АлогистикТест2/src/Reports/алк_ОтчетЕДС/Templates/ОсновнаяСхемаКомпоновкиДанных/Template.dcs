@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОперацияПроизводства</dataPath>
+			<field>ОперацияПроизводства</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Порядок</dataPath>
+			<field>Порядок</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПредставлениеПоказателя</dataPath>
+			<field>ПредставлениеПоказателя</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыделятьТекст</dataPath>
+			<field>ВыделятьТекст</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыделятьФон</dataPath>
+			<field>ВыделятьФон</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Показатель</dataPath>
+			<field>Показатель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТочностьВыводимыхЗначений</dataPath>
+			<field>ТочностьВыводимыхЗначений</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФактЗначениеДень</dataPath>
+			<field>ФактЗначениеДень</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФактЗначениеНочь</dataPath>
+			<field>ФактЗначениеНочь</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПланЗначениеДень</dataPath>
+			<field>ПланЗначениеДень</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цель/План</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПланЗначениеНочь</dataPath>
+			<field>ПланЗначениеНочь</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цель/План</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФактИтог</dataPath>
+			<field>ФактИтог</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПланИтог</dataPath>
+			<field>ПланИтог</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цель/План</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ед. изм.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	алк_ПоказателиОтчетов.Ссылка КАК Ссылка,
+	алк_ПоказателиОтчетов.ПредставлениеПоказателя КАК ПредставлениеПоказателя,
+	алк_ПоказателиОтчетов.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	алк_ПоказателиОтчетов.ВыделятьТекст КАК ВыделятьТекст,
+	алк_ПоказателиОтчетов.ВыделятьФон КАК ВыделятьФон,
+	алк_ПоказателиОтчетов.Порядок КАК Порядок,
+	алк_ПоказателиОтчетов.ТочностьВыводимыхЗначений КАК ТочностьВыводимыхЗначений,
+	алк_ПоказателиОтчетов.ОперацияПроизводства КАК ОперацияПроизводства,
+	алк_ПоказателиОтчетов.Ссылка КАК Показатель,
+	алк_ОперацииПроизводства.ВариантИтогов
+ПОМЕСТИТЬ ВТ_СтруктураОтчета
+ИЗ
+	Справочник.алк_ПоказателиОтчетов КАК алк_ПоказателиОтчетов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.алк_ОперацииПроизводства КАК алк_ОперацииПроизводства
+		ПО алк_ПоказателиОтчетов.ОперацияПроизводства = алк_ОперацииПроизводства.Ссылка
+ГДЕ
+	НЕ алк_ПоказателиОтчетов.ЭтоГруппа
+	И алк_ПоказателиОтчетов.Владелец = &amp;Владелец
+	И НЕ алк_ПоказателиОтчетов.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	алк_ЗначенияПоказателейДляОтчетов.Период КАК Период,
+	ВТ_СтруктураОтчета.ОперацияПроизводства КАК ОперацияПроизводства,
+	ВТ_СтруктураОтчета.Порядок КАК Порядок,
+	ВТ_СтруктураОтчета.ПредставлениеПоказателя КАК ПредставлениеПоказателя,
+	ВТ_СтруктураОтчета.ВыделятьФон КАК ВыделятьФон,
+	ВТ_СтруктураОтчета.ВыделятьТекст КАК ВыделятьТекст,
+	ВТ_СтруктураОтчета.Показатель КАК Показатель,
+	ВТ_СтруктураОтчета.ТочностьВыводимыхЗначений КАК ТочностьВыводимыхЗначений,
+	ВЫБОР
+		КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.ПустаяСсылка)
+				ИЛИ ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Сумма)
+			ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеДень
+		ИНАЧЕ ВЫБОР
+				КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Последнее)
+						И алк_ЗначенияПоказателейДляОтчетов.Период = &amp;ОкончаниеПериода
+					ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеДень
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ФактЗначениеДень,
+	ВЫБОР
+		КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.ПустаяСсылка)
+				ИЛИ ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Сумма)
+			ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеНочь
+		ИНАЧЕ ВЫБОР
+				КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Последнее)
+						И алк_ЗначенияПоказателейДляОтчетов.Период = &amp;ОкончаниеПериода
+					ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеНочь
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ФактЗначениеНочь,
+	NULL КАК ПланЗначениеДень,
+	NULL КАК ПланЗначениеНочь
+ПОМЕСТИТЬ втИтог
+ИЗ
+	ВТ_СтруктураОтчета КАК ВТ_СтруктураОтчета
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ЗначенияПоказателейДляОтчетов КАК алк_ЗначенияПоказателейДляОтчетов
+		ПО ВТ_СтруктураОтчета.ОперацияПроизводства = алк_ЗначенияПоказателейДляОтчетов.ОперацияПроизводства
+			И (алк_ЗначенияПоказателейДляОтчетов.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;НачалоПериода, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ОкончаниеПериода, ДЕНЬ))
+ГДЕ
+	алк_ЗначенияПоказателейДляОтчетов.ВидЗначения = ЗНАЧЕНИЕ(Перечисление.алк_ВидЗначенияПоказателяОтчетов.Факт)
+
+СГРУППИРОВАТЬ ПО
+	алк_ЗначенияПоказателейДляОтчетов.Период,
+	ВТ_СтруктураОтчета.Порядок,
+	ВТ_СтруктураОтчета.ОперацияПроизводства,
+	ВТ_СтруктураОтчета.ПредставлениеПоказателя,
+	ВТ_СтруктураОтчета.ВыделятьФон,
+	ВТ_СтруктураОтчета.ВыделятьТекст,
+	ВТ_СтруктураОтчета.Показатель,
+	ВТ_СтруктураОтчета.ТочностьВыводимыхЗначений,
+	ВЫБОР
+		КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.ПустаяСсылка)
+				ИЛИ ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Сумма)
+			ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеДень
+		ИНАЧЕ ВЫБОР
+				КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Последнее)
+						И алк_ЗначенияПоказателейДляОтчетов.Период = &amp;ОкончаниеПериода
+					ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеДень
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.ПустаяСсылка)
+				ИЛИ ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Сумма)
+			ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеНочь
+		ИНАЧЕ ВЫБОР
+				КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Последнее)
+						И алк_ЗначенияПоказателейДляОтчетов.Период = &amp;ОкончаниеПериода
+					ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеНочь
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	алк_ЗначенияПоказателейДляОтчетов.Период,
+	ВТ_СтруктураОтчета.ОперацияПроизводства,
+	ВТ_СтруктураОтчета.Порядок,
+	ВТ_СтруктураОтчета.ПредставлениеПоказателя,
+	ВТ_СтруктураОтчета.ВыделятьФон,
+	ВТ_СтруктураОтчета.ВыделятьТекст,
+	ВТ_СтруктураОтчета.Показатель,
+	ВТ_СтруктураОтчета.ТочностьВыводимыхЗначений,
+	NULL,
+	NULL,
+	ВЫБОР
+		КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.ПустаяСсылка)
+				ИЛИ ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Сумма)
+			ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеДень
+		ИНАЧЕ ВЫБОР
+				КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Последнее)
+						И алк_ЗначенияПоказателейДляОтчетов.Период = &amp;ОкончаниеПериода
+					ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеДень
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.ПустаяСсылка)
+				ИЛИ ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Сумма)
+			ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеНочь
+		ИНАЧЕ ВЫБОР
+				КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Последнее)
+						И алк_ЗначенияПоказателейДляОтчетов.Период = &amp;ОкончаниеПериода
+					ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеНочь
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ
+ИЗ
+	ВТ_СтруктураОтчета КАК ВТ_СтруктураОтчета
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ЗначенияПоказателейДляОтчетов КАК алк_ЗначенияПоказателейДляОтчетов
+		ПО ВТ_СтруктураОтчета.ОперацияПроизводства = алк_ЗначенияПоказателейДляОтчетов.ОперацияПроизводства
+			И (алк_ЗначенияПоказателейДляОтчетов.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;НачалоПериода, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ОкончаниеПериода, ДЕНЬ))
+ГДЕ
+	алк_ЗначенияПоказателейДляОтчетов.ВидЗначения = ЗНАЧЕНИЕ(Перечисление.алк_ВидЗначенияПоказателяОтчетов.План)
+
+СГРУППИРОВАТЬ ПО
+	алк_ЗначенияПоказателейДляОтчетов.Период,
+	ВТ_СтруктураОтчета.Порядок,
+	ВТ_СтруктураОтчета.ОперацияПроизводства,
+	ВТ_СтруктураОтчета.ПредставлениеПоказателя,
+	ВТ_СтруктураОтчета.ВыделятьФон,
+	ВТ_СтруктураОтчета.ВыделятьТекст,
+	ВТ_СтруктураОтчета.Показатель,
+	ВТ_СтруктураОтчета.ТочностьВыводимыхЗначений,
+	ВЫБОР
+		КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.ПустаяСсылка)
+				ИЛИ ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Сумма)
+			ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеДень
+		ИНАЧЕ ВЫБОР
+				КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Последнее)
+						И алк_ЗначенияПоказателейДляОтчетов.Период = &amp;ОкончаниеПериода
+					ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеДень
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.ПустаяСсылка)
+				ИЛИ ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Сумма)
+			ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеНочь
+		ИНАЧЕ ВЫБОР
+				КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Последнее)
+						И алк_ЗначенияПоказателейДляОтчетов.Период = &amp;ОкончаниеПериода
+					ТОГДА алк_ЗначенияПоказателейДляОтчетов.ЗначениеНочь
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втИтог.Период КАК Период,
+	ВТ_СтруктураОтчета.ОперацияПроизводства КАК ОперацияПроизводства,
+	втИтог.Показатель КАК Показатель,
+	СУММА(втИтог.ФактЗначениеДень) КАК ФактЗначениеДень,
+	СУММА(втИтог.ФактЗначениеНочь) КАК ФактЗначениеНочь,
+	СУММА(втИтог.ПланЗначениеДень) КАК ПланЗначениеДень,
+	СУММА(втИтог.ПланЗначениеНочь) КАК ПланЗначениеНочь,
+	СУММА(ВЫБОР
+			КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.ПустаяСсылка)
+					ИЛИ ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Сумма)
+					ИЛИ ЕСТЬNULL(втИтог.ФактЗначениеДень, 0) = 0
+					ИЛИ ЕСТЬNULL(втИтог.ФактЗначениеНочь, 0) = 0
+				ТОГДА втИтог.ФактЗначениеДень + втИтог.ФактЗначениеНочь
+			ИНАЧЕ ВЫБОР
+					КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Последнее)
+						ТОГДА (втИтог.ФактЗначениеДень + втИтог.ФактЗначениеНочь) / 2
+				КОНЕЦ
+		КОНЕЦ) КАК ФактИтог,
+	СУММА(ВЫБОР
+			КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.ПустаяСсылка)
+					ИЛИ ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Сумма)
+					ИЛИ ЕСТЬNULL(втИтог.ПланЗначениеДень, 0) = 0
+					ИЛИ ЕСТЬNULL(втИтог.ПланЗначениеНочь, 0) = 0
+				ТОГДА втИтог.ПланЗначениеДень + втИтог.ПланЗначениеНочь
+			ИНАЧЕ ВЫБОР
+					КОГДА ВТ_СтруктураОтчета.ВариантИтогов = ЗНАЧЕНИЕ(Перечисление.алк_ВариантыИтогов.Последнее)
+						ТОГДА (втИтог.ПланЗначениеДень + втИтог.ПланЗначениеНочь) / 2
+				КОНЕЦ
+		КОНЕЦ) КАК ПланИтог,
+	ВТ_СтруктураОтчета.Порядок КАК Порядок,
+	ВТ_СтруктураОтчета.ПредставлениеПоказателя КАК ПредставлениеПоказателя,
+	ВТ_СтруктураОтчета.ВыделятьФон КАК ВыделятьФон,
+	ВТ_СтруктураОтчета.ВыделятьТекст КАК ВыделятьТекст,
+	ВТ_СтруктураОтчета.ТочностьВыводимыхЗначений КАК ТочностьВыводимыхЗначений,
+	ВТ_СтруктураОтчета.ЕдиницаИзмерения
+ИЗ
+	ВТ_СтруктураОтчета КАК ВТ_СтруктураОтчета
+		ЛЕВОЕ СОЕДИНЕНИЕ втИтог КАК втИтог
+		ПО ВТ_СтруктураОтчета.ОперацияПроизводства = втИтог.ОперацияПроизводства
+
+СГРУППИРОВАТЬ ПО
+	втИтог.Показатель,
+	втИтог.Период,
+	ВТ_СтруктураОтчета.ОперацияПроизводства,
+	ВТ_СтруктураОтчета.Порядок,
+	ВТ_СтруктураОтчета.ПредставлениеПоказателя,
+	ВТ_СтруктураОтчета.ВыделятьФон,
+	ВТ_СтруктураОтчета.ВыделятьТекст,
+	ВТ_СтруктураОтчета.ТочностьВыводимыхЗначений,
+	ВТ_СтруктураОтчета.ЕдиницаИзмерения</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ПроцентДень</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Оценка, %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=0</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПроцентНочь</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Оценка, %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=0</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПроцентИтог</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Оценка, %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=0</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>ПланЗначениеДень</dataPath>
+		<expression>Сумма(ПланЗначениеДень)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПланЗначениеНочь</dataPath>
+		<expression>Сумма(ПланЗначениеНочь)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ФактЗначениеДень</dataPath>
+		<expression>Сумма(ФактЗначениеДень)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ФактЗначениеНочь</dataPath>
+		<expression>Сумма(ФактЗначениеНочь)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентДень</dataPath>
+		<expression>Выбор когда Сумма(ПланЗначениеДень)=0 тогда 0 иначе Сумма(ФактЗначениеДень)/Сумма(ПланЗначениеДень) * 100 Конец</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентНочь</dataPath>
+		<expression>Выбор когда Сумма(ПланЗначениеНочь)=0 тогда 0 иначе Сумма(ФактЗначениеНочь)/Сумма(ПланЗначениеНочь) * 100 Конец</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПланИтог</dataPath>
+		<expression>Сумма(ПланИтог)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ФактИтог</dataPath>
+		<expression>Сумма(ФактИтог)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентИтог</dataPath>
+		<expression>Выбор когда Сумма(ПланИтог)=0 тогда 0 иначе Сумма(ФактИтог)/Сумма(ПланИтог) * 100 Конец</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ОкончаниеПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Окончание периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Владелец</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Владелец</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.алк_Отчеты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>ПараметрыВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:ChoiceParameters">
+					<dcscor:item>
+						<dcscor:choiceParameter>Отбор.Родитель</dcscor:choiceParameter>
+						<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.алк_Отчеты.ЕДС</dcscor:value>
+					</dcscor:item>
+				</dcscor:value>
+			</dcscor:item>
+			<dcscor:item>
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ВыборГруппИЭлементов</dcscor:parameter>
+				<dcscor:value xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d5p1:FoldersAndItemsUse">Items</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЕДС</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>Порядок</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПредставлениеПоказателя</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показатели</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ВыделятьФон</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ВыделятьТекст</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ТочностьВыводимыхЗначений</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>День</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПланЗначениеДень</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФактЗначениеДень</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентДень</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>SpecialColumn</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ночь</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПланЗначениеНочь</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФактЗначениеНочь</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентНочь</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>SpecialColumn</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итог</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПланИтог</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФактИтог</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентИтог</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>SpecialColumn</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>c347f9f5-7280-4fa8-9f54-a2d2c6c696ff</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ОкончаниеПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>d0da4b32-4903-4c10-adf1-64e805f573a8</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Владелец</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>9847db99-8063-43fb-8f8e-c9cf54fd4ea4</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ОтклонениеНарастающим</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОтклонениеСутки</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПланЗначениеДень</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланЗначениеНочь</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ФактЗначениеДень</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ФактЗначениеНочь</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланИтог</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ФактИтог</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТочностьВыводимыхЗначений</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">2</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=2</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПроцентДень</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланЗначениеДень</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ФактЗначениеДень</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#F5EFDE</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПроцентНочь</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланЗначениеНочь</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ФактЗначениеНочь</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E0F0FB</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПроцентИтог</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланИтог</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ФактИтог</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FBE7E4</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПланЗначениеДень</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланЗначениеНочь</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ФактЗначениеДень</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ФактЗначениеНочь</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланИтог</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ФактИтог</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТочностьВыводимыхЗначений</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=0</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Показатель</dcsset:field>
+						<dcsset:groupType>HierarchyOnly</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemField">
+						<dcsset:field>Показатель.Порядок</dcsset:field>
+						<dcsset:orderType>Asc</dcsset:orderType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Показатель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+						<dcsset:use>false</dcsset:use>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>Показатель</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ОтклонениеМесяц</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ОтклонениеНарастающим</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ОтклонениеСутки</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>МесяцБюджет</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>МесяцПлан</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>НарастающимПлан</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>НарастающимФакт</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ПредставлениеПоказателя</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>СуткиПлан</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>СуткиФакт</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветФона</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#FFD0D8</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Порядок</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ПредставлениеПоказателя</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВыделятьТекст</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВыделятьФон</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ТочностьВыводимыхЗначений</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Порядок</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>Порядок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ВыделятьФон</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ВыделятьТекст</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ТочностьВыводимыхЗначений</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ПредставлениеПоказателя</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПроцентДень</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПроцентИтог</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПроцентНочь</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПланЗначениеДень</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПланЗначениеНочь</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПланИтог</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ФактЗначениеДень</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ФактЗначениеНочь</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ФактИтог</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ВыделятьФон</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#E0FFEB</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+							<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+							<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+							<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+							<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+							<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ОтклонениеМесяц</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ОтклонениеНарастающим</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ОтклонениеСутки</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>МесяцБюджет</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>МесяцПлан</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>НарастающимПлан</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>НарастающимФакт</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПредставлениеПоказателя</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>СуткиПлан</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>СуткиФакт</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПроцентМесяц</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПроцентНарастающим</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПроцентСутки</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ВыделятьТекст</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#FBFFE2</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+							<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+							<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+							<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+							<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+							<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

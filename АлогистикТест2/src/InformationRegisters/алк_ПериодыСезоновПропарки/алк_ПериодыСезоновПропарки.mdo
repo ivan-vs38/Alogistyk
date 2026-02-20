@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d1bc616-f95f-41c3-a910-0a6a4f5e4057">
+  <producedTypes>
+    <selectionType typeId="81295bd6-7213-4244-acdc-64125407362a" valueTypeId="b8447fb9-a7ab-4701-b44f-073c22285c27"/>
+    <listType typeId="78d7c3bc-ae06-4b00-a01c-90ead5cd396d" valueTypeId="1ca24ccf-42d8-4d88-ab99-6c6613388672"/>
+    <managerType typeId="8038c5a1-d612-4fce-a3fe-55063b2867c2" valueTypeId="c9167e8a-66f2-4bc7-8838-453c8991c57b"/>
+    <recordSetType typeId="3e50e071-3dae-400c-960b-593efd0e32db" valueTypeId="cbc940f7-84f4-4956-9a80-86f622cd3029"/>
+    <recordKeyType typeId="1a4020bf-ae86-4a1e-af72-7531cca090b3" valueTypeId="8595a2d5-7cc4-43fb-ba2c-9a422434b56c"/>
+    <recordType typeId="297ea812-3875-4e64-b2bc-f2213b911780" valueTypeId="fd4a630e-85ce-4b89-a1fa-fe529b4764dd"/>
+    <recordManagerType typeId="9d4f332b-5266-4333-b553-2384edc6e22e" valueTypeId="5e297ab6-b72e-4893-a0c3-659849fd0357"/>
+  </producedTypes>
+  <name>алк_ПериодыСезоновПропарки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Периоды сезонов пропарки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1d407fa4-cb58-40ab-a34f-935722215606">
+    <name>Сезон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сезон</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_СезоныПропарки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f533acbe-8dad-48c9-960c-7dbcc5fc175e">
+  <name>алк_ЦПШ</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЦПШ</value>
+  </synonym>
+  <comment>Подсистема для шпонового производства</comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ЦПШ</picture>
+  </picture>
+  <content>CommonPicture.ЦПШ</content>
+  <content>InformationRegister.алк_ДополнительныеПараметрыПакетов</content>
+  <content>DataProcessor.алк_РМ_ОператораЛущения</content>
+  <content>DataProcessor.алк_РМ_МастераЦПШ</content>
+  <content>DataProcessor.алк_РМ_ОператораСортировки</content>
+  <content>DataProcessor.алк_РМ_ОператораУпаковки</content>
+  <content>DataProcessor.алк_РМ_ОператораПередачиВСушку</content>
+  <content>InformationRegister.алк_ГрафикСмен</content>
+  <content>DataProcessor.алк_РМ_СборкаРазборкаПакетов</content>
+  <subsystems>алк_ЦПШ_Документы</subsystems>
+  <subsystems>алк_ЦПШ_НСИ</subsystems>
+  <subsystems>алк_Прочее</subsystems>
+</mdclass:Subsystem>

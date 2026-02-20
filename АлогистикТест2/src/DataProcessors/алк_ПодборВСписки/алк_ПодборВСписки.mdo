@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="824fb4e9-fe85-49a1-833d-6c51ec80ca1a">
+  <producedTypes>
+    <objectType typeId="9905ce39-4c76-4ef4-a873-5a8417e40827" valueTypeId="ff0a5dea-7f34-4196-8e27-446e9ae52f26"/>
+    <managerType typeId="49e0af42-74e9-4e43-9f41-481230caaea4" valueTypeId="2e84138f-db07-4b15-a481-6b253d2a447d"/>
+  </producedTypes>
+  <name>алк_ПодборВСписки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор в списки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.алк_ПодборВСписки.Form.ФормаПодборИзПодчинСпр</defaultForm>
+  <tabularSections uuid="98aecbae-2353-40c9-aa71-3c84d523b342">
+    <producedTypes>
+      <objectType typeId="890586ef-0ae8-4224-a00d-36250a80de6f" valueTypeId="78c80d87-03fe-4de5-b099-256b79387efe"/>
+      <rowType typeId="e7346184-257e-4f00-9e8d-2f18519287c9" valueTypeId="c20d0cf2-1103-44e8-a6e0-fb142bbe05ea"/>
+    </producedTypes>
+    <name>СписокРезультат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список результат</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="bb5efd61-fda1-4de7-975c-610f444ce486">
+      <name>СпрСсылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+        <types>String</types>
+        <types>CatalogRef.Длины</types>
+        <types>CatalogRef.Сорта</types>
+        <types>CatalogRef.РазмерСечения</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1ebd0332-6617-4c38-9579-fb7c5798f6ed">
+    <name>ФормаПодборИзПодчинСпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

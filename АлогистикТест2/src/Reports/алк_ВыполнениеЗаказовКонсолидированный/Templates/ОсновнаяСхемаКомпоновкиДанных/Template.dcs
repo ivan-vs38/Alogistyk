@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказПокупателя</dataPath>
+			<field>ЗаказПокупателя</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.алк_ЗагрузкаКонтейнера</v8:Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.алк_Аддендумы</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемЗаказано</dataPath>
+			<field>ОбъемЗаказано</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем заказано</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемОтгружено</dataPath>
+			<field>ОбъемОтгружено</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем отгружено</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерийныйНомер</dataPath>
+			<field>СерийныйНомер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ячейка</dataPath>
+			<field>Ячейка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтруктурнаяЕдиница</dataPath>
+			<field>СтруктурнаяЕдиница</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемРезервСГП</dataPath>
+			<field>ОбъемРезервСГП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем резерв СГП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемОсталосьОтгрузить</dataPath>
+			<field>ОбъемОсталосьОтгрузить</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем осталось отгрузить</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Порода</dataPath>
+			<field>Порода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сорт</dataPath>
+			<field>Сорт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Влажность</dataPath>
+			<field>Влажность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Длина</dataPath>
+			<field>Длина</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сечение</dataPath>
+			<field>Сечение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапВыполненияЗаказа</dataPath>
+			<field>ЭтапВыполненияЗаказа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АвтоКоличествоЭтап</dataPath>
+			<field>АвтоКоличествоЭтап</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авто количество этап</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЖДКоличествоЭтап</dataPath>
+			<field>ЖДКоличествоЭтап</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЖДКоличество этап</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЖДОбъемЭтап</dataPath>
+			<field>ЖДОбъемЭтап</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЖДОбъем этап</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АвтоОбъемЭтап</dataPath>
+			<field>АвтоОбъемЭтап</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авто объем этап</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Смена</dataPath>
+			<field>Смена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСмены</dataPath>
+			<field>ДатаСмены</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Операция</dataPath>
+			<field>Операция</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пакет</dataPath>
+			<field>Пакет</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пакет</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Документ</dataPath>
+			<field>Документ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АвтоКоличествоСоставЭтап</dataPath>
+			<field>АвтоКоличествоСоставЭтап</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авто количество состав этап</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЖДКоличествоСоставЭтап</dataPath>
+			<field>ЖДКоличествоСоставЭтап</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЖДКоличество состав этап</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесНеттоТаможня</dataPath>
+			<field>ВесНеттоТаможня</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоСостав</dataPath>
+			<field>КоличествоСостав</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесБруттоТаможня</dataPath>
+			<field>ВесБруттоТаможня</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъемнаяГруппа</dataPath>
+			<field>ОбъемнаяГруппа</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объемная группа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОГ</dataPath>
+			<field>ОГ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОГ</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИД</dataPath>
+			<field>ИД</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВладелецИД</dataPath>
+			<field>ВладелецИД</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Получатель</dataPath>
+			<field>Получатель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получатель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Штабель</dataPath>
+			<field>Штабель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СменаУдалить</dataPath>
+			<field>СменаУдалить</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	алк_ИД_ГруппХарактеристик.Характеристика,
+	алк_ИД_ГруппХарактеристик.ВладелецИД,
+	алк_ОбъемныеГруппыПредставление.ПредставлениеГруппы КАК ОбъемнаяГруппа,
+	алк_ИД_ГруппХарактеристик.ОбъемнаяГруппаИД
+ПОМЕСТИТЬ втТоварныеГруппы
+ИЗ
+	РегистрСведений.алк_ИД_ГруппХарактеристик КАК алк_ИД_ГруппХарактеристик
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ОбъемныеГруппыПредставление КАК алк_ОбъемныеГруппыПредставление
+		ПО алк_ИД_ГруппХарактеристик.ОбъемнаяГруппаИД = алк_ОбъемныеГруппыПредставление.ИД
+			И алк_ИД_ГруппХарактеристик.ВладелецИД = алк_ОбъемныеГруппыПредставление.ВладелецИД
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	алк_ЗаказыПокупателейПоОбъемнымГруппамОстаткиИОбороты_Заказано.ЗаказПокупателя,
+	алк_ЗаказыПокупателейПоОбъемнымГруппамОстаткиИОбороты_Заказано.Номенклатура,
+	алк_ЗаказыПокупателейПоОбъемнымГруппамОстаткиИОбороты_Заказано.ОбъемПриход КАК ОбъемЗаказано,
+	0 КАК ОбъемОтгружено,
+	0 КАК ОбъемРезервСГП,
+	"del" КАК Порода,
+	"del" КАК Сорт,
+	"del" КАК Длина,
+	"del" КАК Сечение,
+	NULL КАК Влажность,
+	0 КАК АвтоКоличествоЭтап,
+	0 КАК АвтоОбъемЭтап,
+	0 КАК ЖДКоличествоЭтап,
+	0 КАК ЖДОбъемЭтап,
+	NULL КАК Документ,
+	NULL КАК Пакет,
+	0 КАК АвтоКоличествоСоставЭтап,
+	0 КАК ЖДКоличествоСоставЭтап,
+	0 КАК ВесНеттоТаможня,
+	0 КАК ВесБруттоТаможня,
+	0 КАК КоличествоСостав,
+	NULL КАК Характеристика,
+	алк_ОбъемныеГруппыПредставление.ПредставлениеГруппы КАК ОбъемнаяГруппа,
+	алк_ОбъемныеГруппыПредставление.ИД КАК ОбъемнаяГруппаИД,
+	NULL КАК Получатель
+ПОМЕСТИТЬ втРезультатОбъединения
+ИЗ
+	РегистрНакопления.алк_ЗаказыПокупателейПоОбъемнымГруппам.ОстаткиИОбороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, , , ) КАК алк_ЗаказыПокупателейПоОбъемнымГруппамОстаткиИОбороты_Заказано
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ОбъемныеГруппыПредставление КАК алк_ОбъемныеГруппыПредставление
+		ПО алк_ЗаказыПокупателейПоОбъемнымГруппамОстаткиИОбороты_Заказано.ВладелецИД = алк_ОбъемныеГруппыПредставление.ВладелецИД
+			И алк_ЗаказыПокупателейПоОбъемнымГруппамОстаткиИОбороты_Заказано.ИД = алк_ОбъемныеГруппыПредставление.ИД
+{ГДЕ
+	алк_ЗаказыПокупателейПоОбъемнымГруппамОстаткиИОбороты_Заказано.ЗаказПокупателя.*}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ОтгруженоСоСклада.ЗаказПокупателя,
+	ОтгруженоСоСклада.Номенклатура,
+	ОтгруженоСоСклада.ОбъемЗаказано,
+	ОтгруженоСоСклада.ОбъемОтгружено,
+	ОтгруженоСоСклада.ОбъемРезервСГП,
+	ОтгруженоСоСклада.Порода,
+	ОтгруженоСоСклада.Сорт,
+	ОтгруженоСоСклада.Длина,
+	ОтгруженоСоСклада.Сечение,
+	ОтгруженоСоСклада.Влажность,
+	ОтгруженоСоСклада.АвтоКоличествоЭтап,
+	ОтгруженоСоСклада.АвтоОбъемЭтап,
+	ОтгруженоСоСклада.ЖДКоличествоЭтап,
+	ОтгруженоСоСклада.ЖДОбъемЭтап,
+	ОтгруженоСоСклада.Документ,
+	ОтгруженоСоСклада.СерийныйНомер,
+	ОтгруженоСоСклада.АвтоКоличествоСоставЭтап,
+	ОтгруженоСоСклада.ЖДКоличествоСоставЭтап,
+	ОтгруженоСоСклада.ВесНеттоТаможня,
+	ОтгруженоСоСклада.ВесБруттоТаможня,
+	ОтгруженоСоСклада.КоличествоСостав,
+	ОтгруженоСоСклада.Характеристика,
+	втТоварныеГруппы.ОбъемнаяГруппа,
+	втТоварныеГруппы.ОбъемнаяГруппаИД,
+	NULL
+ИЗ
+	(ВЫБРАТЬ
+		алк_ЗапасыНаСкладахСерииОстаткиИОбороты_Отгружено.ЗаказПокупателя КАК ЗаказПокупателя,
+		алк_ЗапасыНаСкладахСерииОстаткиИОбороты_Отгружено.Номенклатура КАК Номенклатура,
+		0 КАК ОбъемЗаказано,
+		алк_ЗапасыНаСкладахСерииОстаткиИОбороты_Отгружено.КоличествоПакетовРасход * алк_ПараметрыПакетовСрезПоследних.Объем КАК ОбъемОтгружено,
+		0 КАК ОбъемРезервСГП,
+		алк_ПараметрыХарактеристик.Порода КАК Порода,
+		алк_ПараметрыХарактеристик.Сорт КАК Сорт,
+		алк_ПараметрыХарактеристик.Длина КАК Длина,
+		алк_ПараметрыХарактеристик.Сечение КАК Сечение,
+		алк_ПараметрыХарактеристик.Влажность КАК Влажность,
+		0 КАК АвтоКоличествоЭтап,
+		0 КАК АвтоОбъемЭтап,
+		0 КАК ЖДКоличествоЭтап,
+		0 КАК ЖДОбъемЭтап,
+		NULL КАК Документ,
+		алк_ЗапасыНаСкладахСерииОстаткиИОбороты_Отгружено.СерийныйНомер КАК СерийныйНомер,
+		0 КАК АвтоКоличествоСоставЭтап,
+		0 КАК ЖДКоличествоСоставЭтап,
+		алк_ПараметрыПакетовСрезПоследних.ВесНеттоТаможня КАК ВесНеттоТаможня,
+		алк_ПараметрыПакетовСрезПоследних.ВесБруттоТаможня КАК ВесБруттоТаможня,
+		алк_ПараметрыПакетовСрезПоследних.КоличествоСостав КАК КоличествоСостав,
+		алк_ПараметрыПакетовСрезПоследних.Характеристика КАК Характеристика
+	ИЗ
+		РегистрНакопления.алк_ЗапасыНаСкладахСерии.ОстаткиИОбороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, , , ) КАК алк_ЗапасыНаСкладахСерииОстаткиИОбороты_Отгружено
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыПакетов.СрезПоследних({(&amp;ПериодСреза)}, ) КАК алк_ПараметрыПакетовСрезПоследних
+				ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК алк_ПараметрыХарактеристик
+				ПО алк_ПараметрыПакетовСрезПоследних.Характеристика = алк_ПараметрыХарактеристик.Характеристика
+			ПО алк_ЗапасыНаСкладахСерииОстаткиИОбороты_Отгружено.СерийныйНомер = алк_ПараметрыПакетовСрезПоследних.СерийныйНомер
+	{ГДЕ
+		алк_ЗапасыНаСкладахСерииОстаткиИОбороты_Отгружено.ЗаказПокупателя.*}) КАК ОтгруженоСоСклада
+		ЛЕВОЕ СОЕДИНЕНИЕ втТоварныеГруппы КАК втТоварныеГруппы
+		ПО ОтгруженоСоСклада.ЗаказПокупателя = втТоварныеГруппы.ВладелецИД
+			И ОтгруженоСоСклада.Характеристика = втТоварныеГруппы.Характеристика
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЭтапыВыполнения.ЗаказПокупателя,
+	ЭтапыВыполнения.Номенклатура,
+	ЭтапыВыполнения.ОбъемЗаказано,
+	ЭтапыВыполнения.ОбъемОтгружено,
+	ЭтапыВыполнения.ОбъемРезервСГП,
+	ЭтапыВыполнения.Порода,
+	ЭтапыВыполнения.Сорт,
+	ЭтапыВыполнения.Длина,
+	ЭтапыВыполнения.Сечение,
+	ЭтапыВыполнения.Влажность,
+	ЭтапыВыполнения.АвтоКоличествоЭтап,
+	ЭтапыВыполнения.АвтоОбъемЭтап,
+	ЭтапыВыполнения.ЖДКоличествоЭтап,
+	ЭтапыВыполнения.ЖДОбъемЭтап,
+	ЭтапыВыполнения.Документ,
+	ЭтапыВыполнения.СерийныйНомер,
+	ЭтапыВыполнения.АвтоКоличествоСоставЭтап,
+	ЭтапыВыполнения.ЖДКоличествоСоставЭта,
+	ЭтапыВыполнения.ВесНеттоТаможня,
+	ЭтапыВыполнения.ВесБруттоТаможня,
+	ЭтапыВыполнения.КоличествоСостав,
+	ЭтапыВыполнения.Характеристика,
+	втТоварныеГруппы.ОбъемнаяГруппа,
+	втТоварныеГруппы.ОбъемнаяГруппаИД,
+	ЭтапыВыполнения.Документ.СтруктурнаяЕдиницаПолучатель
+ИЗ
+	(ВЫБРАТЬ
+		алк_ВыполнениеЗаказовЭтапыСерииОбороты.ЗаказПокупателя КАК ЗаказПокупателя,
+		алк_ВыполнениеЗаказовЭтапыСерииОбороты.Номенклатура КАК Номенклатура,
+		0 КАК ОбъемЗаказано,
+		0 КАК ОбъемОтгружено,
+		0 КАК ОбъемРезервСГП,
+		алк_ПараметрыХарактеристик.Порода КАК Порода,
+		алк_ПараметрыХарактеристик.Сорт КАК Сорт,
+		алк_ПараметрыХарактеристик.Длина КАК Длина,
+		алк_ПараметрыХарактеристик.Сечение КАК Сечение,
+		алк_ПараметрыХарактеристик.Влажность КАК Влажность,
+		ВЫБОР
+			КОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.Регистратор.ВидТранспортировки = ЗНАЧЕНИЕ(Перечисление.алк_ВидыТранспортировки.Автомобильная)
+				ТОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.КоличествоПакетовОборот
+			ИНАЧЕ 0
+		КОНЕЦ КАК АвтоКоличествоЭтап,
+		ВЫБОР
+			КОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.Регистратор.ВидТранспортировки = ЗНАЧЕНИЕ(Перечисление.алк_ВидыТранспортировки.Автомобильная)
+				ТОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.КоличествоПакетовОборот * алк_ПараметрыПакетовСрезПоследних.Объем
+			ИНАЧЕ 0
+		КОНЕЦ КАК АвтоОбъемЭтап,
+		ВЫБОР
+			КОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.Регистратор.ВидТранспортировки = ЗНАЧЕНИЕ(Перечисление.алк_ВидыТранспортировки.Железнодорожная)
+				ТОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.КоличествоПакетовОборот
+			ИНАЧЕ 0
+		КОНЕЦ КАК ЖДКоличествоЭтап,
+		ВЫБОР
+			КОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.Регистратор.ВидТранспортировки = ЗНАЧЕНИЕ(Перечисление.алк_ВидыТранспортировки.Железнодорожная)
+				ТОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.КоличествоПакетовОборот * алк_ПараметрыПакетовСрезПоследних.Объем
+			ИНАЧЕ 0
+		КОНЕЦ КАК ЖДОбъемЭтап,
+		алк_ВыполнениеЗаказовЭтапыСерииОбороты.Регистратор КАК Документ,
+		алк_ВыполнениеЗаказовЭтапыСерииОбороты.СерийныйНомер КАК СерийныйНомер,
+		ВЫБОР
+			КОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.Регистратор.ВидТранспортировки = ЗНАЧЕНИЕ(Перечисление.алк_ВидыТранспортировки.Автомобильная)
+				ТОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.КоличествоПакетовОборот * алк_ПараметрыПакетовСрезПоследних.КоличествоСостав
+			ИНАЧЕ 0
+		КОНЕЦ КАК АвтоКоличествоСоставЭтап,
+		ВЫБОР
+			КОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.Регистратор.ВидТранспортировки = ЗНАЧЕНИЕ(Перечисление.алк_ВидыТранспортировки.Железнодорожная)
+				ТОГДА алк_ВыполнениеЗаказовЭтапыСерииОбороты.КоличествоПакетовОборот * алк_ПараметрыПакетовСрезПоследних.КоличествоСостав
+			ИНАЧЕ 0
+		КОНЕЦ КАК ЖДКоличествоСоставЭта,
+		алк_ПараметрыПакетовСрезПоследних.ВесНеттоТаможня КАК ВесНеттоТаможня,
+		алк_ПараметрыПакетовСрезПоследних.ВесБруттоТаможня КАК ВесБруттоТаможня,
+		алк_ПараметрыПакетовСрезПоследних.КоличествоСостав КАК КоличествоСостав,
+		алк_ПараметрыПакетовСрезПоследних.Характеристика КАК Характеристика
+	ИЗ
+		РегистрНакопления.алк_ВыполнениеЗаказовЭтапыСерии.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Регистратор, ЭтапВыполненияЗаказа = ЗНАЧЕНИЕ(Перечисление.алк_ЭтапыВыполненияЗаказов.Отгрузка)) КАК алк_ВыполнениеЗаказовЭтапыСерииОбороты
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыПакетов.СрезПоследних({(&amp;ПериодСреза)}, ) КАК алк_ПараметрыПакетовСрезПоследних
+				ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК алк_ПараметрыХарактеристик
+				ПО алк_ПараметрыПакетовСрезПоследних.Характеристика = алк_ПараметрыХарактеристик.Характеристика
+			ПО алк_ВыполнениеЗаказовЭтапыСерииОбороты.СерийныйНомер = алк_ПараметрыПакетовСрезПоследних.СерийныйНомер
+	{ГДЕ
+		алк_ВыполнениеЗаказовЭтапыСерииОбороты.ЗаказПокупателя.*}) КАК ЭтапыВыполнения
+		ЛЕВОЕ СОЕДИНЕНИЕ втТоварныеГруппы КАК втТоварныеГруппы
+		ПО ЭтапыВыполнения.Характеристика = втТоварныеГруппы.Характеристика
+			И ЭтапыВыполнения.ЗаказПокупателя = втТоварныеГруппы.ВладелецИД
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втРезультатОбъединения.ЗаказПокупателя,
+	втРезультатОбъединения.Номенклатура,
+	втРезультатОбъединения.ОбъемЗаказано,
+	втРезультатОбъединения.ОбъемОтгружено,
+	втРезультатОбъединения.ОбъемРезервСГП,
+	втРезультатОбъединения.ОбъемЗаказано - втРезультатОбъединения.ОбъемОтгружено КАК ОбъемОсталосьОтгрузить,
+	втРезультатОбъединения.Порода,
+	втРезультатОбъединения.Сорт,
+	втРезультатОбъединения.Длина,
+	втРезультатОбъединения.Сечение,
+	втРезультатОбъединения.Влажность,
+	втРезультатОбъединения.АвтоКоличествоЭтап,
+	втРезультатОбъединения.АвтоОбъемЭтап,
+	втРезультатОбъединения.ЖДКоличествоЭтап,
+	втРезультатОбъединения.ЖДОбъемЭтап,
+	втРезультатОбъединения.Документ,
+	втРезультатОбъединения.Пакет,
+	втРезультатОбъединения.АвтоКоличествоСоставЭтап,
+	втРезультатОбъединения.ЖДКоличествоСоставЭтап,
+	втРезультатОбъединения.ВесНеттоТаможня,
+	втРезультатОбъединения.ВесБруттоТаможня,
+	втРезультатОбъединения.КоличествоСостав,
+	втРезультатОбъединения.ОбъемнаяГруппа,
+	втРезультатОбъединения.ОбъемнаяГруппаИД КАК ОГ,
+	втРезультатОбъединения.Получатель
+ИЗ
+	втРезультатОбъединения КАК втРезультатОбъединения
+ГДЕ
+	втРезультатОбъединения.ЗаказПокупателя &lt;&gt; ЗНАЧЕНИЕ(Документ.алк_ЗаказПокупателя.ПустаяСсылка)</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ОбъемЭтап</dataPath>
+		<expression>ЖДОбъемЭтап + АвтоОбъемЭтап</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Объем этап</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ОбъемЗаказано</dataPath>
+		<expression>Сумма(ОбъемЗаказано)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемОтгружено</dataPath>
+		<expression>Сумма(ОбъемОтгружено)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемРезервСГП</dataPath>
+		<expression>Сумма(ОбъемРезервСГП)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемОсталосьОтгрузить</dataPath>
+		<expression>Сумма(ОбъемОсталосьОтгрузить)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>АвтоКоличествоЭтап</dataPath>
+		<expression>Сумма(АвтоКоличествоЭтап)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>АвтоОбъемЭтап</dataPath>
+		<expression>Сумма(АвтоОбъемЭтап)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЖДКоличествоЭтап</dataPath>
+		<expression>Сумма(ЖДКоличествоЭтап)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЖДОбъемЭтап</dataPath>
+		<expression>Сумма(ЖДОбъемЭтап)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъемЭтап</dataPath>
+		<expression>Сумма(ОбъемЭтап)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>АвтоКоличествоСоставЭтап</dataPath>
+		<expression>Сумма(АвтоКоличествоСоставЭтап)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЖДКоличествоСоставЭтап</dataPath>
+		<expression>Сумма(ЖДКоличествоСоставЭтап)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВесБруттоТаможня</dataPath>
+		<expression>Сумма(ВесБруттоТаможня)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВесНеттоТаможня</dataPath>
+		<expression>Сумма(ВесНеттоТаможня)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоСостав</dataPath>
+		<expression>Сумма(КоличествоСостав)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПериодСреза</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период среза</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Анализ выполнения заказа</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаказПокупателя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъемЗаказано</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъемОтгружено</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отгружено (по расходным накладным)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сорт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сечение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Длина</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транспортировка (этап выполнения заказа)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Авто</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>АвтоКоличествоЭтап</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>АвтоОбъемЭтап</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объем</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЖД</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ЖДКоличествоЭтап</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ЖДОбъемЭтап</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объем</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъемЭтап</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем (по док. транспортировки)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">ЗаказПокупателя</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Документ.алк_ЗаказПокупателя.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>523f584e-971b-462f-9559-0d1f6f9a1638</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>a3656eae-7f83-4f79-9692-7a33f4fbf06a</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ОГ</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ЗаказПокупателя</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Номенклатура</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ОбъемнаяГруппа</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ОГ</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ОбъемнаяГруппа</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:use>false</dcsset:use>
+								<dcsset:field>ОГ</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ОбъемЗаказано</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ОбъемОтгружено</dcsset:field>
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Отгружено (по расходным накладным)</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Транспортировка (этап выполнения заказа)</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Авто</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>АвтоКоличествоЭтап</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Количество</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>АвтоОбъемЭтап</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Объем</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:placement>Auto</dcsset:placement>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЖД</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ЖДКоличествоЭтап</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Количество</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ЖДОбъемЭтап</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Объем</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:placement>Auto</dcsset:placement>
+								</dcsset:item>
+								<dcsset:placement>Auto</dcsset:placement>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ОбъемЭтап</dcsset:field>
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Объем (по док. транспортировки)</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Сорт</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Длина</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Сечение</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+								<dcsset:item xsi:type="dcsset:StructureItemGroup">
+									<dcsset:use>false</dcsset:use>
+									<dcsset:order>
+										<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+									</dcsset:order>
+									<dcsset:selection>
+										<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+									</dcsset:selection>
+								</dcsset:item>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3cb45f7-b69f-4b3a-9b26-43b88ca79024">
+  <producedTypes>
+    <objectType typeId="9002854f-3272-470d-852b-3dd1a232bb9f" valueTypeId="e68069cb-0df2-412a-902c-c18f2b01d88a"/>
+    <refType typeId="a6c0926a-9c7a-4e30-8edd-89d4c7c715e1" valueTypeId="16c82e9e-765f-47bd-8a40-16a76b5f3367"/>
+    <selectionType typeId="4b0d4695-e7e4-4430-a441-ac526fb75e0a" valueTypeId="52786dec-7eeb-4cc5-bf00-81c7559fa1fe"/>
+    <listType typeId="8f3d11fc-99ad-4a30-8457-e4a995a4bdde" valueTypeId="fca623c5-19fe-44f0-b475-a6e07cef7d27"/>
+    <managerType typeId="3314e04a-3381-4cee-a2bd-aa6327eca675" valueTypeId="b4dba7fa-818c-422c-8b2e-23c4deedf5e4"/>
+  </producedTypes>
+  <name>алк_Пилы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пилы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_Пилы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_Пилы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultChoiceForm>Catalog.алк_Пилы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="bb70f8c9-8e6e-455c-b482-151f05c25ddb">
+    <name>НомерПилы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер пилы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="52d3d570-9284-40d5-b0c5-48096d6d4e10">
+    <name>ДатаПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата поставки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="659937e6-b10b-4c74-9630-035d8f807add">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="25ca0285-1848-4da7-bfdc-a6cd425ac841">
+    <name>Станок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Станки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f78014ec-a290-41fe-900b-8e5a52b3efb6">
+    <name>Сезон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сезон</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_СезоныПропарки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ab7f3155-170e-449c-be81-50cb08a020be">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

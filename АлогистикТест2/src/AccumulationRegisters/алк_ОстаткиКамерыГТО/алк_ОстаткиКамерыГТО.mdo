@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="511b5038-b084-4365-a5f3-a51e7487ea56">
+  <producedTypes>
+    <selectionType typeId="a1a30ad4-c030-42c2-ae6a-21055efd6273" valueTypeId="924f6e47-33be-4861-83e5-d8fee3452b17"/>
+    <listType typeId="b22d4260-41fa-4aff-a727-7de1d0a70af9" valueTypeId="6c711d2e-e369-466a-806a-124f1540b0b8"/>
+    <managerType typeId="5f7acc75-b93c-4119-ad4f-4fe168e50396" valueTypeId="3df22044-82c9-4361-8e1b-8d04ce1e5685"/>
+    <recordSetType typeId="5f2bb801-bec8-4f0b-9df6-6af37eb09f3a" valueTypeId="d9b5c7cd-cd26-4dd9-9190-c53476864bd1"/>
+    <recordKeyType typeId="0447b9e9-aadf-422f-88bc-f84bddcbd1c9" valueTypeId="f30f816d-0a77-4e0c-96f0-c48b4568d7b9"/>
+    <recordType typeId="4e34b9d5-b37d-44fb-be5f-d60d1352e3f4" valueTypeId="1bba7ca3-5bb0-4285-b829-44d47486abc8"/>
+  </producedTypes>
+  <name>алк_ОстаткиКамерыГТО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки камеры ГТО</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="eb196007-49b8-459d-b8b6-e89d4cc00ca4">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="f1438838-32b4-4fc8-8850-b55a48b4f560">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурная единица</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7d793776-8af5-474b-8576-bf64388da635">
+    <name>КамераПропарки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Камера пропарки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f855ab78-20fb-49fc-acd5-9c2ad6b6f1b1">
+    <name>Порода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порода</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Породы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="243da7b1-ff29-4707-b9af-d6a9acb1be15">
+    <name>Длина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Длины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ecefae49-3ae8-4ac0-8f48-3f447815786a">
+    <name>Сотр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сорт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="24277dfa-ff26-4d4e-96e5-b5296b6271de">
+    <name>Градация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Градация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ГрадацияПропарки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

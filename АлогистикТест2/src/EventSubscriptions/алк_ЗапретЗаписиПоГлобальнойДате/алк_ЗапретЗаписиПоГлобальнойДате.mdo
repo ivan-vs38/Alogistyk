@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37a6e3fc-34d4-4372-876d-46c3e2288411">
+  <name>алк_ЗапретЗаписиПоГлобальнойДате</name>
+  <synonym>
+    <key>ru</key>
+    <value>Алк запрет записи по глобальной дате</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.алк_ВводНачальныхОстатков</types>
+    <types>DocumentObject.алк_ПередачаНаОтветхранение</types>
+    <types>DocumentObject.алк_РасходнаяНакладная</types>
+    <types>DocumentObject.алк_РучноеИзменениеПараметровПакета</types>
+    <types>DocumentObject.алк_ПеремещениеЗапасов</types>
+    <types>DocumentObject.алк_ВозвратОтветхранения</types>
+    <types>DocumentObject.алк_СборкаЗапасов</types>
+    <types>DocumentObject.алк_ВнутренняяПередачаМеждуОрганизациями</types>
+    <types>DocumentObject.алк_ВозвратОкорки</types>
+    <types>DocumentObject.алк_ПередачаСырьяВПроизводство</types>
+    <types>DocumentObject.алк_РасформированиеПакетов</types>
+    <types>DocumentObject.алк_СменныйРапортЦЛП</types>
+    <types>DocumentObject.алк_ПересортицаНоменклатуры</types>
+    <types>DocumentObject.алк_ЗагрузкаКонтейнера</types>
+    <types>DocumentObject.алк_ТранспортировкаЗапасов</types>
+    <types>DocumentObject.алк_УпаковкаНоменклатуры</types>
+    <types>DocumentObject.алк_ПеремещениеЛесопродукции</types>
+    <types>DocumentObject.алк_ПриемкаЛесопродукции</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.РфпСерверРегламентные.алк_ЗапретЗаписиПоГлобальнойДатеПередЗаписью</handler>
+</mdclass:EventSubscription>

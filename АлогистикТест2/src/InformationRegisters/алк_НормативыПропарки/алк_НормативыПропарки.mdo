@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="432dc2e6-028c-4a0c-9d6c-3faa19b2a6c0">
+  <producedTypes>
+    <selectionType typeId="0eec5d71-2bbe-4057-a73f-e2bb1e037f91" valueTypeId="cdc06f36-1aed-4e8a-92cd-d2156598e98e"/>
+    <listType typeId="d072a13b-40d3-4c25-b5d1-935c9db07b18" valueTypeId="a69507fe-d539-46b0-8e2e-ba4bb23cc971"/>
+    <managerType typeId="349e9ec9-a088-45af-abaa-693fc7f2886f" valueTypeId="a7647d30-2ed0-4f2e-b686-76f70a572282"/>
+    <recordSetType typeId="dea8ea69-d13a-4e63-94d3-095bc99f9a3e" valueTypeId="88ab4975-c813-47e8-9180-3d132dcf6b06"/>
+    <recordKeyType typeId="c5c53a47-447e-4a7f-97ab-dc472d02f5a0" valueTypeId="37b7f8ec-6232-4d9e-bbea-831828102cd0"/>
+    <recordType typeId="cdb45364-7401-4df4-9b5c-bef0a8cc4ab3" valueTypeId="b2bc78de-2329-4802-a476-87e4c57d59bb"/>
+    <recordManagerType typeId="d862b266-de9e-4205-b77d-84ad602c7434" valueTypeId="777ea096-b8cc-4868-9ee1-24fa61870af5"/>
+  </producedTypes>
+  <name>алк_НормативыПропарки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормативы пропарки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="99db087f-0c91-4bf9-8208-042677e1c0fc">
+    <name>НормативПропарки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норматив пропарки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="861a9181-3630-4082-8e44-6a6f4104f198">
+    <name>НормативЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норматив загрузки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c68861fd-b616-459d-ae64-e9824748749d">
+    <name>Градация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Градация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ГрадацияПропарки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a9542aa5-265a-4423-966a-a8103708f6b7">
+    <name>Порода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порода</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Породы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="64a7b97f-fca3-4d15-ab51-bbcd42502f36">
+    <name>Сезон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сезон</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_СезоныПропарки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

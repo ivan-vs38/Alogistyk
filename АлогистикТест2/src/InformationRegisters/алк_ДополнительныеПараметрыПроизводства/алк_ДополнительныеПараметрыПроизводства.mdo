@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78d341a8-7f01-4367-a452-9a6194470dc5">
+  <producedTypes>
+    <selectionType typeId="19821be7-a534-451a-8722-a4c651df6500" valueTypeId="d43e5b02-8b7d-411d-b15e-ab437f79df0f"/>
+    <listType typeId="deadef90-2945-4d3d-b3d9-637a07c92e62" valueTypeId="96f3f0ff-3497-4fc2-87ee-e1b18a1eccee"/>
+    <managerType typeId="a43faff7-f3ae-48c7-8955-39eaeeaad935" valueTypeId="1d1429c0-d7a1-4589-b8f1-9e131ee607b3"/>
+    <recordSetType typeId="1aab6edd-57d7-4f78-9333-abcfc023fb01" valueTypeId="e3dbc14f-560b-42f4-9771-2bc654e63975"/>
+    <recordKeyType typeId="ff67131b-6fb1-4be4-8120-b78255b00449" valueTypeId="477618b9-bf2a-41b2-a132-ad9299d583b4"/>
+    <recordType typeId="9f75dbb8-cfdd-4eaf-99ca-c3768ecf24dd" valueTypeId="96d53db6-5869-48a5-9fb6-865587c798b0"/>
+    <recordManagerType typeId="84bf4c10-e87b-4c4e-9550-f11e9446a801" valueTypeId="9d8deba9-22dc-4da6-adb1-de1d841212ae"/>
+  </producedTypes>
+  <name>алк_ДополнительныеПараметрыПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные параметры производства (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fa5f2777-f25f-4654-ae08-43914a864463">
+    <name>СреднийДиаметрЛущения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средний диаметр лущения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b2854c04-b71e-4b02-bbcf-58e5a44eb361">
+    <name>Производство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производство</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_Производство</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

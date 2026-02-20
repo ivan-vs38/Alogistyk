@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПакетовОборот</dataPath>
+			<field>КоличествоПакетовОборот</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КатегорияНоменклатуры</dataPath>
+			<field>КатегорияНоменклатуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категория номенклатуры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Порода</dataPath>
+			<field>Порода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БоковаяДоска</dataPath>
+			<field>БоковаяДоска</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объем_Нараст</dataPath>
+			<field>Объем_Нараст</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем нараст</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказПокупателя</dataPath>
+			<field>ЗаказПокупателя</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерийныйНомер</dataPath>
+			<field>СерийныйНомер</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объем</dataPath>
+			<field>Объем</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПакетовОборот_Сутки</dataPath>
+			<field>КоличествоПакетовОборот_Сутки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество пакетов оборот сутки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>FSC</dataPath>
+			<field>FSC</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>FSC</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПакетовОборот_Нараст</dataPath>
+			<field>КоличествоПакетовОборот_Нараст</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество пакетов оборот нараст</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объем_Сутки</dataPath>
+			<field>Объем_Сутки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем сутки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сечение</dataPath>
+			<field>Сечение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сорт</dataPath>
+			<field>Сорт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Аналитика</dataPath>
+			<field>Аналитика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Влажность</dataPath>
+			<field>Влажность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Длина</dataPath>
+			<field>Длина</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСмены</dataPath>
+			<field>ДатаСмены</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Смена</dataPath>
+			<field>Смена</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Упаковка_Нараст.Организация,
+	Упаковка_Нараст.Номенклатура,
+	Упаковка_Нараст.Характеристика,
+	Упаковка_Нараст.ЗаказПокупателя,
+	Упаковка_Нараст.СерийныйНомер,
+	Упаковка_Нараст.ДатаСмены,
+	Упаковка_Нараст.Смена,
+	Упаковка_Нараст.КоличествоПакетовОборот КАК КоличествоПакетовОборот_Нараст,
+	Упаковка_Нараст.FSC,
+	Упаковка_Нараст.КоличествоПакетовОборот * Упаковка_Нараст.Объем КАК Объем_Нараст,
+	Упаковка_Нараст.Порода,
+	Упаковка_Нараст.Сорт,
+	Упаковка_Нараст.Длина,
+	Упаковка_Нараст.Сечение,
+	Упаковка_Нараст.Влажность,
+	Упаковка_Нараст.КатегорияНоменклатуры,
+	ДопАналитика.Аналитика,
+	Упаковка_Нараст.БоковаяДоска,
+	0 КАК КоличествоПакетовОборот_Сутки,
+	0 КАК Объем_Сутки
+ИЗ
+	(ВЫБРАТЬ
+		алк_ВыпускПродукцииСерииОбороты.Организация КАК Организация,
+		алк_ВыпускПродукцииСерииОбороты.Номенклатура КАК Номенклатура,
+		алк_ВыпускПродукцииСерииОбороты.Характеристика КАК Характеристика,
+		алк_ВыпускПродукцииСерииОбороты.ЗаказПокупателя КАК ЗаказПокупателя,
+		алк_ВыпускПродукцииСерииОбороты.СерийныйНомер КАК СерийныйНомер,
+		алк_ВыпускПродукцииСерииОбороты.ДатаСмены КАК ДатаСмены,
+		алк_ВыпускПродукцииСерииОбороты.Смена КАК Смена,
+		алк_ВыпускПродукцииСерииОбороты.КоличествоПакетовОборот КАК КоличествоПакетовОборот,
+		алк_ПараметрыПакетовСрезПоследних.СертификатFSC КАК FSC,
+		алк_ПараметрыПакетовСрезПоследних.Объем КАК Объем,
+		ПараметрыХарактеристик.Порода КАК Порода,
+		ПараметрыХарактеристик.Сорт КАК Сорт,
+		ПараметрыХарактеристик.Длина КАК Длина,
+		ПараметрыХарактеристик.Сечение КАК Сечение,
+		ПараметрыХарактеристик.Влажность КАК Влажность,
+		алк_ВыпускПродукцииСерииОбороты.Номенклатура.КатегорияНоменклатуры КАК КатегорияНоменклатуры,
+		алк_ПараметрыПакетовСрезПоследних.БоковаяДоска КАК БоковаяДоска
+	ИЗ
+		РегистрНакопления.алк_ВыпускПродукцииСерии.Обороты({(&amp;ПустаяДата)}, {(&amp;ПустаяДата)}, Авто, Номенклатура.КатегорияНоменклатуры = ЗНАЧЕНИЕ(Справочник.КатегорииНоменклатуры.Пиломатериал) {(ДатаСмены &gt;= &amp;НачалоПериода
+				    И ДатаСмены &lt;= &amp;КонецПериода)}) КАК алк_ВыпускПродукцииСерииОбороты
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыПакетов.СрезПоследних({(&amp;ПериодСреза)}, ) КАК алк_ПараметрыПакетовСрезПоследних
+			ПО алк_ВыпускПродукцииСерииОбороты.СерийныйНомер = алк_ПараметрыПакетовСрезПоследних.СерийныйНомер
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК ПараметрыХарактеристик
+			ПО алк_ВыпускПродукцииСерииОбороты.Характеристика = ПараметрыХарактеристик.Характеристика) КАК Упаковка_Нараст
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			алк_ДопАналитикаПакетов.СерийныйНомер КАК СерийныйНомер,
+			алк_ДопАналитикаПакетов.Аналитика КАК Аналитика
+		ИЗ
+			РегистрСведений.алк_ДопАналитикаПакетов КАК алк_ДопАналитикаПакетов) КАК ДопАналитика
+		ПО Упаковка_Нараст.СерийныйНомер = ДопАналитика.СерийныйНомер
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Упаковка_Сутки.Организация,
+	Упаковка_Сутки.Номенклатура,
+	Упаковка_Сутки.Характеристика,
+	Упаковка_Сутки.ЗаказПокупателя,
+	Упаковка_Сутки.СерийныйНомер,
+	Упаковка_Сутки.ДатаСмены,
+	Упаковка_Сутки.Смена,
+	0,
+	Упаковка_Сутки.FSC,
+	0,
+	Упаковка_Сутки.Порода,
+	Упаковка_Сутки.Сорт,
+	Упаковка_Сутки.Длина,
+	Упаковка_Сутки.Сечение,
+	Упаковка_Сутки.Влажность,
+	Упаковка_Сутки.КатегорияНоменклатуры,
+	ДопАналитика.Аналитика,
+	Упаковка_Сутки.БоковаяДоска,
+	Упаковка_Сутки.КоличествоПакетовОборот,
+	Упаковка_Сутки.КоличествоПакетовОборот * Упаковка_Сутки.Объем
+ИЗ
+	(ВЫБРАТЬ
+		алк_ВыпускПродукцииСерииОбороты.Организация КАК Организация,
+		алк_ВыпускПродукцииСерииОбороты.Номенклатура КАК Номенклатура,
+		алк_ВыпускПродукцииСерииОбороты.Характеристика КАК Характеристика,
+		алк_ВыпускПродукцииСерииОбороты.ЗаказПокупателя КАК ЗаказПокупателя,
+		алк_ВыпускПродукцииСерииОбороты.СерийныйНомер КАК СерийныйНомер,
+		алк_ВыпускПродукцииСерииОбороты.ДатаСмены КАК ДатаСмены,
+		алк_ВыпускПродукцииСерииОбороты.Смена КАК Смена,
+		алк_ВыпускПродукцииСерииОбороты.КоличествоПакетовОборот КАК КоличествоПакетовОборот,
+		алк_ПараметрыПакетовСрезПоследних.СертификатFSC КАК FSC,
+		алк_ПараметрыПакетовСрезПоследних.Объем КАК Объем,
+		ПараметрыХарактеристик.Порода КАК Порода,
+		ПараметрыХарактеристик.Сорт КАК Сорт,
+		ПараметрыХарактеристик.Длина КАК Длина,
+		ПараметрыХарактеристик.Сечение КАК Сечение,
+		ПараметрыХарактеристик.Влажность КАК Влажность,
+		алк_ВыпускПродукцииСерииОбороты.Номенклатура.КатегорияНоменклатуры КАК КатегорияНоменклатуры,
+		алк_ПараметрыПакетовСрезПоследних.БоковаяДоска КАК БоковаяДоска
+	ИЗ
+		РегистрНакопления.алк_ВыпускПродукцииСерии.Обороты({(&amp;ПустаяДата)}, {(&amp;ПустаяДата)}, Авто, Номенклатура.КатегорияНоменклатуры = ЗНАЧЕНИЕ(Справочник.КатегорииНоменклатуры.Пиломатериал) {(ДатаСмены = &amp;ДатаСмены)}) КАК алк_ВыпускПродукцииСерииОбороты
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыПакетов.СрезПоследних({(&amp;ПериодСреза)}, ) КАК алк_ПараметрыПакетовСрезПоследних
+			ПО алк_ВыпускПродукцииСерииОбороты.СерийныйНомер = алк_ПараметрыПакетовСрезПоследних.СерийныйНомер
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алк_ПараметрыХарактеристик КАК ПараметрыХарактеристик
+			ПО алк_ВыпускПродукцииСерииОбороты.Характеристика = ПараметрыХарактеристик.Характеристика) КАК Упаковка_Сутки
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			алк_ДопАналитикаПакетов.СерийныйНомер КАК СерийныйНомер,
+			алк_ДопАналитикаПакетов.Аналитика КАК Аналитика
+		ИЗ
+			РегистрСведений.алк_ДопАналитикаПакетов КАК алк_ДопАналитикаПакетов) КАК ДопАналитика
+		ПО Упаковка_Сутки.СерийныйНомер = ДопАналитика.СерийныйНомер</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ПроцентСутки</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>%</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПроцентНараст</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>%</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>КоличествоПакетовОборот_Нараст</dataPath>
+		<expression>Сумма(КоличествоПакетовОборот_Нараст)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоПакетовОборот_Сутки</dataPath>
+		<expression>Сумма(КоличествоПакетовОборот_Сутки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Объем_Нараст</dataPath>
+		<expression>Сумма(Объем_Нараст)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Объем_Сутки</dataPath>
+		<expression>Сумма(Объем_Сутки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентСутки</dataPath>
+		<expression>Сумма(Объем_Сутки) / Вычислить("Сумма(Объем_Сутки)", "ОбщийИтог") * 100</expression>
+		<group>БоковаяДоска</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентНараст</dataPath>
+		<expression>Сумма(Объем_Нараст) / Вычислить("Сумма(Объем_Нараст)", "ОбщийИтог") * 100</expression>
+		<group>БоковаяДоска</group>
+	</totalField>
+	<parameter>
+		<name>ДатаСмены</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата смены</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ДатаСмены</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>НачалоПериода(&amp;ДатаСмены, "Месяц")</expression>
+	</parameter>
+	<parameter>
+		<name>ПериодСреза</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период среза</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПустаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пустая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выпуск ПМ (процентный выход центральной доски)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>FSC</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Аналитика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>БоковаяДоска</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Влажность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаСмены</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Длина</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаказПокупателя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КатегорияНоменклатуры</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Порода</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СерийныйНомер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сечение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Смена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сорт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сутки</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоПакетовОборот_Сутки</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Количество</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Объем_Сутки</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Объем</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентСутки</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>%</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нарастающий</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоПакетовОборот_Нараст</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Количество</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Объем_Нараст</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Объем</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентНараст</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>%</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДатаСмены</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>b5f2a8a5-35c9-4620-b89e-ef44cb6179d1</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПроцентНараст</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПроцентСутки</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=2</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Номенклатура</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>БоковаяДоска</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Сорт</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

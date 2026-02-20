@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd958d70-9bd6-4b18-b2dd-d351bbaaf288">
+  <producedTypes>
+    <selectionType typeId="6c6e2128-6303-43e9-a18a-8926a3763389" valueTypeId="e1137dec-6b05-4862-8217-8a056f568fac"/>
+    <listType typeId="edd56251-6f7f-4075-9300-3c44ba54a750" valueTypeId="bba575f1-272f-41a2-9ab4-2e0395bccac9"/>
+    <managerType typeId="d9e1f78f-109a-42c0-a6fe-6f200a6287e3" valueTypeId="9e253967-7d66-46a1-b0ca-c310276623c0"/>
+    <recordSetType typeId="f623ddd3-20b1-4fb9-9936-c1150893321c" valueTypeId="837a11f9-116d-4c0b-a96c-44a4c66c8a16"/>
+    <recordKeyType typeId="c1ebe8fb-ba0f-416a-be0a-64f633025047" valueTypeId="1c8fa3b2-c8e1-40fb-b707-b566b3154938"/>
+    <recordType typeId="3bb306f2-0a93-49d9-8f24-878a7dfedbf9" valueTypeId="9988ee1c-76b1-4211-8227-c2370ce63159"/>
+    <recordManagerType typeId="d7cb7ed1-6625-4555-92cd-e18469f9ea11" valueTypeId="f59ab26e-d578-4017-9e7e-07b9be39b5fe"/>
+  </producedTypes>
+  <name>ВремяПроведенияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время проведения документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВремяПроведенияДокументов.Form.ФормаЗаписи</defaultRecordForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ec67a796-66f5-4eba-964b-5265d20c19fa">
+    <name>Приращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приращение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Приращение к концу смены в секундах. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="6888df52-4910-471e-ae40-93dfc575d561">
+    <name>ВыражениеПриращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выражение приращения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="13127d33-dab4-4232-92a7-4b4b61a65a5a">
+    <name>ИмяМетаданныхДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя метаданных документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="93895a5f-1951-49b5-aa97-b05d719637ee">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="0bd1da9e-5521-42be-8945-3217c692f6a7">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

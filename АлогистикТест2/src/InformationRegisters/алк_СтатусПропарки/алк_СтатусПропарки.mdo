@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0983be7-d4e3-4b14-b122-fd1c670bd7fe">
+  <producedTypes>
+    <selectionType typeId="5291f847-9601-423c-9a7a-fdfe8861f71e" valueTypeId="c1c11d42-176f-4cb5-8880-00025699764d"/>
+    <listType typeId="90c3b329-53b9-447e-a2b7-3e9d6bfb5faa" valueTypeId="ba8d6d66-23b7-4a17-b4c1-906227cae98d"/>
+    <managerType typeId="1d09f47e-cc34-4e2d-bd41-1ae1ae209633" valueTypeId="442cea8b-5151-4430-b28b-b1a4b4a9e46c"/>
+    <recordSetType typeId="cd1219dc-fb35-471a-85ea-731f8f38bf5b" valueTypeId="f7ffa6a3-8dbe-4669-9c5b-9ee49f8763ff"/>
+    <recordKeyType typeId="cc7d09c1-4654-4f2b-a998-02ea5ac76f01" valueTypeId="f401ef3a-d177-4bfa-9494-8f96f9854eb4"/>
+    <recordType typeId="bd0162fb-fd93-47a2-a350-57b793509858" valueTypeId="4c5ba170-c2a7-4885-84ee-e86914b8bbdd"/>
+    <recordManagerType typeId="debce1de-b7b6-4d6b-86b3-88f0c02dd6d4" valueTypeId="a623be9a-1e0c-4250-ab18-e08b2daa82c7"/>
+  </producedTypes>
+  <name>алк_СтатусПропарки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус пропарки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="913afefa-d024-4bea-85d5-d054ec3ee73b">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ОперацииПропарки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0e1fd161-6863-457b-9b65-6872650740f9">
+    <name>ВремяНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="28b7d775-9f28-471f-90ac-c87bea8fa705">
+    <name>ВремяОкончанияПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время окончания план</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="aa9a2745-1c33-46f4-8e03-2cb91122f31d">
+    <name>КамераПропарки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Камера пропарки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Ячейки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

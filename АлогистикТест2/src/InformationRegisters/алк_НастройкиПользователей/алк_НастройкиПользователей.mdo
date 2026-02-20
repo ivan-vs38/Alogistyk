@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b80e3825-9eff-4f96-b671-e17d183bcb97">
+  <producedTypes>
+    <selectionType typeId="49fc79b4-aa56-44a0-b5cf-d49f77d1d1b4" valueTypeId="3c05c405-32f0-46ff-b91e-f67bdbff61b0"/>
+    <listType typeId="4a30a37d-da39-45b2-b911-708ff07417c4" valueTypeId="ada7af6c-cebe-4a77-9971-5aa373acad74"/>
+    <managerType typeId="677fd5ed-589a-446e-bd63-d4b5e4588656" valueTypeId="ddea35b2-89f2-47b7-be21-0d73ce6a1f8e"/>
+    <recordSetType typeId="a3599bd3-6b2d-4373-b99f-90aff61d0227" valueTypeId="c30f2c47-fddb-44fb-8f13-29e3f8ddbb02"/>
+    <recordKeyType typeId="d9d129be-e947-4a25-8121-0a75b0f03403" valueTypeId="25eca14c-7a39-4da0-be9f-d79bb0052f19"/>
+    <recordType typeId="fc0cd83b-ae2c-44c8-80fd-f16b94c432c9" valueTypeId="2761944c-d56f-4eea-bbad-c44f1c47c142"/>
+    <recordManagerType typeId="30cb349b-ee2d-4977-b154-f79a265e1a7d" valueTypeId="8ae7a8ad-fbec-4699-bfd8-7186b0c75031"/>
+  </producedTypes>
+  <name>алк_НастройкиПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки пользователей (АЛогистиК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="58748519-7305-489e-9dd7-22e8c8f4c75d">
+    <name>КонтрагентПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент пользователя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d64b8f6d-beda-465a-b669-77e9efef173d">
+    <name>ЛогистическийЦентр_Порт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логистический центр (порт)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ЛогистическиеЦентры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d8d24a1e-49fc-46c3-8cbd-1b752a7c0a7c">
+    <name>ПортовыйАгент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Портовый агент</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2f59c866-da3a-44a0-a1e4-0e5c8473dc60">
+    <name>СтруктурнаяЕдиница_ПортовыйСклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурная единица (портовый склад)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="936596ec-d848-40e2-ad50-c933366ff53a">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="500ca778-b4fa-4099-afab-1a458412ee1d">
+  <producedTypes>
+    <objectType typeId="5dd4e33e-7774-4ae3-912e-3fbd393856a6" valueTypeId="021cc156-ad48-4fb8-a92e-9b4844554bd9"/>
+    <refType typeId="8eae8f51-798d-4fff-a9f2-b1e84e1c9cc2" valueTypeId="2e3d595e-221e-47fe-9f48-b9f6be2097af"/>
+    <selectionType typeId="520c3475-162b-4967-9519-b13e9d2a0c1a" valueTypeId="7e8bf208-f6a1-4521-8650-9d42e1b68e4f"/>
+    <listType typeId="8dd383f9-c5a9-452c-b097-3d366ac93189" valueTypeId="6d77d2f9-57dd-4b6d-bec4-95a640a27ae8"/>
+    <managerType typeId="659b8e15-ff10-4343-8ba6-b6b434d5acd3" valueTypeId="e4f2da1e-45a1-4964-ba33-9f2f9a139634"/>
+  </producedTypes>
+  <name>алк_ЗагрузкаВКамеруПрисоединенныеФайлы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Присоединенные файлы (Загрузка в камеру) - АЛК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_ЗагрузкаВКамеруПрисоединенныеФайлы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_ЗагрузкаВКамеруПрисоединенныеФайлы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="3711ab75-e3c3-4729-ad01-5f9b1114a2f7">
+    <name>ДатаДобавления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата добавления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0feb6645-2f6e-47f8-aef5-998b3047a118">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ЗагрузкаВКамеру</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6ce2cb58-3845-4c07-b01b-d5f937086c8a">
+    <name>ДанныеФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные файла</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="abf33874-c462-4ad1-96f1-44cd64b580c8">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

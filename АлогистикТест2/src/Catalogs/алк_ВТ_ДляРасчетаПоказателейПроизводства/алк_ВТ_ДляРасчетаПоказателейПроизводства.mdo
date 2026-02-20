@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="611a30a3-278f-4529-89ed-2bfede29faab">
+  <producedTypes>
+    <objectType typeId="cbdc5376-3978-4116-8bf2-bacc4ac800cf" valueTypeId="fcd39f69-ec50-4471-95bc-7eb1f75bfda2"/>
+    <refType typeId="05e4d4d7-7a8e-4363-bf7d-b0e1de81624a" valueTypeId="c472048a-cd74-4574-96a5-968cd50829f9"/>
+    <selectionType typeId="b3e11b2c-cd60-4514-90f4-1687c68f6855" valueTypeId="2cac3286-a781-4d81-a7af-e86e755ea28e"/>
+    <listType typeId="695435c6-bcb1-4c8b-a46e-af4b055328b2" valueTypeId="b1731663-45e8-4706-bff8-7c5da29d71da"/>
+    <managerType typeId="0f13850d-5d88-41ca-97d7-3fecaafdda1b" valueTypeId="b74cb00a-3af0-44c1-9af7-00f073d58fa7"/>
+  </producedTypes>
+  <name>алк_ВТ_ДляРасчетаПоказателейПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВТ для расчета показателей производства</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_ВТ_ДляРасчетаПоказателейПроизводства.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_ВТ_ДляРасчетаПоказателейПроизводства.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>128</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.алк_ВТ_ДляРасчетаПоказателейПроизводства.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultChoiceForm>Catalog.алк_ВТ_ДляРасчетаПоказателейПроизводства.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="d4ab4496-4c7f-4a43-a0ab-5990d031c334">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dfdc5ea7-4514-4d3f-8a73-42b87783f302">
+    <name>Приоритет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ae4ec597-4063-4f97-aa5a-614147eea93e">
+    <name>ТекстЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст запроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="567ed4df-78e6-4c24-9380-a424866a3176">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="52bae8e3-10e4-46ee-8b67-912c5e53ca2d">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

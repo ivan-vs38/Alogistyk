@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56c3183b-42ef-41b7-b7ac-35a198d97e08">
+  <producedTypes>
+    <selectionType typeId="11844266-6df4-40b5-8168-5744133495f6" valueTypeId="a9289b2d-ab78-4a53-b9bb-827f42889c2c"/>
+    <listType typeId="f956e897-634d-4db1-a62d-3e169d1f2498" valueTypeId="921a923e-eec0-4af9-b7ea-828a5e863b06"/>
+    <managerType typeId="8d38b4e4-3a96-41f0-b352-4c1621e959e6" valueTypeId="80c6c572-0c44-471d-a4fe-5c6b48b67791"/>
+    <recordSetType typeId="35e2f735-fa42-4b85-a074-9517df6b869a" valueTypeId="0aedb5ef-0538-464a-be4b-58d2d17e0a73"/>
+    <recordKeyType typeId="75d55fcb-2fdc-4a39-9f36-9b164ef487ef" valueTypeId="05a66b79-52b0-4b73-8218-920aba614917"/>
+    <recordType typeId="b7905c4d-6116-4a9c-8f94-92954c405043" valueTypeId="2a5613a1-5be0-49f5-b4f6-1c007a9d1a32"/>
+    <recordManagerType typeId="9a2b2892-cfee-4064-a887-93a986f64ee9" valueTypeId="a7e7fdba-3a0d-4ca4-80b7-53a5c4cc807c"/>
+  </producedTypes>
+  <name>алк_ПородаСортировка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие породы из файла сортировки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a41f2d16-cddb-424f-9e6e-df70fd9e9e79">
+    <name>Порода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порода</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Породы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="41779cc6-d93c-4468-80af-8c086a89e521">
+    <name>ПородаФайл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порода файл</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

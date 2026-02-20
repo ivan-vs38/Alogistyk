@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="73ce2137-fa4c-4d5d-bacb-fc7a99768095">
+  <producedTypes>
+    <objectType typeId="9eb4bfb5-f8ad-4113-8995-a89fc3663541" valueTypeId="2a1e8906-e6bb-4cbb-81d0-79bce5b358c6"/>
+    <managerType typeId="7758707d-1b74-4732-8f3d-3f2e61e13d1f" valueTypeId="61466fa1-32c6-49c8-a291-e9856c95156b"/>
+  </producedTypes>
+  <name>алк_ВыполнениеЗаказовКонсолидированный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет. Выполнение заказов (сводная информация).</value>
+  </synonym>
+  <defaultForm>Report.алк_ВыполнениеЗаказовКонсолидированный.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.алк_ВыполнениеЗаказовКонсолидированный.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.алк_ВыполнениеЗаказовКонсолидированный.Form.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>Report.алк_ВыполнениеЗаказовКонсолидированный.Form.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="9c91f285-2472-4476-b362-22db4668e1cd">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d2ad3ec5-e712-4c29-875c-c33e6533b59c">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a2fdf518-6501-4924-9675-5f4fa1a3db5e">
+    <name>ФормаНастроекОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9f4eab6b-c5d7-4e4a-9186-25da5fab7fd4">
+    <name>ФормаВариантаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="acddc643-785a-4af0-bbf7-77b7f4582ea0">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="4e2549a4-989f-47ac-a11f-bc4c452d9cfa">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет. Выполнение заказов (сводная информация)</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

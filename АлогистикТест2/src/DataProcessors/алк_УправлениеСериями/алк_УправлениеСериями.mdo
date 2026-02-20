@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e900036-b194-4c33-9388-466a1dfc316c">
+  <producedTypes>
+    <objectType typeId="0a096a06-89c7-40a3-a0cf-d19597dd54db" valueTypeId="72736bb0-6b8b-4467-a1ce-0c0b9ebd2bec"/>
+    <managerType typeId="6ab58d9d-9682-4130-9588-50c496590742" valueTypeId="3ee175f0-f7fe-4258-811e-1994410818e4"/>
+  </producedTypes>
+  <name>алк_УправлениеСериями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление сериями</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.алк_УправлениеСериями.Form.УправлениеСериями</defaultForm>
+  <attributes uuid="ba1dbb7e-87b2-42cf-bf0d-9a6043340cc1">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="93f45358-00c9-4aed-bd11-93eef0e31b61">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1b975290-5adc-4978-9a1c-296030ebc4d2">
+    <name>ПрошлыйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прошлый период</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d8b024d2-dde6-4081-8f69-953b0ac2ea4a">
+    <name>НомерСерии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер серии</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="0d0b3769-1e83-42f5-83df-7a955edb60e4">
+    <name>УправлениеСериями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управление сериями</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="aee1f082-166a-41aa-aff3-3b8d5f7cdb94">
+    <name>МакетОформленияКомпоновкиДанныхПесок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет оформления компоновки данных (песок)</value>
+    </synonym>
+    <templateType>DataCompositionAppearanceTemplate</templateType>
+  </templates>
+  <templates uuid="34cfe074-5d46-4f17-883b-98515bdb465b">
+    <name>СхКД_шпон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сх к д шпон</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c95b98df-289c-4a39-bb68-8d72bd9e094f">
+    <name>СхКД_ДГ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сх к д ДГ</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="888d2c78-5fa2-43eb-990b-32a60ead52b3">
+    <name>МакетПМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет ПМ</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="4f928b0a-0cde-42c7-9704-963d3042c309">
+    <name>СхКД_ИФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схкд ИФ</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

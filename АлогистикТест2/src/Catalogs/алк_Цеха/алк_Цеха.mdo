@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4c702cb-8259-4f7b-8bff-562a19c8637e">
+  <producedTypes>
+    <objectType typeId="5c0ffd4c-f6ee-4ded-b9fd-5f81101c49db" valueTypeId="6df6ce08-e194-4ac2-9ae5-989022c8fc02"/>
+    <refType typeId="1f3d6c99-2c09-454b-b76a-9098fe862305" valueTypeId="84b86157-4f4d-4542-9f29-086e0873fecb"/>
+    <selectionType typeId="e614752d-82bf-4764-b735-814173dbdf96" valueTypeId="27cfbda9-1bea-492c-b504-d091f72d990a"/>
+    <listType typeId="a77139d7-76b8-4a6b-b99c-76386c40a5c4" valueTypeId="f3e666c7-e505-4c11-9d95-0d4c3dab333c"/>
+    <managerType typeId="576f7204-dc6a-4b0d-826f-cc0ba6928f19" valueTypeId="96bef97a-3738-4050-a18c-ce500ea95fb6"/>
+  </producedTypes>
+  <name>алк_Цеха</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цеха</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_Цеха.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_Цеха.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="c7c027aa-1e20-4f52-b94c-d0eb9cdfafe0">
+    <name>Вид_РМ_Мастера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид РМ мастера</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ВидыРабочихМест</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

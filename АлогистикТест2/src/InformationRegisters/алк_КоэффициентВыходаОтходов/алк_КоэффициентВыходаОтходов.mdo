@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="060a7b3e-0cb5-4059-9d2e-023a93880a4c">
+  <producedTypes>
+    <selectionType typeId="81903b3e-3d8a-456f-b945-89b1f2d7ee0a" valueTypeId="d176dfd5-ab8b-4469-ba4b-a315017dbe30"/>
+    <listType typeId="647be717-0c46-4e0d-8017-9bc6a4f3288d" valueTypeId="56d3c3ef-fb0e-4c1b-a259-e76823d63fb8"/>
+    <managerType typeId="b10ae0c7-eb40-4453-b0d0-f2c101fd7984" valueTypeId="4bbd33bc-ef39-40f3-bdac-ef852d2f3620"/>
+    <recordSetType typeId="78c6520b-efaa-4ac2-b572-348f3d3de604" valueTypeId="9a88b82a-add2-447a-bfd3-fb1f8bce3e4f"/>
+    <recordKeyType typeId="bd3269f4-cb0f-46c0-9e72-57aec595f673" valueTypeId="caa9ff86-58b6-483b-9568-f16e12b458ca"/>
+    <recordType typeId="3da5f0af-140c-4612-858d-71f5bf9fc92e" valueTypeId="1f1f9303-1a9c-4515-a620-e87795e1cfef"/>
+    <recordManagerType typeId="009bd9a2-3eac-4467-b199-6f322f0a4c4b" valueTypeId="6c7651ca-be56-4d5d-bdcf-ea18f9cfcb6f"/>
+  </producedTypes>
+  <name>алк_КоэффициентВыходаОтходов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коэффициент выхода отходов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a323abbc-d798-41b6-ae9b-26d1f21a6c0a">
+    <name>ДоляОтСырья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доля от сырья</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="2d8e20ff-408d-42bb-bcd2-ee85e57516a9">
+    <name>Актуален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуален</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="86f9d931-0dac-41ea-86a4-6510dab5efb1">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

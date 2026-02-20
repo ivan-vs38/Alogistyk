@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1cff4dd5-ad06-4210-864b-b04f62f9c6cd">
+  <name>OptiMonitoring</name>
+  <synonym>
+    <key>ru</key>
+    <value>Opti monitoring</value>
+  </synonym>
+  <rootURL>OptiMonitoring</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="2deed8d5-ffa2-4fd6-ac98-f5449398ecfa">
+    <name>WoodStoreMonitoring</name>
+    <synonym>
+      <key>ru</key>
+      <value>Wood store monitoring</value>
+    </synonym>
+    <template>/WoodStoreMonitoring/</template>
+    <methods uuid="7cb5b4ee-16f5-4ddb-aa25-ff656de496bc">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>WoodStoreMonitoringAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="912d3ea0-8ed0-451f-9cdf-94aea2172143">
+    <name>WoodTransportMonitoring</name>
+    <synonym>
+      <key>ru</key>
+      <value>Wood transport monitoring</value>
+    </synonym>
+    <template>/WoodTransportMonitoring/</template>
+    <methods uuid="8197c9d6-2d09-41a0-8e80-cd9dee6198e9">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>WoodTransportMonitoringAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="b6b4e3a5-3840-4457-872f-e9090924522e">
+    <name>WoodTransportMonitoringStruct</name>
+    <synonym>
+      <key>ru</key>
+      <value>Wood transport monitoring struct</value>
+    </synonym>
+    <template>/WoodTransportMonitoringStruct/</template>
+    <methods uuid="b567d4ef-9bb3-4374-8105-83f35b2d81ae">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>WoodTransportMonitoringStructAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="65156b95-3ff8-47cb-b229-a9e71a43c56c">
+    <name>LumberStoreMonitoring</name>
+    <synonym>
+      <key>ru</key>
+      <value>Lumber store monitoring</value>
+    </synonym>
+    <template>/LumberStoreMonitoring/</template>
+    <methods uuid="12badebb-9e8c-4740-a05f-5b73c21d5d2b">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>LumberStoreMonitoringAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="b40c9713-f3a3-4f7c-bd7e-718feda0dacf">
+    <name>WorkScheduleMonitoring</name>
+    <synonym>
+      <key>ru</key>
+      <value>Work schedule monitoring</value>
+    </synonym>
+    <template>/WorkScheduleMonitoring/</template>
+    <methods uuid="eb4ae4cf-8f1f-4b21-a7a5-88a4cde19b4c">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>WorkScheduleMonitoringAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="fe1af696-d5cc-47d1-aa95-5287a5bc29df">
+    <name>TunnelsStatusMonitoring</name>
+    <synonym>
+      <key>ru</key>
+      <value>Tunnels status monitoring</value>
+    </synonym>
+    <template>/TunnelsStatusMonitoring/</template>
+    <methods uuid="38761fba-ad34-40c2-b36c-5d38ec0c6a79">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>TunnelsStatusMonitoringAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="c7cc2f73-38b3-46d8-ac4f-a8e69a918919">
+    <name>IdleEquipment</name>
+    <synonym>
+      <key>ru</key>
+      <value>Idle equipment</value>
+    </synonym>
+    <comment>&quot;Простаивающее оборудование&quot; - создание простоев по данным Оптимониторига</comment>
+    <template>/IdleEquipment/</template>
+    <methods uuid="7cf6c151-f0c9-44dc-9abe-39fc3c3daf18">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>IdleEquipmentAction</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="303d121f-5917-4aa9-b695-2a393ac72009">
+    <name>VeneerLogMonitoring</name>
+    <synonym>
+      <key>ru</key>
+      <value>Veneer log monitoring</value>
+    </synonym>
+    <comment>Загрузка подачи/выпуска пакетов шпона </comment>
+    <template>/VeneerLogMonitoring/</template>
+    <methods uuid="ffe64936-1937-4c0d-aeb3-0449dbeb6628">
+      <name>Action</name>
+      <synonym>
+        <key>ru</key>
+        <value>Action</value>
+      </synonym>
+      <handler>VeneerLogMonitoring</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

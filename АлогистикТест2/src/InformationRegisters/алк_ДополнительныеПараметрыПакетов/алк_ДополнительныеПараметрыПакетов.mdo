@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc9b210d-5f8f-4e5e-ad35-1fd2238039cd">
+  <producedTypes>
+    <selectionType typeId="042d2443-f9b2-4c48-8410-a864daf1ba87" valueTypeId="771fe4b5-3f69-4d9f-bfb8-433d7063c3c8"/>
+    <listType typeId="84863382-5adc-4406-88b7-da9e842f160d" valueTypeId="f0a0aea6-fb59-41c6-b8bb-d0d33d99a864"/>
+    <managerType typeId="63bba006-b378-4490-889d-f78bcbca143e" valueTypeId="435749ce-b842-4bca-a6c6-5f10b125ff69"/>
+    <recordSetType typeId="99970629-adf6-40ad-8e4b-a55aa11afa18" valueTypeId="56e0f7d0-9760-4a69-8e87-4bcb7df4fd20"/>
+    <recordKeyType typeId="8af14fa4-74d1-4fb1-87e9-b1d41bede891" valueTypeId="aa3c9618-b34b-4a2d-b700-2b2475c1b5fe"/>
+    <recordType typeId="bb77d607-15d1-4e14-b121-e1e0e9818533" valueTypeId="e2e3fa98-f338-41bd-abe7-83e99609c62d"/>
+    <recordManagerType typeId="2b824fc7-54f2-4c33-a72e-260bf39c4908" valueTypeId="a7cd6189-9fcd-4461-98c8-28c5384db558"/>
+  </producedTypes>
+  <name>алк_ДополнительныеПараметрыПакетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные параметры пакетов (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c2eb05bc-924e-438a-bef4-c1c242fce92b">
+    <name>ВидШпона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид шпона</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ВидыШпона</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9c078709-ab0a-4672-8608-5eb1eed84f9a">
+    <name>Припуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Припуск</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ВариантыПрипуска</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0242afa5-868a-4a22-a73f-b7cc17788d24">
+    <name>СлойДревесины</name>
+    <synonym>
+      <key>ru</key>
+      <value>Слой древесины</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_СлойДревесины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9c127ce6-a1e4-450d-a1ec-3ca1d7def315">
+    <name>СортированныйПакет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сортированный пакет</value>
+    </synonym>
+    <comment>из какого пакета была упаковка</comment>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="55438fb0-fe58-4f93-9c10-cd63f3944a00">
+    <name>УчастокВыпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок выпуска</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fb85670e-4c16-458f-be11-af81f417e5e4">
+    <name>Досушка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Досушка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="943d53ae-0eed-4933-9229-16da1f61fd98">
+    <name>Переупаковка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переупаковка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="42d95e97-bc00-4399-890b-3d6564ba29cd">
+    <name>БоковаяДоска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Боковая доска</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8a9c288c-6dcb-44ab-ba9f-dbf9a19f21ac">
+    <name>КатегорияНоменклатурыПЭО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номенклатуры ПЭО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_КатегорияНоменклатурыПЭО</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7b9a6eaa-0e8c-46f4-acd4-9d91b5331083">
+    <name>Габарит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Габарит</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ГабаритПакета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="fe69085e-0459-4ddc-9d3f-8aabec58cdf4">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_УпаковкаНоменклатуры</types>
+      <types>DocumentRef.алк_РучноеИзменениеДополнительныхПараметровПакета</types>
+      <types>DocumentRef.алк_РучноеИзменениеПараметровПакета</types>
+      <types>DocumentRef.алк_СборкаЗапасов</types>
+      <types>DocumentRef.алк_Производство</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="d0ef1750-27dd-451e-9890-f7df7085e81b">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

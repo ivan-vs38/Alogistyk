@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df1ff18c-5906-433e-9cae-8dfc82009129">
+  <producedTypes>
+    <selectionType typeId="4ccbac7e-8f79-436c-85a8-861d1ce01ce2" valueTypeId="07be2732-eb29-4349-8eb2-22ad0d3963c0"/>
+    <listType typeId="e25195e1-1ed8-44fe-9f70-5cfa0722ae4b" valueTypeId="28536905-0a67-4bce-8a6f-c2bb46579e14"/>
+    <managerType typeId="3e98b720-a2ed-4668-a0a8-72256b884787" valueTypeId="5834f148-cafe-4978-8c56-091f3434fad8"/>
+    <recordSetType typeId="cfb427f2-3352-4b23-b0a8-301dc1d33f86" valueTypeId="5dcd5cb0-a5a7-4654-9dd1-205648b5460d"/>
+    <recordKeyType typeId="de53ecf2-403b-454b-8989-12f2a8b6f477" valueTypeId="f22b3077-2f28-43c0-97dd-af910cba2d6f"/>
+    <recordType typeId="009198d2-d61d-414f-80c7-f6b753b38f49" valueTypeId="f75daddf-47b8-48de-bc4b-af18404494f2"/>
+    <recordManagerType typeId="110fab0a-ea97-478a-9e46-e971a1868a02" valueTypeId="30900d3b-0d9c-4e98-8b1a-07e9ed6f05b2"/>
+  </producedTypes>
+  <name>алк_ГрадацииСечений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Градации сечений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9fd4bc9f-bc14-4e11-9bbd-ebf980375066">
+    <name>Градация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Градация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Градации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3f0fe682-2397-4cc3-8c0a-dcf1eb84ba3f">
+    <name>Сечение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сечение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РазмерСечения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

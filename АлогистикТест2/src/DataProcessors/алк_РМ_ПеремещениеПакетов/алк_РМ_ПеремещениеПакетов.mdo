@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26521cba-c85e-41bb-8f1d-d6376b7e7797">
+  <producedTypes>
+    <objectType typeId="a3af3c0f-fa59-4853-9490-06899702a06e" valueTypeId="24179bdf-0dbe-4bd0-ae7f-9d52cd772ccb"/>
+    <managerType typeId="e111ce53-9698-4274-a593-17ee4ebb4745" valueTypeId="54a00f7d-4e69-405c-a3e5-6cbacb000a27"/>
+  </producedTypes>
+  <name>алк_РМ_ПеремещениеПакетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочее место перемещение пакетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.алк_РМ_ПеремещениеПакетов.Form.Форма</defaultForm>
+  <attributes uuid="2858b9dc-ab52-4483-897a-e5e280e2bf09">
+    <name>Бригада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бригада</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Бригады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c9a97b86-324b-41aa-8f7c-6b4f2dce7177">
+    <name>ДатаСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата смены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="18152551-1559-4587-a014-5992d50fcfea">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Собственная организация, от имени которой оформляется документ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="c35693d3-9a35-4e20-80cb-2c69b114269b">
+    <name>СкладОтправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад отправитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>DataProcessor.алк_РМ_ПеремещениеПакетов.Attribute.Организация</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="5dccfeda-f63e-4992-bbbf-03fccc79e3a2">
+    <name>СкладПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад получатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>DataProcessor.алк_РМ_ПеремещениеПакетов.Attribute.Организация</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="d25c652c-2c00-4680-8e5f-3b62ca2e0b2b">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="2084e6a5-2a2a-4bd9-927b-09da5bd13c45">
+    <name>Участок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок отправителя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="926f9e27-e178-4f43-a383-cc1f87adcd94">
+    <name>ШтабельОтправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штабель отправитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Участок</name>
+      <field>DataProcessor.алк_РМ_ПеремещениеПакетов.Attribute.Участок</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="6f09f0df-6fc6-4fae-9e51-8e4cfceacceb">
+    <name>ШтабельПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штабель получатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Штабели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="5ec775d1-4bdb-4fdf-a23f-ded317a179de">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

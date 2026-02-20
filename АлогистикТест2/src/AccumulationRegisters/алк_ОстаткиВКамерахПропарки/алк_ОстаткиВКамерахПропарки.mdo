@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e9a4bf1e-509e-4c34-9351-bee27cdd710c">
+  <producedTypes>
+    <selectionType typeId="43df7041-f9aa-4a8b-a35b-232f3ff57147" valueTypeId="0c764fb5-a6d3-4be4-a4e4-be4b2045bf47"/>
+    <listType typeId="e8c969da-b96b-4d1e-b7ed-c5a9f5b9d982" valueTypeId="adcee28c-961e-4b8b-81d6-285fd790db38"/>
+    <managerType typeId="7afed891-e709-43c1-a94d-60eeee65103a" valueTypeId="4084283d-0594-49b7-a596-3dda52f92f50"/>
+    <recordSetType typeId="16ce1a7a-0b82-4802-b4c3-a58cee2a496d" valueTypeId="c557174a-5d22-4633-8b31-4e9d61bef74d"/>
+    <recordKeyType typeId="01f6527a-3130-45d0-bf54-a9376f974012" valueTypeId="eaee4be7-2ac9-40a3-9eb8-415cee9c0e32"/>
+    <recordType typeId="784fe523-29b6-43ec-b70b-db52dceea21b" valueTypeId="aae17e59-6999-4319-b361-f223767e696a"/>
+  </producedTypes>
+  <name>алк_ОстаткиВКамерахПропарки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки в камерах пропарки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="f26824b4-9d31-41e7-9b0f-3883b7aa1276">
+    <name>Объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="9d788081-826d-4dc0-a95a-f783d5b763c0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="659847a9-4864-4da2-9300-456fd6299166">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурная единица</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c7eed768-5a99-4595-bb68-a06f93896dfd">
+    <name>Ячейка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ячейка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Ячейки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

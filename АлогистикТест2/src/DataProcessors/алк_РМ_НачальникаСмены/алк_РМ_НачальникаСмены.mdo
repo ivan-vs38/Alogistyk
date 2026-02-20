@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4ae5704-4a40-42a9-ad24-110e60bf4104">
+  <producedTypes>
+    <objectType typeId="e2a68bd5-c2b9-430c-8e2b-9f9c09bf09a7" valueTypeId="1d7f7170-48dd-4be0-9551-865749c7198b"/>
+    <managerType typeId="641710d5-67cf-49a5-8a29-1c1c858e4a2e" valueTypeId="c3f1eba1-462e-4edf-b0c8-3cbefebc831d"/>
+  </producedTypes>
+  <name>алк_РМ_НачальникаСмены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочее место начальника смены</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.алк_РМ_НачальникаСмены.Form.Форма</defaultForm>
+  <attributes uuid="de6c7810-e246-4fe0-8283-d492b2c47d52">
+    <name>ДатаСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата смены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="a4283c4f-4836-4f86-98ca-6304643e87c1">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <tabularSections uuid="2d8a3aeb-8511-4f56-ad48-2eb68bd5fb88">
+    <producedTypes>
+      <objectType typeId="3f70a052-c37d-438a-a988-d576a6a66b8c" valueTypeId="8ffb53ed-9633-4fc8-8522-6604bd4d1233"/>
+      <rowType typeId="1ba68ff2-b6cd-4bbe-acad-1df3a7dfc59c" valueTypeId="b374e2dc-bcee-45fb-865e-8eb0de1efc51"/>
+    </producedTypes>
+    <name>Проблемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проблемы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="2adf4ca0-7ecf-425d-9443-1aecd6cbd32c">
+      <name>Проблема</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проблема</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="db6a8e93-b89b-48f6-8c24-ae68055e57ec">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

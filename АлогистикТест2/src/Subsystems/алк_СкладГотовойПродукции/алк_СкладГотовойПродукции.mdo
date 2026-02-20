@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd5f40dd-a20c-4ac3-ad14-27e5817b73ea">
+  <name>алк_СкладГотовойПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>СГП</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаСГП</picture>
+  </picture>
+  <content>Report.алк_ВедомостьТоварыНаСкладах_Вертикальная</content>
+  <content>Report.алк_ВедомостьУчастокПереупакаовкиСГП_Вертикальная</content>
+  <content>Report.алк_ОстаткиУчастокПереупакаовкиСГП</content>
+  <content>CommonPicture.ПодсистемаСГП</content>
+  <content>Report.алк_ТоварыНаСкладахРезерв</content>
+  <content>Report.алк_ТоварыКПоступлениюНаСклад</content>
+  <content>Report.алк_ПоступлениеПиломатериаловНаСГП</content>
+  <content>Report.алк_ПоступлениеОтходовНаСГП</content>
+  <content>Document.алк_РучноеИзменениеПараметровПакета</content>
+  <content>CommonCommand.алк_ПанельОтчетов_СГП</content>
+  <content>AccumulationRegister.алк_ОстаткиЗапасов</content>
+  <content>Report.алк_ВедомостьПоОстаткамЗапасов_СГП</content>
+  <subsystems>СкладскиеОперации</subsystems>
+  <subsystems>УправлениеЗаказами</subsystems>
+  <subsystems>Переупаковка</subsystems>
+  <subsystems>ТранспортнаяЛогистика</subsystems>
+</mdclass:Subsystem>

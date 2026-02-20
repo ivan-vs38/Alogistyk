@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="948300c7-bdf3-4c79-9036-114c07248c04">
+  <producedTypes>
+    <refType typeId="2fddf212-308e-4226-b0a6-dd5ee8f70374" valueTypeId="6ffe7817-0e2f-45a5-a7a8-6b081def1bfd"/>
+    <listType typeId="527f103f-9ba9-4428-aa02-f16c76f6fae1" valueTypeId="a1d8f0aa-0211-4e16-b9dc-d6432045c504"/>
+    <objectType typeId="16ab38c3-f2cd-4292-bff2-1f8e70cd4475" valueTypeId="2c8bdbc2-71e1-40e6-9723-b5167e6827b4"/>
+    <managerType typeId="c383e33e-84e6-46af-bb53-cbb2d596e90d" valueTypeId="c3b6ec51-affc-44ab-9fe2-53c5e5248f28"/>
+    <recordManagerType typeId="2530201f-7c0a-4072-9891-239398ca2e67" valueTypeId="6474d5c5-2971-4c52-8a47-db1c9d40a112"/>
+    <recordSetType typeId="f391e808-d505-43b5-84a9-5d9c3dcb158a" valueTypeId="dc5bb15d-f58d-4469-93e8-c227e86f33e2"/>
+    <recordType typeId="7b903599-6310-4741-87c3-509190395763" valueTypeId="ac898da2-886a-43a6-bba3-08b195c2b063"/>
+    <recordKeyType typeId="ac2491b5-f623-4e6f-a959-dfe3cf17d2b4" valueTypeId="2161e1c8-6820-4efa-942d-67c90dbb4eed"/>
+  </producedTypes>
+  <name>dbo_HumidityList</name>
+  <parentDataSource>ExternalDataSource.ПФМ_ПМ_Сырой</parentDataSource>
+  <nameInDataSource>dbo.HumidityList</nameInDataSource>
+  <keyFields>ExternalDataSource.ПФМ_ПМ_Сырой.Table.dbo_HumidityList.Field.ID</keyFields>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExternalDataSource.ПФМ_ПМ_Сырой.Table.dbo_HumidityList.Field.ID</inputByString>
+  <editType>InDialog</editType>
+  <tableFields uuid="49555e73-cf3c-40a9-be5c-39a73aa43113">
+    <name>ID</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>ID</nameInDataSource>
+  </tableFields>
+  <tableFields uuid="e3223338-56db-4147-8a80-24effb8e8d2f">
+    <name>Name</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Name</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="41f1db7e-2582-48d5-a2f3-3cdf3574dcae">
+    <name>Visible</name>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <nameInDataSource>Visible</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

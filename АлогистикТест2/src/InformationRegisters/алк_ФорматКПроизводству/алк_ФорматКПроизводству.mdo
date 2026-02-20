@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9fbfdb22-d35f-42bc-99c2-c61d67fff7a1">
+  <producedTypes>
+    <selectionType typeId="a70231ca-0241-4747-bdd1-9386942bc641" valueTypeId="012cfcdd-145b-4ae3-8233-bf8ce5cb2654"/>
+    <listType typeId="6bc36497-d67e-4ada-adb4-6bcfaa1b3fcb" valueTypeId="b9a1be60-de14-4749-9e49-025c422d7e0a"/>
+    <managerType typeId="9e83814c-8d93-436b-8f70-7d9562a8d8a2" valueTypeId="db8fc235-52b0-4889-bf60-673fac69b4e3"/>
+    <recordSetType typeId="e12d57ce-cdb8-4940-989b-82e4194bbcc5" valueTypeId="10c82fab-6645-4059-acbc-b2679a96ac48"/>
+    <recordKeyType typeId="80e727b6-7313-4da6-85c4-d9f335868774" valueTypeId="8b1ac28d-9cec-4336-a3f8-47f10805f25f"/>
+    <recordType typeId="4868e94d-6ec4-4d67-ab95-355cb20d549c" valueTypeId="5122f1a6-5512-44ed-b149-08039c2d8990"/>
+    <recordManagerType typeId="f6739ae5-7b0c-4425-a571-3066aca1adbd" valueTypeId="e84fa72c-8b23-4fa8-bd72-53fd894ec677"/>
+  </producedTypes>
+  <name>алк_ФорматКПроизводству</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форматы к производству (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4c970453-5537-47ce-a3c6-45ab614e1495">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="08b6f075-0d2d-4dc4-a180-2dd5db531940">
+    <name>ДатаСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата смены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ea98d7d3-0400-47ac-8d58-f73c725677e6">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b94d11fe-3f18-41f4-ae5a-ba39e2463aae">
+    <name>Линия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Линия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d6eb235b-7c6b-4fef-9965-2b9ed98c0133">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

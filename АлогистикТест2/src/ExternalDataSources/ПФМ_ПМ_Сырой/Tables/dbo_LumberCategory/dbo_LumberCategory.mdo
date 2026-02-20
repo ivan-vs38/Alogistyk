@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6ce902e-331e-45d1-b228-079767bd9bf0">
+  <producedTypes>
+    <refType typeId="beeeee90-1016-4d42-9366-dd2f8697e764" valueTypeId="66166392-ed19-4f66-b6d2-b0949ed8eba6"/>
+    <listType typeId="6d4f64d5-4798-4a2f-9975-cd489bc7d117" valueTypeId="6bb9c967-cbdb-4722-866c-74da9de71d50"/>
+    <objectType typeId="db127a93-9498-4d29-b426-064a412ebf71" valueTypeId="bcc75fbf-e9ed-40a4-b003-d101117f29f0"/>
+    <managerType typeId="f974e9eb-f680-43c4-bf2f-6cc086652b7e" valueTypeId="e3c053ad-b306-4064-aed2-293e2cf7dd34"/>
+    <recordManagerType typeId="423abad6-9119-4fe9-9739-7579c89af6e7" valueTypeId="834a0f76-26bf-4ae9-a003-2f2e6c654bd6"/>
+    <recordSetType typeId="66c42bae-581f-49d5-aa05-edb59324244b" valueTypeId="6444217e-96ae-433b-a6c1-9e6f0817a6ea"/>
+    <recordType typeId="193f548b-9a5f-495e-9b7a-9edb336b7495" valueTypeId="89a3f7f7-be15-49e7-b689-eec9cbc72163"/>
+    <recordKeyType typeId="cc7cecc0-6723-4cfb-a4b3-5450e76997c8" valueTypeId="dd1191b9-23d7-4f5d-9d37-a58043f654c0"/>
+  </producedTypes>
+  <name>dbo_LumberCategory</name>
+  <parentDataSource>ExternalDataSource.ПФМ_ПМ_Сырой</parentDataSource>
+  <nameInDataSource>dbo.LumberCategory</nameInDataSource>
+  <keyFields>ExternalDataSource.ПФМ_ПМ_Сырой.Table.dbo_LumberCategory.Field.ID</keyFields>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExternalDataSource.ПФМ_ПМ_Сырой.Table.dbo_LumberCategory.Field.ID</inputByString>
+  <editType>InDialog</editType>
+  <tableFields uuid="d19c5002-bfa3-4f6a-b006-fa7c611c3784">
+    <name>ID</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>ID</nameInDataSource>
+  </tableFields>
+  <tableFields uuid="e9a6b93d-c550-45e5-878c-5f68acb77dad">
+    <name>Name</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Name</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="790916eb-5e20-4c34-9c37-55b3cd50bb3b">
+    <name>Visible</name>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <nameInDataSource>Visible</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

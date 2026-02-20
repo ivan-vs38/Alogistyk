@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4c430d9-7799-480c-9685-0018163281f5">
+  <producedTypes>
+    <selectionType typeId="dca594fe-d31a-4cc7-8901-8a515e035ea5" valueTypeId="7a35ee37-f2d2-4540-8028-e8154fbe221c"/>
+    <listType typeId="33b11598-c5ac-41c7-9408-3176f4595578" valueTypeId="8ea7b24b-a33a-486d-904e-3c784d0fffdc"/>
+    <managerType typeId="3192491c-b5e0-4704-bbdd-1e97a9c792a6" valueTypeId="e01b20f6-bccc-4a25-8626-9c3a24ce8f0c"/>
+    <recordSetType typeId="5871a2bf-2088-47f3-9d6b-057a11150f7e" valueTypeId="e39c906f-f033-47ff-b7e1-8cfdb1b4f0b8"/>
+    <recordKeyType typeId="acc33e71-6dd8-4566-bf24-b9689992a281" valueTypeId="d9ae20be-bbb8-4412-a472-72209b84cfe1"/>
+    <recordType typeId="ca7a2d6d-f465-4524-97eb-e6ffa191ab55" valueTypeId="da228e5c-7ea4-4e5a-9939-6d45e8d075cb"/>
+    <recordManagerType typeId="eb8c8481-a17a-40cb-8afb-5460835e9532" valueTypeId="e8ff85ff-bbed-45a1-b7b3-ccbd242db557"/>
+  </producedTypes>
+  <name>алк_КонтрагентПользователяПортовогоАгента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контрагент пользователя портового агента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e58bf9b8-eedf-499b-9732-bbf0605829b6">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e4560a2b-16d0-410e-9ca3-9e7692c10957">
+    <name>ПользовательАгента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь агента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

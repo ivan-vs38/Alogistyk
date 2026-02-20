@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d6f4d28-e208-49a7-be1c-7656a96b4802">
+  <producedTypes>
+    <selectionType typeId="8e6860fc-e84e-49a2-8481-eaa3537a97a8" valueTypeId="1972decc-dd91-478e-af67-b6c6a237ae3b"/>
+    <listType typeId="e9eadc8a-4148-4138-914b-4f5e3776f2f3" valueTypeId="2b1c2522-0d15-4ae6-993e-55b249a9ccd1"/>
+    <managerType typeId="6b52b022-1cc4-49d4-8cbb-195d60d43d8c" valueTypeId="ed78e011-63ff-4ab5-a3ed-e8f70ba0336d"/>
+    <recordSetType typeId="870adf74-4722-427a-90af-0bafb6e74d5f" valueTypeId="a8b3e57d-4988-4993-b82d-dc5b95ec81c8"/>
+    <recordKeyType typeId="c63d48fc-7d64-4b96-bb7c-25dcca457c83" valueTypeId="6852cdb9-68ee-4048-ba9e-51e44bb0e7b2"/>
+    <recordType typeId="11c5882c-8c5a-4660-94ba-0657f918d6f5" valueTypeId="20e323f4-6fe8-4e70-a47c-9f626c069344"/>
+    <recordManagerType typeId="69d76f02-a184-4230-a3b4-206e2b5658a8" valueTypeId="89067a72-9e6c-49a4-9d02-a4e565c70a59"/>
+  </producedTypes>
+  <name>алк_ТипСменыУчастка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип смены участка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a9337b8e-b1af-4de2-98dc-6d269e6151b7">
+    <name>ТипСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип смены</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ТипСмен</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="31112d75-f3e7-4fea-bc79-ddd1fef0c764">
+    <name>Участок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b66b265c-2e0b-4615-a4dd-a66f87537629">
+  <producedTypes>
+    <objectType typeId="e9c014da-5f73-4af7-80e5-3568a1dd6aad" valueTypeId="0aacdfd0-ef42-4dc7-bb78-ea8b4092ea7c"/>
+    <managerType typeId="60fb6099-6149-4b6a-8873-f52d98d4574d" valueTypeId="7318949b-9f9d-432d-934a-d4b9dd9b6106"/>
+  </producedTypes>
+  <name>алк_СортировкаЛесопродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет. &quot;Сортировка лесопродукции&quot; (данные линии сортировки)</value>
+  </synonym>
+  <comment>Удалить</comment>
+  <defaultForm>Report.алк_СортировкаЛесопродукции.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.алк_СортировкаЛесопродукции.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.алк_СортировкаЛесопродукции.Form.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>Report.алк_СортировкаЛесопродукции.Form.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="c6c1e9eb-fecd-4e57-8354-bcff8063ed1e">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="0d7a0efd-63c2-4687-8bf9-425d26fe4faf">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bf76b8ab-004c-4a26-a727-925c87b30680">
+    <name>ФормаНастроекОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="97687390-ce03-4ae8-9b01-e4c9082e4791">
+    <name>ФормаВариантаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c07baab0-37af-401a-8f69-4a4cb09af5dc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="b86749e7-cbe4-466b-97dc-27a88bb0486f">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет. &quot;Сортировка лесопродукции&quot; (данные линии сортировки)</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

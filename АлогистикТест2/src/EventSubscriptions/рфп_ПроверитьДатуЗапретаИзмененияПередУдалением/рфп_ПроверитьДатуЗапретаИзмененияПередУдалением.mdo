@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0b8dfe2-0965-4d05-a718-f3944c899bc5">
+  <name>рфп_ПроверитьДатуЗапретаИзмененияПередУдалением</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рфп проверить дату запрета изменения перед удалением</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.алк_СкладскиеОперации</types>
+    <types>DocumentObject.алк_СборкаЗапасов</types>
+    <types>DocumentObject.алк_СменныйРапортЦЛП</types>
+    <types>DocumentObject.алк_ЧисленныйСоставСмены</types>
+    <types>DocumentObject.алк_Аддендумы</types>
+    <types>DocumentObject.алк_ПривязкаПакетовКАддендуму</types>
+    <types>DocumentObject.алк_Производство</types>
+    <types>DocumentObject.алк_Перемещение</types>
+    <types>DocumentObject.алк_ПеремещениеЛесопродукции</types>
+    <types>DocumentObject.алк_ВводОбъемныхПроизводственныхПоказателей</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередУдалением</handler>
+</mdclass:EventSubscription>

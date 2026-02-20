@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e65ee023-356c-4ae9-b913-b7451fbd80f3">
+  <producedTypes>
+    <selectionType typeId="34d8bf81-a1fc-4ab5-8fb2-7b30336c1f4a" valueTypeId="ce039a97-0d2c-40dd-bfc5-eaddf9b92466"/>
+    <listType typeId="a715b21d-64a0-453f-a418-79bf82aaee69" valueTypeId="1b5c35ea-4bf9-48c8-9666-c1509009ab50"/>
+    <managerType typeId="4f8ef05a-5a13-47fd-9c4b-37ae87cbcdaf" valueTypeId="55ef936b-06a7-498b-b8cb-adecd3a25874"/>
+    <recordSetType typeId="07661aeb-4a5d-4a38-8134-5c1b137ae09e" valueTypeId="3f3087a8-13c8-4ecd-8466-11fb07869e36"/>
+    <recordKeyType typeId="877baa89-286a-4363-bf2f-31de413feeba" valueTypeId="71829506-a311-4c1f-9ce3-cd5aa690dd90"/>
+    <recordType typeId="557e52c8-7de8-46c0-81b7-9b3fd63ecff8" valueTypeId="36ab7188-0fdc-4b08-992a-31f4d0461797"/>
+  </producedTypes>
+  <name>алк_ПредварительныеПартииСерии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предварительные партии (по пакетам)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="f259515b-54ae-4132-85ca-cee2c4510ed9">
+    <name>КоличествоПакетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество пакетов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="51932905-462f-4ded-8bac-ff14d528311c">
+    <name>ПартияОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия отгрузки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ТранспортировкаЗапасов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a8b3be51-3825-405a-ae0f-3cae2bda26b4">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="422483c3-68b6-4a50-8156-3d6d7ff86b0e">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Серия товаров</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

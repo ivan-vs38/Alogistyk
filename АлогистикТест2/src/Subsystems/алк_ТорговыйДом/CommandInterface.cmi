@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Report.алк_ВедомостьУчетаЛесопродукцииНаОтветхранении.Command.Команда1</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsPlacement>
+    <placementFragments>
+      <group>ActionsPanelReports</group>
+      <commands>Report.алк_ВедомостьУчетаЛесопродукцииНаОтветхранении.Command.Команда1</commands>
+    </placementFragments>
+  </commandsPlacement>
+  <commandsOrder>
+    <orderFragments>
+      <group>ActionsPanelReports</group>
+      <commands>Report.алк_ВедомостьУчетаЛесопродукцииНаОтветхранении.Command.Команда1</commands>
+      <commands>Report.алк_ВнутренняяПередачаМеждуОрганизациями.StandardCommand.Open</commands>
+      <commands>Report.алк_ПриемкаЛесопродукцииГОСТ_ДопДанныеПоставщика.StandardCommand.Open</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.алк_ТорговыйДом.Subsystem.Выгружаемые</subsystems>
+    <subsystems>Subsystem.алк_ТорговыйДом.Subsystem.Загружаемые</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

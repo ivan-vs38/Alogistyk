@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e9f126df-f02b-4d87-95c9-b1acacdb1692">
+  <producedTypes>
+    <selectionType typeId="7404ff3d-a310-4131-8ce1-1a761e8bee06" valueTypeId="e7cbf07a-3f70-426c-b4d2-3eef88241517"/>
+    <listType typeId="9e3d68c1-9a98-4421-b696-7b700dcc4258" valueTypeId="b0a7b2df-f789-4d87-a889-c60709083910"/>
+    <managerType typeId="3cf44172-2893-45d3-bf61-f1a40b90a75d" valueTypeId="c2f9172c-13a9-488f-92ee-061f9767d102"/>
+    <recordSetType typeId="dd9abffd-7a01-4bbf-82d8-3fbb70483cd8" valueTypeId="d35593fb-bf5b-48db-becb-d34053dac201"/>
+    <recordKeyType typeId="11d27131-f403-4780-80c9-014fb037e7d5" valueTypeId="e96da53a-4a95-4951-8bbc-24a08053e20d"/>
+    <recordType typeId="49b772e2-065c-4e63-82cb-e907c6a1a1f3" valueTypeId="0d3cdaf0-2ceb-415a-a589-04d014d44ced"/>
+    <recordManagerType typeId="725fcb63-daf7-405e-8187-c2bcfd1521d5" valueTypeId="ae4d3f9c-8432-4d27-9bc6-0d086bbb9a06"/>
+  </producedTypes>
+  <name>алк_ОсновныеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные объекты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d1dc2d73-d697-4f6f-8ac7-3c2f72c672f4">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3dd090a2-044c-4abd-9397-dfcd09cc8dca">
+    <name>ВидОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид объекта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ВидыОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

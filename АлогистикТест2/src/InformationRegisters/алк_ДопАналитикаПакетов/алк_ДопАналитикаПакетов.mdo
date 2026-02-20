@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f54fcac0-4203-4d42-9e65-0f4273292f79">
+  <producedTypes>
+    <selectionType typeId="6b3b1819-c878-41f1-b7d4-033f3c9c9b37" valueTypeId="7215fb56-3a7d-48f3-97bd-e7ca124d1b7e"/>
+    <listType typeId="4b960aa3-f066-4a63-baef-e2c7032e21be" valueTypeId="6290a8e6-6651-453b-acd5-d52d877702f2"/>
+    <managerType typeId="0934130b-7b84-44e4-815c-28a4f1c61fca" valueTypeId="2a14ccc6-1db2-423d-a552-49013335ab81"/>
+    <recordSetType typeId="6eccbf7c-88d4-45ac-9748-dd4e7238fa3c" valueTypeId="8a2f10e7-dc0f-4925-8f2e-27e91bba60d2"/>
+    <recordKeyType typeId="216e40ef-18bc-4657-8d36-7ab239714f32" valueTypeId="0fc8c92f-2fbd-42ad-99ce-19432c3c0803"/>
+    <recordType typeId="c8330eef-1bbc-4c32-9edb-7459cc8b1ccd" valueTypeId="46d54ca2-cace-42e4-ac60-3f83989e4877"/>
+    <recordManagerType typeId="9b66bfa7-833a-4f09-ac24-dd3bab0b84c5" valueTypeId="0bf2e31b-f255-4efa-9423-98fed499c682"/>
+  </producedTypes>
+  <name>алк_ДопАналитикаПакетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Алк доп аналитика пакетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2f586728-0cd4-45eb-86bd-8d4434e98c47">
+    <name>Аналитика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ДопАналитикаПараметрыПакетовОперативный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="87cbc75d-01d4-45e2-9e53-648879194255">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

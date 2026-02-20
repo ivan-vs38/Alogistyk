@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9415695b-4f71-46ae-acba-253216289fa4">
+  <producedTypes>
+    <objectType typeId="4b376196-d14a-493e-ba74-38b802b7b031" valueTypeId="b0b1e8e1-11d9-4c41-bf21-124890496d5d"/>
+    <refType typeId="4d5ce23d-e834-4bb5-a198-807205d8932d" valueTypeId="1fe5855c-1b2b-4650-b048-fb763e3db59b"/>
+    <selectionType typeId="7454614a-8dac-4193-ac22-4004cf40ad49" valueTypeId="d5a811aa-6877-49ec-ab47-d3ce36482e2b"/>
+    <listType typeId="83deae4e-9d19-4acb-b0d4-d6d6116a4e6e" valueTypeId="54cd1746-fb9d-4c99-aec8-44125e9760b0"/>
+    <managerType typeId="60cd0d12-bb6f-46b7-99dc-a2061a64e955" valueTypeId="bd5a40ff-2333-4df6-8ce1-707b64214bfc"/>
+  </producedTypes>
+  <name>алк_ГрадацияПропарки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Градация пропарки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_ГрадацияПропарки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_ГрадацияПропарки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.алк_ГрадацияПропарки.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultChoiceForm>Catalog.алк_ГрадацияПропарки.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="c3350230-ef90-4820-8e93-a05163a17ddb">
+    <name>КатегорияНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="dc30b181-7a09-4385-95a0-66bd3574c55d">
+    <producedTypes>
+      <objectType typeId="6a30ce9f-ae75-44a7-8583-4d30724266f2" valueTypeId="d5b7db9f-68b5-4240-9ea1-99f76e0ddf13"/>
+      <rowType typeId="1f67099f-fbfe-4d8c-aea2-3c537309d677" valueTypeId="784c0d9a-1f9a-400c-b29e-8b6114eb8353"/>
+    </producedTypes>
+    <name>Сечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сечения</value>
+    </synonym>
+    <attributes uuid="15758287-de55-4ec0-bfa9-586b4bdcb3e0">
+      <name>Сечение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сечение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.РазмерСечения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="c4f732a7-2bcc-47f9-8718-b62ca6f8fc48">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b4c72c8e-790e-4276-9bbc-47dab633724e">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

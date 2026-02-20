@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="150b2521-df35-487b-9836-1c41b530c8e4">
+  <producedTypes>
+    <objectType typeId="d25cd657-66e5-48eb-aea5-38f983e0c96c" valueTypeId="ccb51af4-f251-48d3-8eca-85fa352b7d8c"/>
+    <refType typeId="a96b4c26-224c-4d30-88ca-98e2f8efc599" valueTypeId="b9781e67-51c5-4f9a-8ef4-4f7fd3196676"/>
+    <selectionType typeId="858f4acb-32a7-4b70-892e-d2ed2c7e5084" valueTypeId="fb07432b-5dcd-4882-9460-04a198028c24"/>
+    <listType typeId="86afe1e6-0a9f-4cde-832b-70bfeeb3fe6d" valueTypeId="d2b24b78-6b03-4a1c-9bef-9604b18e1ee9"/>
+    <managerType typeId="d59e723f-87a2-4ca6-a2c1-90dfa92f961e" valueTypeId="c76e07cd-7580-404b-96a1-0062d5508f8f"/>
+  </producedTypes>
+  <name>алк_Простой</name>
+  <synonym>
+    <key>ru</key>
+    <value>Простой (справочник)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_Простой.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_Простой.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="fba2f05a-6014-40c0-9fa4-a3ac20c03d8b">
+      <name>СтруктураПоГруппам</name>
+      <description>Структура по группам</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+      <isFolder>true</isFolder>
+    </items>
+    <items id="a6b4d112-5e1f-4fe5-9a49-831836ad62fc">
+      <name>СтруктураПоТипам</name>
+      <description>Структура по типам</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+      <isFolder>true</isFolder>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.алк_Простой.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.алк_Простой.Form.ФормаГруппы</defaultFolderForm>
+  <attributes uuid="1bf264c1-d605-4df8-b0f4-5150e2b69014">
+    <name>Цех</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цех</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Цеха</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6fb5466c-2201-42d1-91fa-9ca6a066ce41">
+    <name>Участок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="533453b8-372b-433d-bf3e-1c74757d86ee">
+    <name>МашинныйЦентр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Машинный центр</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_МашинныйЦентр</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d9d57e01-46bc-4179-ae95-a79d1cece934">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ПодтипПростоя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <createOnInput>Use</createOnInput>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+  </attributes>
+  <attributes uuid="814a479e-c299-4f1a-a3c2-e142d55d3c2e">
+    <name>Подтип1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтип 1</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ПодтипПростоя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Родитель</name>
+      <field>Catalog.алк_Простой.Attribute.Тип</field>
+    </choiceParameterLinks>
+    <createOnInput>Use</createOnInput>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+  </attributes>
+  <attributes uuid="8f5c8bf2-8c56-4b5b-9132-99048579259d">
+    <name>Подтип2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтип 2</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ПодтипПростоя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Родитель</name>
+      <field>Catalog.алк_Простой.Attribute.Подтип1</field>
+    </choiceParameterLinks>
+    <createOnInput>Use</createOnInput>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+  </attributes>
+  <attributes uuid="a1a3f94f-5cc0-40b7-9974-335011e79267">
+    <name>Подтип25</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтип 2.5</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ПодтипПростоя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Родитель</name>
+      <field>Catalog.алк_Простой.Attribute.Подтип2</field>
+    </choiceParameterLinks>
+    <createOnInput>Use</createOnInput>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+  </attributes>
+  <attributes uuid="104e1a83-4253-4582-9b0d-831d246b5c1e">
+    <name>Подтип3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтип 3</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ПодтипПростоя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Родитель</name>
+      <field>Catalog.алк_Простой.Attribute.Подтип2</field>
+    </choiceParameterLinks>
+    <createOnInput>Use</createOnInput>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+  </attributes>
+  <attributes uuid="2e09491a-65c7-4325-a4d2-d0b420fb0e9d">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6f73c4a4-18a5-4b0b-84de-649fc7c14fae">
+    <name>Узел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_УзелУчастка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dc0737aa-71ba-427a-a56d-a57c675d8bf7">
+    <name>Служба</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служба</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Службы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c76b909a-4d8a-4afa-bccd-35993d4b386b">
+    <name>ВидПростоя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид простоя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ВидПростоя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eaf77d65-6a2f-46d6-b9dc-56ace412ce7e">
+    <name>ТипПростоя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип простоя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_ТипПростоя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="13a943e6-5719-4cb4-884b-ce863d3cdb66">
+    <name>IdleReasonID</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID</value>
+    </synonym>
+    <comment>Для обмена с Оптимониторингом</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код причины простоя в программе Opti-Monitoring.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="8b01e088-a1a5-43c1-ae13-65a6bb898ecd">
+    <name>ФормаВыбораПоТипу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора по типу</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bf7b9302-3f7d-4664-b41b-08086f0b3f47">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="29f4602a-4468-4f7d-b295-f2aed4989389">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

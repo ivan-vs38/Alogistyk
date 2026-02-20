@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e31396a-967d-4859-ac54-8f6cea869e14">
+  <producedTypes>
+    <selectionType typeId="4178fd1b-7f2f-4fc9-981c-c91c2a4354da" valueTypeId="529fab8c-3908-4e30-bf09-4f1df5b6b5dc"/>
+    <listType typeId="f64a7028-9009-4394-9f06-e04163a78cfd" valueTypeId="75a82ff7-4a34-417c-9cc3-f5ff1e819abd"/>
+    <managerType typeId="3e488b7c-a48b-4537-b370-7714ef1ca399" valueTypeId="208fe04c-aada-40d9-9544-886e18b7c052"/>
+    <recordSetType typeId="5f687731-7a78-4d41-80b3-e0ad44cf3086" valueTypeId="75699628-a174-41a2-b65b-d780293b6059"/>
+    <recordKeyType typeId="d7b8e1d3-3378-4fc5-9362-88e240e0a463" valueTypeId="58fd704d-bcaa-415d-a1fd-b3319853d911"/>
+    <recordType typeId="e3d9e8c4-4b65-43a3-b586-06942a84b3fd" valueTypeId="b520c95a-841a-4a6a-8232-10a8609e2bf7"/>
+  </producedTypes>
+  <name>алк_ОтгрузкиПоЗаказам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отгрузки по заказам (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="5eaed0ea-8cf3-42f7-919e-5a941809d40b">
+    <name>ОбъемОтгружено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем отгружено</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="b556eb44-25fc-46d5-aeb9-43002a71ea8f">
+    <name>ОбъемЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем заказа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="eaebd21a-76d4-4390-a30a-a9ed203620cc">
+    <name>ОбъемГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем группы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="4b3086c6-25b7-4869-a1ac-d9cb1800b3fd">
+    <name>ИдентификаторГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор группы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="ea9f246b-1609-428b-9d1d-4fe57a15bf7b">
+    <name>алк_ЗаказПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ЗаказПокупателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0edb2f50-2583-4892-8a03-96533207fad5">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="224ca21f-89d2-460d-995d-d3e47efb19c4">
+    <name>алк_КатегорияНоменклатурыПЭО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номенклатуры ПЭО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_КатегорияНоменклатурыПЭО</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

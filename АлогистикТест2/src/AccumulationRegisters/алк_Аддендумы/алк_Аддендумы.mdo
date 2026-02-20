@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c754fe6a-709b-4895-9198-0c3b3814147c">
+  <producedTypes>
+    <selectionType typeId="0dabb168-6cb9-4a9e-8f54-381149f934ef" valueTypeId="0987f3d5-2d70-4e8d-baf7-38c24be00755"/>
+    <listType typeId="f9f4133a-cc44-4cbe-b710-d03b2b4fcd51" valueTypeId="cc183e2f-6f00-46fd-a8c6-3d545e4ccfe5"/>
+    <managerType typeId="4f7395fa-f163-4d40-9b1a-be0addefc383" valueTypeId="a2a50516-dca3-44c9-a1ff-f66a5e24ef36"/>
+    <recordSetType typeId="df700ed4-36d5-42d9-8ef0-5b15ca286847" valueTypeId="87f0130d-360e-4fa9-8b54-33853ff7831a"/>
+    <recordKeyType typeId="1c18abd3-384e-4665-992c-187794bdf451" valueTypeId="21d19876-d78d-49a4-b81f-ecdfa24b53b7"/>
+    <recordType typeId="ff4af867-d27e-4dac-96da-fc5fd9c608ed" valueTypeId="219965a7-da05-4fe2-a003-d8dfaca41418"/>
+  </producedTypes>
+  <name>алк_Аддендумы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Алк аддендумы</value>
+  </synonym>
+  <comment>Регистр показывает сколько требуется произвести и отгрузить по заказу</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <explanation>
+    <key>ru</key>
+    <value>КПроизводству: приход адд., расход привязкой (любой), закрытие - закрытием адд
+
+Произведено - приход привязкой с галочкой &quot;производство&quot;, закрытие закрытием адд
+
+КОтгрузке: приход адд., расход отгрузкой, закрытие - закрытием адд
+</value>
+  </explanation>
+  <resources uuid="c53cc4c6-4a35-417f-ae41-7e678b1da4f2">
+    <name>КПроизводству</name>
+    <synonym>
+      <key>ru</key>
+      <value>К производству</value>
+    </synonym>
+    <type>
+      <types>DefinedType.алк_Количество</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="27c0335d-de80-4f32-a5a4-f7e52b2afde7">
+    <name>Произведено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произведено</value>
+    </synonym>
+    <type>
+      <types>DefinedType.алк_Количество</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="7a495c34-bee2-4c6e-ae0b-ef3b0b615ac4">
+    <name>КОтгрузке</name>
+    <synonym>
+      <key>ru</key>
+      <value>К отгрузке</value>
+    </synonym>
+    <type>
+      <types>DefinedType.алк_Количество</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="e48ce839-ace6-4f50-899f-3f153f9a686e">
+    <name>Аддендум</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аддендум</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_Аддендумы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="533ef472-9f19-4965-ab69-67d0577a1e26">
+    <name>ИдентификаторТовара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор товара</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

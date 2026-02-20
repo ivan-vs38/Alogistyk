@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="367bd829-c3d6-47b4-a68c-8dbbb106dd12">
+  <producedTypes>
+    <objectType typeId="59537b59-41c4-4bf6-a98f-b69c71d8f3ac" valueTypeId="0652dcc7-8c78-4020-bd4a-dd4e6009aa54"/>
+    <refType typeId="b32e79d8-ba0a-4854-bdec-061392f0e1de" valueTypeId="1daf5fdc-0c31-4677-8c10-b31cb1deb8ee"/>
+    <selectionType typeId="65fc88b7-698e-4e43-8438-aa36eb5924ed" valueTypeId="3d597940-0c5f-4977-9786-0d377233be3a"/>
+    <listType typeId="94a998fc-5d41-470a-923c-fdcf6809e941" valueTypeId="633eb1e3-e40b-4d59-b9ed-fb2bf5efbabe"/>
+    <managerType typeId="e07ae58f-0fb7-4832-b4bd-925379b079a2" valueTypeId="b3f2c95b-396c-47cc-b43d-a98334f0b3a8"/>
+  </producedTypes>
+  <name>алк_МашинныйЦентр</name>
+  <synonym>
+    <key>ru</key>
+    <value>Машинный центр</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_МашинныйЦентр.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_МашинныйЦентр.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>120</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.алк_МашинныйЦентр.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.алк_МашинныйЦентр.Form.ФормаЭлемента</defaultFolderForm>
+  <attributes uuid="c0845d21-39c8-40f6-a41d-76e78d783367">
+    <name>Участок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="66b2ffcb-bec7-46ee-88a6-25b78e154c1a">
+    <name>EquipmentID</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID</value>
+    </synonym>
+    <comment>Для обмена с Оптимониторингом</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код оборудования в программе Opti-Monitoring.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a7fc396b-4714-4fbc-98d9-85ce0fbaf83a">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

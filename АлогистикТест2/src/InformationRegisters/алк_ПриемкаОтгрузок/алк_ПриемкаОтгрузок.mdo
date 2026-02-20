@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="518f8e7f-6e29-45d5-bbbb-d69aa6d9117d">
+  <producedTypes>
+    <selectionType typeId="505814db-38da-4596-8ecc-6081d4314743" valueTypeId="d805ddf5-89bd-4e50-9ee7-910e77e59996"/>
+    <listType typeId="f74cfe10-7a87-4f00-99f1-e9d7ba7011e9" valueTypeId="d654ab97-8971-4dc6-a59b-9c0972e61000"/>
+    <managerType typeId="5aee9b15-0597-41bc-89b9-5dfa9207119f" valueTypeId="a8bdf584-4539-4dbd-bbac-b0510320b2ab"/>
+    <recordSetType typeId="2af4f701-a2f6-4330-87c6-9084a12afa72" valueTypeId="7ea476ad-6a31-42f9-9480-abaabc9d49b5"/>
+    <recordKeyType typeId="ed07e489-263c-479b-a53b-101236ceb75a" valueTypeId="8467ae56-1a53-4120-a25e-d6b3cb76c376"/>
+    <recordType typeId="4d85a022-93c9-4103-b6c7-34e5dc03d162" valueTypeId="2a6b9a7e-c8af-43f7-abd0-fc14ccc166d0"/>
+    <recordManagerType typeId="a280a8e0-2dc2-40ec-b8e3-76bf9f64769c" valueTypeId="86fd7786-4bd1-4519-97c6-8abee2e1e3bf"/>
+  </producedTypes>
+  <name>алк_ПриемкаОтгрузок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приемка отгрузок (на перевалке)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c73ef93e-4dd9-4695-98c4-d04fc3e18e7a">
+    <name>Документ_ПНПеревалка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ ПН перевалка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ПриходнаяНакладнаяПеревалка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="75682585-2ad4-4272-8ae9-d7a55db0de4b">
+    <name>ДокументОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ отгрузки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ТранспортировкаЗапасов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

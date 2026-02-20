@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4df094a-2abb-440a-a3f0-a1916168da8a">
+  <producedTypes>
+    <selectionType typeId="b21c1b0f-0cb5-4a14-8c6f-721cc31c422f" valueTypeId="a6f43e38-aa71-480f-a90c-e069aca81b5f"/>
+    <listType typeId="db4a89e1-e3d2-49dc-9890-b678fbbe4ff5" valueTypeId="5670e202-a141-4719-a11f-a1aca9cbed33"/>
+    <managerType typeId="86b2f210-401a-44a1-b21a-ac53b48bc369" valueTypeId="27bf2a35-25a6-4bb3-bc7e-8f5c7b964060"/>
+    <recordSetType typeId="b22e51ac-a358-4130-831d-2f9932c5e98b" valueTypeId="3da3c967-b719-4656-a672-218d92365b0d"/>
+    <recordKeyType typeId="f4e55fe7-bceb-4c0a-88ad-1a2a3c4acf92" valueTypeId="9787846e-a1ca-48da-93dd-25ceb1fb06d9"/>
+    <recordType typeId="07a55565-eadc-41c5-b0c7-c239aba973ca" valueTypeId="cf10118f-82b5-4f53-b64d-1fac2acdb200"/>
+    <recordManagerType typeId="3be63e89-e560-4c28-a035-1fc4d29bdc46" valueTypeId="74c8095e-0f72-4f2c-b2da-e4d1c1264a33"/>
+  </producedTypes>
+  <name>алк_НормаВыпускаПакета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Алк норма выпуска пакета</value>
+  </synonym>
+  <comment>Для определение нормы выпуска пакета при переупаковке</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8b3dfa90-f8ee-47d6-b87a-2a1d754692dd">
+    <name>ИсходныйПакет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходный пакет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4e221449-ec81-4e67-9968-7b17d9b2ccb1">
+    <name>Норма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_НормыРасходаИВыпуска</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="027d38dd-91e7-4737-96b1-530f150faeeb">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

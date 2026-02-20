@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07b48a63-8916-4ea2-875a-586e2d72bb42">
+  <producedTypes>
+    <selectionType typeId="bca6b2e8-8ebb-4310-afca-fb2d2aa26799" valueTypeId="a2ac08cb-65eb-49d9-9444-9f9e479dfc56"/>
+    <listType typeId="942a05f6-9462-4c3e-ae72-2c4b48258d59" valueTypeId="d2cf77a8-1817-4eb4-b8dd-a97900e32e25"/>
+    <managerType typeId="2999e987-b09f-4f7d-8aab-8dcc6f572bc1" valueTypeId="1fc6da4f-4eff-440e-b833-03ff6ebf61a4"/>
+    <recordSetType typeId="8f0723d1-9a42-46cc-b964-b9421980864c" valueTypeId="e3fd1b46-5d5f-421c-b5aa-2955cd3dfd9c"/>
+    <recordKeyType typeId="773c70f8-5d01-426d-9ca1-3d11b0a82be0" valueTypeId="aeabc806-8826-42b2-b45a-bf3aef2fb8c1"/>
+    <recordType typeId="54bc8d71-b0f3-407a-975a-635aba4f58c4" valueTypeId="11dbb5bd-39bf-4164-89af-779460e32a71"/>
+    <recordManagerType typeId="9477bc66-21a3-488f-9ffb-600cffcac542" valueTypeId="396d1746-0e91-49fa-9fca-5abc588a4825"/>
+  </producedTypes>
+  <name>алк_АссортиментныеГруппыПредставление</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ассортиментные группы представление</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="54d89909-2aeb-48ef-964c-c13a4294bf42">
+    <name>ПредставлениеГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление группы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>750</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="a083c19d-7701-4aeb-9a9b-89e0c7007598">
+    <name>ИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c34f7c0f-ce6a-4b0e-a458-0b1ade8be820">
+    <name>ВладелецИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец ИД</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.алк_ЗаказПокупателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

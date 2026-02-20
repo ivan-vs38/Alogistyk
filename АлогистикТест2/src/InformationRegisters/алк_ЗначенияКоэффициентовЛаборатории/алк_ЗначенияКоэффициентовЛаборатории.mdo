@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4760955-dc2c-413b-9d99-4a91cd29a526">
+  <producedTypes>
+    <selectionType typeId="c67a8a3e-d754-4999-8302-2918c9c60bda" valueTypeId="442e85fc-be25-4c84-93ed-199444c40451"/>
+    <listType typeId="8933d6d1-d413-437a-a2db-a7532ee3c553" valueTypeId="06e09f77-5d9e-4b6a-8451-057d46b95bb7"/>
+    <managerType typeId="fe560fa0-57fc-49b7-a989-0b7b6a2d8c50" valueTypeId="c104db96-d0aa-4e24-8fce-3e8ea5cbbbf7"/>
+    <recordSetType typeId="a16dea46-e3f5-4d43-9cfb-8d09e4a0d596" valueTypeId="28018abc-03cc-445a-bd73-d93210b473a8"/>
+    <recordKeyType typeId="6f1cdc4b-43e9-491f-8a36-24b6705d39d7" valueTypeId="5c7ad63d-32a2-4737-8f26-92a77237cddd"/>
+    <recordType typeId="a141a1ed-1893-4d69-bde5-561d698b4d43" valueTypeId="2a7c9ca5-de22-48ee-9e06-8d06599890f0"/>
+    <recordManagerType typeId="19a64fd6-7809-4dfc-8d76-46ec8b73e5eb" valueTypeId="d3820e37-0513-4954-81a8-f3cee9211dad"/>
+  </producedTypes>
+  <name>алк_ЗначенияКоэффициентовЛаборатории</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения коэффициентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="62825ea3-d43a-46f2-939a-7b9f809ba8bb">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

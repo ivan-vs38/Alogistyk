@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b84ecf89-8b13-41ff-9bd5-d6e1be9bd675">
+  <producedTypes>
+    <selectionType typeId="08a40f0c-747c-4fe5-a74f-b42bd4f33bb9" valueTypeId="6450bdd0-8523-4e8f-b646-dfdc23479896"/>
+    <listType typeId="a38a299a-d7ea-457e-b16e-91cd8f80f155" valueTypeId="188a5f13-77b2-4d94-8653-1bdd148c3940"/>
+    <managerType typeId="53e5b536-49a1-4d43-88c3-b07ae000e0c0" valueTypeId="a1d5fc4f-1d09-46ca-b85b-f562174eebd9"/>
+    <recordSetType typeId="b1975065-46db-48e8-94af-212b0e1a4bd8" valueTypeId="f0e38233-83b1-450e-9fc0-e78aaabc9682"/>
+    <recordKeyType typeId="d18507d5-dde7-48ff-a4f6-2ed9859a0080" valueTypeId="72b61ebd-49de-4f5e-b64c-094b2ffcb9ae"/>
+    <recordType typeId="2fe330a7-c47f-48c9-a72f-dc19d61081d6" valueTypeId="fe515ef9-59bd-450d-b8b1-33a20c399fdb"/>
+    <recordManagerType typeId="1cde2eed-9452-46e6-a5bb-83f8e9428204" valueTypeId="70636301-05d1-4267-a764-e46485f177f5"/>
+  </producedTypes>
+  <name>алк_КубатурникКруглогоЛеса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кубатурник круглого леса</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c8ee6c92-8797-4518-8ace-5740056588cb">
+    <name>Объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем (куб.м.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ffe26a80-f575-4854-a406-e93b6345ced0">
+    <name>ДлинаМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина (м.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1d49a1b8-a097-440b-99af-f3bcd4422fa6">
+    <name>СечениеМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сечение (м.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5fd19e72-5f34-493c-aa00-326d93a1a604">
+    <name>ТипКубатурника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип кубатурника</value>
+    </synonym>
+    <type>
+      <types>EnumRef.алк_ТипыКубатурников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78c83b2f-7431-450f-9ff4-c2b81f260ebf">
+  <producedTypes>
+    <selectionType typeId="a8072248-aab1-48bf-96a2-6b0c7dce45dc" valueTypeId="ddbafb50-0bda-494d-b1d7-8e1575a25b87"/>
+    <listType typeId="05d964e5-4848-45c4-ae24-07b88c08697a" valueTypeId="cdf3acde-d0ef-407c-b933-a694b658b88a"/>
+    <managerType typeId="ab46233b-b015-49a2-b731-c79b3cb8a42e" valueTypeId="ca0ccbb4-d734-4107-9067-d2fdfdcaa2bc"/>
+    <recordSetType typeId="2e2bf5d9-c88c-4e84-be2c-dc2b13e7d070" valueTypeId="31a9a386-c97f-4615-a38d-2fd806e40ef0"/>
+    <recordKeyType typeId="eb1033c7-e9b5-4325-bf6d-45096d391242" valueTypeId="e76a14bd-deac-45d3-bb28-dd126f6ed223"/>
+    <recordType typeId="8b52951b-3678-4a52-9e52-018e53f653d6" valueTypeId="e6e0adac-6369-479d-b6a5-254fcdc69b9b"/>
+    <recordManagerType typeId="d2c3f0ef-d177-47ee-b21c-eafce505ca3e" valueTypeId="d671ff62-2474-42eb-b97e-994f8351aed7"/>
+  </producedTypes>
+  <name>алк_НормыПростоев</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы простоев</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f5e3b4a4-3acf-4d5e-be15-f6cee51c61e7">
+    <name>Время</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время, ч</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f5ffdacf-c144-422e-84f3-073c36e60830">
+    <name>Простой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Простой</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Простой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8f31195d-751c-4f7c-9da2-ad9f0fbffec5">
+    <name>Участок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8fd5c4ee-4b7e-4062-8939-21e1cbbd7ca1">
+    <name>СменаУдалить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена удалить</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b033ce50-acd1-4ffb-87e5-73dcd0f547a3">
+    <name>Актуален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуален</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5b10f138-9648-47be-8d75-86ac63c7f1da">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Смены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

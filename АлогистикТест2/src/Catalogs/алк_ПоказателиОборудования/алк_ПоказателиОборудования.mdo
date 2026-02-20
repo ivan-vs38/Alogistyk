@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ada1140d-7801-422e-8146-74242af68fbd">
+  <producedTypes>
+    <objectType typeId="c6c72e72-9470-4c28-91fe-0b8ba2701f98" valueTypeId="fa99777f-0aef-4993-a87a-c58a274c10ff"/>
+    <refType typeId="18855865-db6c-43dc-93b4-4932e3c04fc2" valueTypeId="46a5650c-8702-40c2-bc4c-5320ca30c5ea"/>
+    <selectionType typeId="26bc50b7-3151-4b66-8cfd-17b42dc4b10b" valueTypeId="2a8bf2bf-13f8-4240-9208-5053766abcb0"/>
+    <listType typeId="f35d1f2b-ef5d-4b56-81e6-878bde7803a1" valueTypeId="27f34760-2e84-436e-b8e2-e865d7fa57b6"/>
+    <managerType typeId="209b39c0-0d85-498e-b892-79d0b2e0511e" valueTypeId="da6b706f-3627-4856-8bed-20484df01460"/>
+  </producedTypes>
+  <name>алк_ПоказателиОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели оборудования (АЛК)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.алк_ПоказателиОборудования.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.алк_ПоказателиОборудования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.алк_ПоказателиОборудования.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="01f5f364-e7dc-4ba3-aede-62690815d28e">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5f44277e-4c36-4cc4-a71d-2482f6e19542">
+    <name>ПерваяСтрокаРаздела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первая строка раздела</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3895c27e-643b-493c-9e4f-46b3af593eeb">
+    <name>НомерКолонкиПоказателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер колонки показателя</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="56cc94ea-3fa3-4f92-b058-5f958daf4830">
+    <name>Участок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.алк_Участки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="299a6927-b260-4932-a821-88e84e11023c">
+    <name>ДлинаММ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина, мм</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="50861172-3a37-47e5-9c66-547f939a1b55">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>
